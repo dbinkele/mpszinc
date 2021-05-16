@@ -1,0 +1,40 @@
+<project version='4'>
+  <component name='ProjectLibraryManager'>
+    <option name='libraries'>
+      <map>
+        <entry key='iets3.core'>
+          <value>
+            <Library>
+              <option name='name' value='iets3.core' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/org.iets3.core' />
+            </Library>
+          </value>
+        </entry>
+        <entry key='iets3.os'>
+          <value>
+            <Library>
+              <option name='name' value='iets3.os' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/org.iets3.opensource' />
+            </Library>
+          </value>
+        </entry>
+        <entry key='iets3.os.tests'>
+          <value>
+            <Library>
+              <option name='name' value='iets3.os.tests' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/org.iets3.opensource.tests' />
+            </Library>
+          </value>
+        </entry>
+        <entry key='mbeddr.plattform'>
+          <value>
+            <Library>
+              <option name='name' value='mbeddr.plattform' />
+              <option name='path' value='$PROJECT_DIR$/../../../build/dependencies/com.mbeddr.platform' />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
