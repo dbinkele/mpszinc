@@ -19,8 +19,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/hansebloc.dsl.api/hansebloc.dsl.api.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/hansebloc.init.examples/hansebloc.init.examples.msd" folder="init" />
       <modulePath path="$PROJECT_DIR$/solutions/hansebloc.unit/hansebloc.unit.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build.allScripts/mpszinc.build.allScripts.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build/mpszinc.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build.allScripts/mpszinc.build.allScripts.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build/mpszinc.build.msd" folder="build" />
     </projectModules>
   </component>
 </project>
