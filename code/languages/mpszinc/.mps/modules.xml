@@ -2,23 +2,12 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/devkits/hansebloc.devkit/hansebloc.devkit.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.contract/hansebloc.contract.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.contract/hansebloc.contract.sandbox.clone/hansebloc.contract.sandbox.clone.msd" folder="contract" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.expression.ext/hansebloc.expression.ext.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.sensor.init.clone/hansebloc.sensor.init.clone.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.sensor.init/hansebloc.sensor.init.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.sensor/hansebloc.sensor.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.sensor/sandbox/hansebloc.sensor.sandbox.msd" folder="init" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.units/hansebloc.units.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/hansebloc.units/sandbox/hansebloc.units.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/decTab.play/decTab.play.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/hansebloc.contract.genplan/hansebloc.contract.genplan.msd" folder="contract" />
-      <modulePath path="$PROJECT_DIR$/solutions/hansebloc.contract.runtime.test/hansebloc.contract.runtime.test.msd" folder="contract" />
-      <modulePath path="$PROJECT_DIR$/solutions/hansebloc.contract.runtime/hansebloc.contract.runtime.msd" folder="contract" />
-      <modulePath path="$PROJECT_DIR$/solutions/hansebloc.dsl.api/hansebloc.dsl.api.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/hansebloc.init.examples/hansebloc.init.examples.msd" folder="init" />
-      <modulePath path="$PROJECT_DIR$/solutions/hansebloc.unit/hansebloc.unit.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.antlr.zinc/org.antlr.zinc.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.antlr.zinc/runtime/org.antlr.zinc.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.antlr.zinc/sandbox/org.antlr.zinc.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.itemis.mpszinc/org.itemis.mpszinc.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.itemis.mpszinc/runtime/org.itemis.mpszinc.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.itemis.mpszinc/sandbox/org.itemis.mpszinc.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build.allScripts/mpszinc.build.allScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build/mpszinc.build.msd" folder="build" />
     </projectModules>
