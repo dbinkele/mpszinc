@@ -17,9 +17,9 @@ public class Var_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Varmark_1$jgGa));
     tgs.append(" ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.ID_1$jhac));
-    tgs.append(": ");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Typename_2$jgVb));
+    tgs.append(": ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.ID_1$jhac));
   }
 
   private static final class LINKS {

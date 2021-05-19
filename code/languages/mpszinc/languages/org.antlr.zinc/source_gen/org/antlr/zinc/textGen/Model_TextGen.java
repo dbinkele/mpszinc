@@ -6,20 +6,32 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class Model_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.Model_block_1_1_1$j9ra)) {
-      tgs.appendNode(item);
+    for (SNode stat : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.Stats$mE0D))) {
+      if (!(SNodeOperations.isInstanceOf(stat, CONCEPTS.EmptyStatement$9Y))) {
+
+        tgs.appendNode(stat);
+        tgs.append(";");
+        tgs.newLine();
+      }
     }
   }
 
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept EmptyStatement$9Y = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1bb0060e71f082cfL, "org.antlr.zinc.structure.EmptyStatement");
+  }
+
   private static final class LINKS {
-    /*package*/ static final SContainmentLink Model_block_1_1_1$j9ra = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f3821dL, 0x2656959549f38352L, "Model_block_1_1_1");
+    /*package*/ static final SContainmentLink Stats$mE0D = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f3821dL, 0x1bb0060e71e148e2L, "Stats");
   }
 }

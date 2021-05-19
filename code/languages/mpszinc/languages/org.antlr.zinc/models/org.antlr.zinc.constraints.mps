@@ -7,7 +7,8 @@
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="rpch" ref="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="rpch" ref="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -72,38 +73,6 @@
   <node concept="1M2fIO" id="313yWIVwO5I">
     <property role="3GE5qa" value="Interfaces" />
     <ref role="1M2myG" to="rpch:2pm_pl9WS9x" resolve="IStat" />
-  </node>
-  <node concept="1M2fIO" id="313yWIVwO69">
-    <property role="3GE5qa" value="Rules.Model_block_1_1" />
-    <ref role="1M2myG" to="rpch:2pm_pl9WSbt" resolve="Model_block_1_1" />
-    <node concept="9SLcT" id="313yWIVwO6a" role="9SGkU">
-      <node concept="3clFbS" id="313yWIVwO6b" role="2VODD2">
-        <node concept="3SKdUt" id="313yWIVwSLw" role="3cqZAp">
-          <node concept="1PaTwC" id="313yWIVwSLx" role="1aUNEU">
-            <node concept="3oM_SD" id="313yWIVwSLy" role="1PaTwD">
-              <property role="3oM_SC" value="ToDo" />
-            </node>
-            <node concept="3oM_SD" id="313yWIVwSMh" role="1PaTwD">
-              <property role="3oM_SC" value="allow" />
-            </node>
-            <node concept="3oM_SD" id="313yWIVwSMv" role="1PaTwD">
-              <property role="3oM_SC" value="other" />
-            </node>
-            <node concept="3oM_SD" id="313yWIVwSMH" role="1PaTwD">
-              <property role="3oM_SC" value="concepts" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="313yWIVwOa3" role="3cqZAp">
-          <node concept="17R0WA" id="313yWIVwOxZ" role="3clFbG">
-            <node concept="35c_gC" id="313yWIVwOAd" role="3uHU7w">
-              <ref role="35c_gD" to="rpch:2pm_pl9WS95" resolve="Vardecl" />
-            </node>
-            <node concept="2DD5aU" id="313yWIVwOa2" role="3uHU7B" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="313yWIVwSOF">
     <property role="3GE5qa" value="Rules.Vardecl" />
@@ -205,6 +174,54 @@
               <ref role="35c_gD" to="rpch:2pm_pl9WSaA" resolve="Integer_1" />
             </node>
             <node concept="2DD5aU" id="313yWIVx9$g" role="3uHU7B" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1IK1wTLTZH7">
+    <property role="3GE5qa" value="Rules.Model" />
+    <ref role="1M2myG" to="rpch:2pm_pl9WS8t" resolve="Model" />
+    <node concept="9SLcT" id="1IK1wTLTZH8" role="9SGkU">
+      <node concept="3clFbS" id="1IK1wTLTZH9" role="2VODD2">
+        <node concept="3clFbF" id="1IK1wTLZwxJ" role="3cqZAp">
+          <node concept="22lmx$" id="1IK1wTM37X_" role="3clFbG">
+            <node concept="17R0WA" id="1IK1wTM38CD" role="3uHU7w">
+              <node concept="2DD5aU" id="1IK1wTM38KC" role="3uHU7w" />
+              <node concept="35c_gC" id="1IK1wTM385G" role="3uHU7B">
+                <ref role="35c_gD" to="rpch:2pm_pl9WSbp" resolve="Solve" />
+              </node>
+            </node>
+            <node concept="22lmx$" id="1IK1wTLZxua" role="3uHU7B">
+              <node concept="17R0WA" id="1IK1wTLZx8x" role="3uHU7B">
+                <node concept="35c_gC" id="1IK1wTLZwxI" role="3uHU7B">
+                  <ref role="35c_gD" to="rpch:2pm_pl9WS95" resolve="Vardecl" />
+                </node>
+                <node concept="2DD5aU" id="1IK1wTLZxcN" role="3uHU7w" />
+              </node>
+              <node concept="17R0WA" id="1IK1wTLZxSG" role="3uHU7w">
+                <node concept="35c_gC" id="1IK1wTLZxva" role="3uHU7B">
+                  <ref role="35c_gD" to="rpch:1IK1wTLW8bf" resolve="EmptyStatement" />
+                </node>
+                <node concept="2DD5aU" id="1IK1wTLZxXi" role="3uHU7w" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1IK1wTM3O$e">
+    <property role="3GE5qa" value="Rules.Solve" />
+    <ref role="1M2myG" to="rpch:2pm_pl9WSbp" resolve="Solve" />
+    <node concept="9SLcT" id="1IK1wTM3O$f" role="9SGkU">
+      <node concept="3clFbS" id="1IK1wTM3O$g" role="2VODD2">
+        <node concept="3clFbF" id="1IK1wTM3OCa" role="3cqZAp">
+          <node concept="17R0WA" id="1IK1wTM3Pan" role="3clFbG">
+            <node concept="2DD5aU" id="1IK1wTM3PeD" role="3uHU7w" />
+            <node concept="35c_gC" id="1IK1wTM3OC9" role="3uHU7B">
+              <ref role="35c_gD" to="rpch:2pm_pl9WScr" resolve="Satisfy" />
+            </node>
           </node>
         </node>
       </node>

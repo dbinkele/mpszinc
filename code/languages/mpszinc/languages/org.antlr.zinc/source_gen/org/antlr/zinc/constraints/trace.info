@@ -13,7 +13,93 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,37,0" name="org.antlr.zinc.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,39,0" name="org.antlr.zinc.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/1995101294035467079">
+    <file name="Model_Constraints.java">
+      <node id="1995101294035467079" at="20,30,21,29" concept="10" />
+      <node id="1995101294035467079" at="28,128,29,133" concept="4" />
+      <node id="1995101294035467079" at="29,133,30,0" concept="7" />
+      <node id="1995101294035467079" at="31,55,32,72" concept="1" />
+      <node id="1995101294035467079" at="33,9,34,0" concept="7" />
+      <node id="1995101294035467079" at="34,0,35,22" concept="5" />
+      <node id="1995101294036912239" at="39,128,40,172" concept="5" />
+      <node id="1995101294035467079" at="42,0,43,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="1995101294035467079" at="45,0,46,0" concept="8" trace="Model$jy" />
+      <node id="1995101294035467079" at="46,0,47,0" concept="8" trace="Solve$Ax" />
+      <node id="1995101294035467079" at="47,0,48,0" concept="8" trace="Vardecl$fA" />
+      <node id="1995101294035467079" at="48,0,49,0" concept="8" trace="EmptyStatement$9Y" />
+      <node id="1995101294035467079" at="20,0,23,0" concept="0" trace="Model_Constraints#()V" />
+      <node id="1995101294035467079" at="30,0,33,9" concept="2" />
+      <node id="1995101294035467079" at="39,0,42,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="1995101294035467079" at="27,0,37,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="1995101294035467079" at="25,105,37,6" concept="5" />
+      <node id="1995101294035467079" at="24,0,39,0" concept="3" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="1995101294035467079" at="20,30,21,29" />
+      <scope id="1995101294035467079" at="31,55,32,72" />
+      <scope id="1995101294035467081" at="39,128,40,172" />
+      <scope id="1995101294035467079" at="20,0,23,0" />
+      <scope id="1995101294035467079" at="39,0,42,0">
+        <var name="childConcept" id="1995101294035467079" />
+        <var name="childNode" id="1995101294035467079" />
+        <var name="link" id="1995101294035467079" />
+        <var name="node" id="1995101294035467079" />
+      </scope>
+      <scope id="1995101294035467079" at="28,128,35,22">
+        <var name="result" id="1995101294035467079" />
+      </scope>
+      <scope id="1995101294035467079" at="27,0,37,0">
+        <var name="checkingNodeContext" id="1995101294035467079" />
+        <var name="context" id="1995101294035467079" />
+      </scope>
+      <scope id="1995101294035467079" at="25,105,37,6" />
+      <scope id="1995101294035467079" at="24,0,39,0" />
+      <unit id="1995101294035467079" at="44,0,50,0" name="org.antlr.zinc.constraints.Model_Constraints$CONCEPTS" />
+      <unit id="1995101294035467079" at="26,15,37,5" name="org.antlr.zinc.constraints.Model_Constraints$1" />
+      <unit id="1995101294035467079" at="19,0,51,0" name="org.antlr.zinc.constraints.Model_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/1995101294038042894">
+    <file name="Solve_Constraints.java">
+      <node id="1995101294038042894" at="20,30,21,29" concept="10" />
+      <node id="1995101294038042894" at="28,128,29,133" concept="4" />
+      <node id="1995101294038042894" at="29,133,30,0" concept="7" />
+      <node id="1995101294038042894" at="31,55,32,72" concept="1" />
+      <node id="1995101294038042894" at="33,9,34,0" concept="7" />
+      <node id="1995101294038042894" at="34,0,35,22" concept="5" />
+      <node id="1995101294038043146" at="39,128,40,61" concept="5" />
+      <node id="1995101294038042894" at="42,0,43,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="1995101294038042894" at="45,0,46,0" concept="8" trace="Solve$Ax" />
+      <node id="1995101294038042894" at="46,0,47,0" concept="8" trace="Satisfy$dG" />
+      <node id="1995101294038042894" at="20,0,23,0" concept="0" trace="Solve_Constraints#()V" />
+      <node id="1995101294038042894" at="30,0,33,9" concept="2" />
+      <node id="1995101294038042894" at="39,0,42,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="1995101294038042894" at="27,0,37,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="1995101294038042894" at="25,105,37,6" concept="5" />
+      <node id="1995101294038042894" at="24,0,39,0" concept="3" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="1995101294038042894" at="20,30,21,29" />
+      <scope id="1995101294038042894" at="31,55,32,72" />
+      <scope id="1995101294038042896" at="39,128,40,61" />
+      <scope id="1995101294038042894" at="20,0,23,0" />
+      <scope id="1995101294038042894" at="39,0,42,0">
+        <var name="childConcept" id="1995101294038042894" />
+        <var name="childNode" id="1995101294038042894" />
+        <var name="link" id="1995101294038042894" />
+        <var name="node" id="1995101294038042894" />
+      </scope>
+      <scope id="1995101294038042894" at="28,128,35,22">
+        <var name="result" id="1995101294038042894" />
+      </scope>
+      <scope id="1995101294038042894" at="27,0,37,0">
+        <var name="checkingNodeContext" id="1995101294038042894" />
+        <var name="context" id="1995101294038042894" />
+      </scope>
+      <scope id="1995101294038042894" at="25,105,37,6" />
+      <scope id="1995101294038042894" at="24,0,39,0" />
+      <unit id="1995101294038042894" at="44,0,48,0" name="org.antlr.zinc.constraints.Solve_Constraints$CONCEPTS" />
+      <unit id="1995101294038042894" at="26,15,37,5" name="org.antlr.zinc.constraints.Solve_Constraints$1" />
+      <unit id="1995101294038042894" at="19,0,49,0" name="org.antlr.zinc.constraints.Solve_Constraints" />
     </file>
   </root>
   <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/3477777044400718190">
@@ -25,49 +111,6 @@
       <scope id="3477777044400718190" at="10,0,13,0" />
       <unit id="3477777044400718190" at="14,0,17,0" name="org.antlr.zinc.constraints.IStat_Constraints$CONCEPTS" />
       <unit id="3477777044400718190" at="9,0,18,0" name="org.antlr.zinc.constraints.IStat_Constraints" />
-    </file>
-  </root>
-  <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/3477777044400718217">
-    <file name="Model_block_1_1_Constraints.java">
-      <node id="3477777044400718217" at="20,40,21,39" concept="10" />
-      <node id="3477777044400718217" at="28,128,29,133" concept="4" />
-      <node id="3477777044400718217" at="29,133,30,0" concept="7" />
-      <node id="3477777044400718217" at="31,55,32,72" concept="1" />
-      <node id="3477777044400718217" at="33,9,34,0" concept="7" />
-      <node id="3477777044400718217" at="34,0,35,22" concept="5" />
-      <node id="3477777044400737376" at="39,128,40,33" concept="6" />
-      <node id="3477777044400718467" at="40,33,41,61" concept="5" />
-      <node id="3477777044400718217" at="43,0,44,0" concept="8" trace="canBeParentBreakingPoint" />
-      <node id="3477777044400718217" at="46,0,47,0" concept="8" trace="Model_block_1_1$Ct" />
-      <node id="3477777044400718217" at="47,0,48,0" concept="8" trace="Vardecl$fA" />
-      <node id="3477777044400718217" at="20,0,23,0" concept="0" trace="Model_block_1_1_Constraints#()V" />
-      <node id="3477777044400718217" at="30,0,33,9" concept="2" />
-      <node id="3477777044400718217" at="39,0,43,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
-      <node id="3477777044400718217" at="27,0,37,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
-      <node id="3477777044400718217" at="25,105,37,6" concept="5" />
-      <node id="3477777044400718217" at="24,0,39,0" concept="3" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
-      <scope id="3477777044400718217" at="20,40,21,39" />
-      <scope id="3477777044400718217" at="31,55,32,72" />
-      <scope id="3477777044400718219" at="39,128,41,61" />
-      <scope id="3477777044400718217" at="20,0,23,0" />
-      <scope id="3477777044400718217" at="39,0,43,0">
-        <var name="childConcept" id="3477777044400718217" />
-        <var name="childNode" id="3477777044400718217" />
-        <var name="link" id="3477777044400718217" />
-        <var name="node" id="3477777044400718217" />
-      </scope>
-      <scope id="3477777044400718217" at="28,128,35,22">
-        <var name="result" id="3477777044400718217" />
-      </scope>
-      <scope id="3477777044400718217" at="27,0,37,0">
-        <var name="checkingNodeContext" id="3477777044400718217" />
-        <var name="context" id="3477777044400718217" />
-      </scope>
-      <scope id="3477777044400718217" at="25,105,37,6" />
-      <scope id="3477777044400718217" at="24,0,39,0" />
-      <unit id="3477777044400718217" at="45,0,49,0" name="org.antlr.zinc.constraints.Model_block_1_1_Constraints$CONCEPTS" />
-      <unit id="3477777044400718217" at="26,15,37,5" name="org.antlr.zinc.constraints.Model_block_1_1_Constraints$1" />
-      <unit id="3477777044400718217" at="19,0,50,0" name="org.antlr.zinc.constraints.Model_block_1_1_Constraints" />
     </file>
   </root>
   <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/3477777044400737579">

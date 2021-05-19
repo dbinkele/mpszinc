@@ -15,7 +15,9 @@ public class Vardecl_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_1_1$jIID));
     tgs.append("  ");
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_2_2$jIXE));
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_2_2$jIXE) != null)) {
+      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_2_2$jIXE));
+    }
   }
 
   private static final class LINKS {
