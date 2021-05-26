@@ -29,22 +29,22 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Integer_1_TextGen();
       case LanguageConceptSwitch.Model:
         return new Model_TextGen();
-      case LanguageConceptSwitch.Rbool:
-        return new Rbool_TextGen();
-      case LanguageConceptSwitch.Rfloat:
-        return new Rfloat_TextGen();
-      case LanguageConceptSwitch.Rint:
-        return new Rint_TextGen();
       case LanguageConceptSwitch.Satisfy:
         return new Satisfy_TextGen();
       case LanguageConceptSwitch.Solve:
         return new Solve_TextGen();
       case LanguageConceptSwitch.Var:
         return new Var_TextGen();
-      case LanguageConceptSwitch.Vardecl:
-        return new Vardecl_TextGen();
+      case LanguageConceptSwitch.VarDeclItem:
+        return new VarDeclItem_TextGen();
       case LanguageConceptSwitch.Varmark:
         return new Varmark_TextGen();
+      case LanguageConceptSwitch.ZBoolType:
+        return new ZBoolType_TextGen();
+      case LanguageConceptSwitch.ZFloatType:
+        return new ZFloatType_TextGen();
+      case LanguageConceptSwitch.ZIntType:
+        return new ZIntType_TextGen();
     }
     return null;
   }

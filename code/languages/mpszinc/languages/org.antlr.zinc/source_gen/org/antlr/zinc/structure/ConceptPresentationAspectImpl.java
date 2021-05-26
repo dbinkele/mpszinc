@@ -241,6 +241,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Optimize_2;
   private ConceptPresentation props_Output_1;
   private ConceptPresentation props_Output_2;
+  private ConceptPresentation props_ParDecl;
   private ConceptPresentation props_Parameter;
   private ConceptPresentation props_Parameter_block_1_1;
   private ConceptPresentation props_Pararray;
@@ -261,12 +262,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_QualName_3;
   private ConceptPresentation props_Range_1;
   private ConceptPresentation props_Range_2;
-  private ConceptPresentation props_Rbool;
   private ConceptPresentation props_RbracketExpr;
   private ConceptPresentation props_Real;
   private ConceptPresentation props_RestS;
-  private ConceptPresentation props_Rfloat;
-  private ConceptPresentation props_Rint;
   private ConceptPresentation props_Satisfy;
   private ConceptPresentation props_Scons;
   private ConceptPresentation props_SeqS;
@@ -311,15 +309,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Typename_7;
   private ConceptPresentation props_Typeset;
   private ConceptPresentation props_Var;
+  private ConceptPresentation props_VarDecl;
+  private ConceptPresentation props_VarDeclItem;
   private ConceptPresentation props_Vararray;
   private ConceptPresentation props_Varchoice_1;
   private ConceptPresentation props_Varchoice_2;
   private ConceptPresentation props_Varchoice_3;
-  private ConceptPresentation props_Vardecl;
   private ConceptPresentation props_Vardecl_block_1_1_1;
   private ConceptPresentation props_Vardecl_block_1_1_2;
   private ConceptPresentation props_Varmark;
   private ConceptPresentation props_WhereCond;
+  private ConceptPresentation props_ZBoolType;
+  private ConceptPresentation props_ZFloatType;
+  private ConceptPresentation props_ZIntType;
 
   @Override
   @Nullable
@@ -2075,6 +2077,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Output_2 = cpb.create();
         }
         return props_Output_2;
+      case LanguageConceptSwitch.ParDecl:
+        if (props_ParDecl == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ParDecl = cpb.create();
+        }
+        return props_ParDecl;
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2235,13 +2244,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Range_2 = cpb.create();
         }
         return props_Range_2;
-      case LanguageConceptSwitch.Rbool:
-        if (props_Rbool == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Rbool");
-          props_Rbool = cpb.create();
-        }
-        return props_Rbool;
       case LanguageConceptSwitch.RbracketExpr:
         if (props_RbracketExpr == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2266,20 +2268,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RestS = cpb.create();
         }
         return props_RestS;
-      case LanguageConceptSwitch.Rfloat:
-        if (props_Rfloat == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Rfloat");
-          props_Rfloat = cpb.create();
-        }
-        return props_Rfloat;
-      case LanguageConceptSwitch.Rint:
-        if (props_Rint == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Rint");
-          props_Rint = cpb.create();
-        }
-        return props_Rint;
       case LanguageConceptSwitch.Satisfy:
         if (props_Satisfy == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2632,6 +2620,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Var = cpb.create();
         }
         return props_Var;
+      case LanguageConceptSwitch.VarDecl:
+        if (props_VarDecl == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_VarDecl = cpb.create();
+        }
+        return props_VarDecl;
+      case LanguageConceptSwitch.VarDeclItem:
+        if (props_VarDeclItem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("VarDeclItem");
+          props_VarDeclItem = cpb.create();
+        }
+        return props_VarDeclItem;
       case LanguageConceptSwitch.Vararray:
         if (props_Vararray == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2664,14 +2666,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Varchoice_3 = cpb.create();
         }
         return props_Varchoice_3;
-      case LanguageConceptSwitch.Vardecl:
-        if (props_Vardecl == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Vardecl");
-          cpb.presentationByName();
-          props_Vardecl = cpb.create();
-        }
-        return props_Vardecl;
       case LanguageConceptSwitch.Vardecl_block_1_1_1:
         if (props_Vardecl_block_1_1_1 == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2704,6 +2698,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_WhereCond = cpb.create();
         }
         return props_WhereCond;
+      case LanguageConceptSwitch.ZBoolType:
+        if (props_ZBoolType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ZBoolType");
+          props_ZBoolType = cpb.create();
+        }
+        return props_ZBoolType;
+      case LanguageConceptSwitch.ZFloatType:
+        if (props_ZFloatType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ZFloatType");
+          props_ZFloatType = cpb.create();
+        }
+        return props_ZFloatType;
+      case LanguageConceptSwitch.ZIntType:
+        if (props_ZIntType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ZIntType");
+          props_ZIntType = cpb.create();
+        }
+        return props_ZIntType;
     }
     return null;
   }

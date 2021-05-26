@@ -29,7 +29,7 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
       case 4:
         return new Var_Constraints();
       case 5:
-        return new Vardecl_Constraints();
+        return new VarDeclItem_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);

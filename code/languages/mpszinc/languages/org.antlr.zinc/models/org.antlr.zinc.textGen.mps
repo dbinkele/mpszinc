@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="rpch" ref="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)" implicit="true" />
+    <import index="qjzu" ref="r:bf9ecde6-b11c-472c-9555-cb5706474e27(org.antlr.zinc.behavior)" implicit="true" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -39,6 +40,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
@@ -64,6 +68,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -170,7 +175,7 @@
   </node>
   <node concept="WtQ9Q" id="313yWIV$Lek">
     <property role="3GE5qa" value="New.Type" />
-    <ref role="WuzLi" to="rpch:2pm_pl9WS81" resolve="Rint" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS81" resolve="ZIntType" />
     <node concept="11bSqf" id="313yWIV$Lel" role="11c4hB">
       <node concept="3clFbS" id="313yWIV$Lem" role="2VODD2">
         <node concept="lc7rE" id="313yWIV$LeB" role="3cqZAp">
@@ -183,12 +188,17 @@
   </node>
   <node concept="WtQ9Q" id="313yWIVAh5A">
     <property role="3GE5qa" value="New.Decl" />
-    <ref role="WuzLi" to="rpch:2pm_pl9WS95" resolve="Vardecl" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS95" resolve="VarDeclItem" />
     <node concept="11bSqf" id="313yWIVAh5B" role="11c4hB">
       <node concept="3clFbS" id="313yWIVAh5C" role="2VODD2">
         <node concept="lc7rE" id="313yWIVAh5T" role="3cqZAp">
-          <node concept="la8eA" id="7ARmMQbaIx4" role="lcghm">
-            <property role="lacIc" value="var" />
+          <node concept="l9hG8" id="7ARmMQbenkh" role="lcghm">
+            <node concept="2OqwBi" id="7ARmMQbenBL" role="lb14g">
+              <node concept="117lpO" id="7ARmMQbenm0" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7ARmMQber4n" role="2OqNvi">
+                <ref role="37wK5l" to="qjzu:7ARmMQbeoXc" resolve="alias" />
+              </node>
+            </node>
           </node>
           <node concept="la8eA" id="7ARmMQbaL7g" role="lcghm">
             <property role="lacIc" value=" " />
@@ -232,7 +242,7 @@
                 <node concept="2OqwBi" id="1IK1wTLYtxh" role="lb14g">
                   <node concept="117lpO" id="1IK1wTLYtoh" role="2Oq$k0" />
                   <node concept="3TrEf2" id="4GavVjJ5zHC" role="2OqNvi">
-                    <ref role="3Tt5mk" to="rpch:4GavVjJ3uQO" resolve="Expr" />
+                    <ref role="3Tt5mk" to="rpch:4GavVjJ3uQO" resolve="expr" />
                   </node>
                 </node>
               </node>
@@ -242,7 +252,7 @@
             <node concept="2OqwBi" id="1IK1wTLYsp0" role="2Oq$k0">
               <node concept="117lpO" id="1IK1wTLYsdO" role="2Oq$k0" />
               <node concept="3TrEf2" id="4GavVjJ5zlC" role="2OqNvi">
-                <ref role="3Tt5mk" to="rpch:4GavVjJ3uQO" resolve="Expr" />
+                <ref role="3Tt5mk" to="rpch:4GavVjJ3uQO" resolve="expr" />
               </node>
             </node>
             <node concept="3x8VRR" id="1IK1wTLYtiz" role="2OqNvi" />
@@ -336,7 +346,7 @@
   </node>
   <node concept="WtQ9Q" id="4GavVjJ6uPn">
     <property role="3GE5qa" value="New.Type" />
-    <ref role="WuzLi" to="rpch:2pm_pl9WS8C" resolve="Rbool" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS8C" resolve="ZBoolType" />
     <node concept="11bSqf" id="4GavVjJ6uPo" role="11c4hB">
       <node concept="3clFbS" id="4GavVjJ6uPp" role="2VODD2">
         <node concept="lc7rE" id="4GavVjJ6uPE" role="3cqZAp">
@@ -349,7 +359,7 @@
   </node>
   <node concept="WtQ9Q" id="4GavVjJ6vh_">
     <property role="3GE5qa" value="New.Type" />
-    <ref role="WuzLi" to="rpch:2pm_pl9WS9N" resolve="Rfloat" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS9N" resolve="ZFloatType" />
     <node concept="11bSqf" id="4GavVjJ6vhA" role="11c4hB">
       <node concept="3clFbS" id="4GavVjJ6vhB" role="2VODD2">
         <node concept="lc7rE" id="4GavVjJ6vhS" role="3cqZAp">

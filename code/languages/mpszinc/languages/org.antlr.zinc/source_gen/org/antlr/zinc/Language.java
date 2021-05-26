@@ -42,6 +42,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("71934284-d7d1-45ee-a054-8c072591085f"), "org.iets3.core.expr.toplevel"));
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("6b277d9a-d52d-416f-a209-1919bd737f50"), "org.iets3.core.expr.simpleTypes"));
   }
 
