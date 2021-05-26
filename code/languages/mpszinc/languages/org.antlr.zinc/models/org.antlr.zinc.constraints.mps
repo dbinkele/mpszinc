@@ -199,5 +199,9 @@
     <property role="3GE5qa" value="Interfaces" />
     <ref role="1M2myG" to="rpch:2pm_pl9WSa3" resolve="ITypename" />
   </node>
+  <node concept="1M2fIO" id="2yWALofDzum">
+    <property role="3GE5qa" value="New.Decl" />
+    <ref role="1M2myG" to="rpch:2yWALofAj8E" resolve="VarRef" />
+  </node>
 </model>
 

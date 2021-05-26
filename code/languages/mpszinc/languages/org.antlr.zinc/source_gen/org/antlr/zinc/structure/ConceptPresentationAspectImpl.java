@@ -242,6 +242,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Output_1;
   private ConceptPresentation props_Output_2;
   private ConceptPresentation props_ParDecl;
+  private ConceptPresentation props_ParRef;
   private ConceptPresentation props_Parameter;
   private ConceptPresentation props_Parameter_block_1_1;
   private ConceptPresentation props_Pararray;
@@ -311,6 +312,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Var;
   private ConceptPresentation props_VarDecl;
   private ConceptPresentation props_VarDeclItem;
+  private ConceptPresentation props_VarRef;
   private ConceptPresentation props_Vararray;
   private ConceptPresentation props_Varchoice_1;
   private ConceptPresentation props_Varchoice_2;
@@ -323,10 +325,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ZBoolType;
   private ConceptPresentation props_ZFalseLiteral;
   private ConceptPresentation props_ZFloatType;
+  private ConceptPresentation props_ZIff;
+  private ConceptPresentation props_ZImplies;
   private ConceptPresentation props_ZIntType;
   private ConceptPresentation props_ZNot;
   private ConceptPresentation props_ZNumber;
   private ConceptPresentation props_ZOr;
+  private ConceptPresentation props_ZParens;
   private ConceptPresentation props_ZTrueLiteral;
   private ConceptPresentation props_ZXor;
 
@@ -2091,6 +2096,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ParDecl = cpb.create();
         }
         return props_ParDecl;
+      case LanguageConceptSwitch.ParRef:
+        if (props_ParRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x28bc9b160fb413f6L, 0x28bc9b160f99322bL, "var", "", "");
+          props_ParRef = cpb.create();
+        }
+        return props_ParRef;
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2641,6 +2653,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_VarDeclItem = cpb.create();
         }
         return props_VarDeclItem;
+      case LanguageConceptSwitch.VarRef:
+        if (props_VarRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x28bc9b160f99322aL, 0x28bc9b160f99322bL, "var", "", "");
+          props_VarRef = cpb.create();
+        }
+        return props_VarRef;
       case LanguageConceptSwitch.Vararray:
         if (props_Vararray == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2733,6 +2752,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZFloatType = cpb.create();
         }
         return props_ZFloatType;
+      case LanguageConceptSwitch.ZIff:
+        if (props_ZIff == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("<=>");
+          props_ZIff = cpb.create();
+        }
+        return props_ZIff;
+      case LanguageConceptSwitch.ZImplies:
+        if (props_ZImplies == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("=>");
+          props_ZImplies = cpb.create();
+        }
+        return props_ZImplies;
       case LanguageConceptSwitch.ZIntType:
         if (props_ZIntType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2761,6 +2794,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZOr = cpb.create();
         }
         return props_ZOr;
+      case LanguageConceptSwitch.ZParens:
+        if (props_ZParens == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("(");
+          props_ZParens = cpb.create();
+        }
+        return props_ZParens;
       case LanguageConceptSwitch.ZTrueLiteral:
         if (props_ZTrueLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

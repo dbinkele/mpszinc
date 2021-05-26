@@ -12,6 +12,7 @@
     <classNode dependClassName="org.antlr.zinc.constraints.Model_Constraints" />
     <classNode dependClassName="org.antlr.zinc.constraints.Solve_Constraints" />
     <classNode dependClassName="org.antlr.zinc.constraints.VarDeclItem_Constraints" />
+    <classNode dependClassName="org.antlr.zinc.constraints.VarRef_Constraints" />
     <classNode dependClassName="org.antlr.zinc.constraints.Var_Constraints" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
@@ -79,6 +80,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SInterfaceConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="org.antlr.zinc.constraints.VarRef_Constraints">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="org.antlr.zinc.constraints.Var_Constraints">

@@ -29,6 +29,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Integer_1_TextGen();
       case LanguageConceptSwitch.Model:
         return new Model_TextGen();
+      case LanguageConceptSwitch.ParRef:
+        return new ParRef_TextGen();
       case LanguageConceptSwitch.Satisfy:
         return new Satisfy_TextGen();
       case LanguageConceptSwitch.Solve:
@@ -37,6 +39,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Var_TextGen();
       case LanguageConceptSwitch.VarDeclItem:
         return new VarDeclItem_TextGen();
+      case LanguageConceptSwitch.VarRef:
+        return new VarRef_TextGen();
       case LanguageConceptSwitch.Varmark:
         return new Varmark_TextGen();
       case LanguageConceptSwitch.ZAnd:
@@ -45,12 +49,18 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new ZBoolType_TextGen();
       case LanguageConceptSwitch.ZFloatType:
         return new ZFloatType_TextGen();
+      case LanguageConceptSwitch.ZIff:
+        return new ZIff_TextGen();
+      case LanguageConceptSwitch.ZImplies:
+        return new ZImplies_TextGen();
       case LanguageConceptSwitch.ZIntType:
         return new ZIntType_TextGen();
       case LanguageConceptSwitch.ZNot:
         return new ZNot_TextGen();
       case LanguageConceptSwitch.ZOr:
         return new ZOr_TextGen();
+      case LanguageConceptSwitch.ZParens:
+        return new ZParens_TextGen();
       case LanguageConceptSwitch.ZXor:
         return new ZXor_TextGen();
     }

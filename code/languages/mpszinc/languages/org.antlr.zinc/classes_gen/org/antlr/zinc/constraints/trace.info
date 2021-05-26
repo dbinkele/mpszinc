@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,39,0" name="org.antlr.zinc.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,41,0" name="org.antlr.zinc.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/1995101294035467079">
@@ -99,6 +99,17 @@
       <unit id="1995101294038042894" at="44,0,48,0" name="org.antlr.zinc.constraints.Solve_Constraints$CONCEPTS" />
       <unit id="1995101294038042894" at="26,15,37,5" name="org.antlr.zinc.constraints.Solve_Constraints$1" />
       <unit id="1995101294038042894" at="19,0,49,0" name="org.antlr.zinc.constraints.Solve_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/2935391576192858006">
+    <file name="VarRef_Constraints.java">
+      <node id="2935391576192858006" at="10,31,11,30" concept="9" />
+      <node id="2935391576192858006" at="15,0,16,0" concept="7" trace="VarRef$ZQ" />
+      <node id="2935391576192858006" at="10,0,13,0" concept="0" trace="VarRef_Constraints#()V" />
+      <scope id="2935391576192858006" at="10,31,11,30" />
+      <scope id="2935391576192858006" at="10,0,13,0" />
+      <unit id="2935391576192858006" at="14,0,17,0" name="org.antlr.zinc.constraints.VarRef_Constraints$CONCEPTS" />
+      <unit id="2935391576192858006" at="9,0,18,0" name="org.antlr.zinc.constraints.VarRef_Constraints" />
     </file>
   </root>
   <root nodeRef="r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)/3477777044400718190">

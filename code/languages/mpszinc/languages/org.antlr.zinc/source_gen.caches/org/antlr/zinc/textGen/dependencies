@@ -28,6 +28,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="org.antlr.zinc.textGen.ParRef_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="org.antlr.zinc.textGen.Satisfy_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
@@ -53,17 +64,22 @@
     <classNode dependClassName="org.antlr.zinc.textGen.EmptyStatement_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Integer_1_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Model_TextGen" />
+    <classNode dependClassName="org.antlr.zinc.textGen.ParRef_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Satisfy_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Solve_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.VarDeclItem_TextGen" />
+    <classNode dependClassName="org.antlr.zinc.textGen.VarRef_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Var_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Varmark_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZAnd_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZBoolType_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZFloatType_TextGen" />
+    <classNode dependClassName="org.antlr.zinc.textGen.ZIff_TextGen" />
+    <classNode dependClassName="org.antlr.zinc.textGen.ZImplies_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZIntType_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZNot_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZOr_TextGen" />
+    <classNode dependClassName="org.antlr.zinc.textGen.ZParens_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ZXor_TextGen" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
@@ -82,6 +98,17 @@
     <classNode dependClassName="org.antlr.zinc.behavior.VarDeclItem__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="org.antlr.zinc.textGen.VarRef_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="org.antlr.zinc.textGen.Var_TextGen">
@@ -120,6 +147,24 @@
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="org.antlr.zinc.textGen.ZIff_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="org.antlr.zinc.textGen.ZImplies_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="org.antlr.zinc.textGen.ZIntType_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
@@ -136,6 +181,15 @@
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="org.antlr.zinc.textGen.ZOr_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
+  <dependency className="org.antlr.zinc.textGen.ZParens_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

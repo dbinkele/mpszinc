@@ -5328,5 +5328,65 @@
       <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2yWALofyTDU">
+    <property role="EcuMT" value="2935391576191113850" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <property role="TrG5h" value="ZIff" />
+    <property role="34LRSv" value="&lt;=&gt;" />
+    <ref role="1TJDcQ" to="hm2y:1k3knzd4P65" resolve="LogicalImpliesExpression" />
+    <node concept="PrWs8" id="2yWALofyTDV" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofz5J4">
+    <property role="EcuMT" value="2935391576191163332" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <property role="TrG5h" value="ZImplies" />
+    <property role="34LRSv" value="=&gt;" />
+    <ref role="1TJDcQ" to="hm2y:1k3knzd4P65" resolve="LogicalImpliesExpression" />
+    <node concept="PrWs8" id="2yWALofz5J5" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofAj8E">
+    <property role="EcuMT" value="2935391576192004650" />
+    <property role="3GE5qa" value="New.Decl" />
+    <property role="TrG5h" value="VarRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="2yWALofAj8F" role="1TKVEi">
+      <property role="IQ2ns" value="2935391576192004651" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7ARmMQbemU2" resolve="VarDecl" />
+    </node>
+    <node concept="PrWs8" id="2yWALofAj8I" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofD_Ih">
+    <property role="EcuMT" value="2935391576192867217" />
+    <property role="3GE5qa" value="New.Expr" />
+    <property role="TrG5h" value="ZParens" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6OJ4v" resolve="ParensExpression" />
+    <node concept="PrWs8" id="2yWALofGQMq" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofH1fQ">
+    <property role="EcuMT" value="2935391576193766390" />
+    <property role="3GE5qa" value="New.Decl" />
+    <property role="TrG5h" value="ParRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="2yWALofH1fR" role="1TKVEi">
+      <property role="IQ2ns" value="2935391576192004651" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7ARmMQbk6FU" resolve="ParDecl" />
+    </node>
+    <node concept="PrWs8" id="2yWALofH1fS" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
 </model>
 
