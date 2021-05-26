@@ -12,26 +12,15 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
   </imports>
   <registry>
-    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
-        <child id="7089558164905593725" name="type" index="2zM23F" />
-      </concept>
-    </language>
     <language id="d84d0ef9-36eb-4841-bd7c-5b126eb1e2b4" name="org.antlr.zinc">
       <concept id="1995101294036026063" name="org.antlr.zinc.structure.EmptyStatement" flags="ng" index="1Eg8j1" />
       <concept id="2762559889861739291" name="org.antlr.zinc.structure.Satisfy" flags="ng" index="1JDhqe" />
       <concept id="2762559889861739225" name="org.antlr.zinc.structure.Solve" flags="ng" index="1JDhtc">
         <child id="2762559889861739541" name="Solve_block_1_2_2" index="1JDh60" />
       </concept>
-      <concept id="2762559889861739254" name="org.antlr.zinc.structure.IExpr" flags="ng" index="1JDhtz" />
       <concept id="2762559889861739037" name="org.antlr.zinc.structure.Model" flags="ng" index="1JDhu8">
         <child id="1995101294035028194" name="Stats" index="1EkkVG" />
       </concept>
-      <concept id="2762559889861739048" name="org.antlr.zinc.structure.Rbool" flags="ng" index="1JDhuX" />
-      <concept id="2762559889861739077" name="org.antlr.zinc.structure.Vardecl" flags="ng" index="1JDhvg">
-        <child id="5407274717693210036" name="Expr" index="2$1T80" />
-      </concept>
-      <concept id="2762559889861739123" name="org.antlr.zinc.structure.Rfloat" flags="ng" index="1JDhvA" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -43,15 +32,6 @@
     <property role="TrG5h" value="FirstHit" />
     <node concept="1Eg8j1" id="1IK1wTM6eIO" role="1EkkVG" />
     <node concept="1Eg8j1" id="4GavVjJddl4" role="1EkkVG" />
-    <node concept="1JDhvg" id="7ARmMQb9xxQ" role="1EkkVG">
-      <property role="TrG5h" value="y" />
-      <node concept="1JDhuX" id="7ARmMQbb05v" role="2zM23F" />
-    </node>
-    <node concept="1JDhvg" id="7ARmMQb9xy_" role="1EkkVG">
-      <property role="TrG5h" value="x" />
-      <node concept="1JDhvA" id="7ARmMQbb05T" role="2zM23F" />
-      <node concept="1JDhtz" id="7ARmMQbelkN" role="2$1T80" />
-    </node>
     <node concept="1JDhtc" id="4GavVjJ3vGc" role="1EkkVG">
       <node concept="1JDhqe" id="4GavVjJ3vGm" role="1JDh60" />
     </node>
