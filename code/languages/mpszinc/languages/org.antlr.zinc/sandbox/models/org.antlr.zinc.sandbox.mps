@@ -17,7 +17,13 @@
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
     </language>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+    </language>
     <language id="d84d0ef9-36eb-4841-bd7c-5b126eb1e2b4" name="org.antlr.zinc">
+      <concept id="2935391576184845325" name="org.antlr.zinc.structure.ZNumber" flags="ng" index="B_QWr" />
       <concept id="2935391576183035499" name="org.antlr.zinc.structure.ZTrueLiteral" flags="ng" index="BFcPX" />
       <concept id="1995101294036026063" name="org.antlr.zinc.structure.EmptyStatement" flags="ng" index="1Eg8j1" />
       <concept id="2762559889861739291" name="org.antlr.zinc.structure.Satisfy" flags="ng" index="1JDhqe" />
@@ -52,6 +58,9 @@
     <node concept="3MTN7n" id="2yWALof2w6h" role="1EkkVG">
       <property role="TrG5h" value="s" />
       <node concept="1JDhvA" id="2yWALof45ia" role="2zM23F" />
+      <node concept="B_QWr" id="2yWALofb9sM" role="2$1T80">
+        <property role="30bXRw" value="3.5" />
+      </node>
     </node>
     <node concept="1JDhtc" id="4GavVjJ3vGc" role="1EkkVG">
       <node concept="1JDhqe" id="4GavVjJ3vGm" role="1JDh60" />

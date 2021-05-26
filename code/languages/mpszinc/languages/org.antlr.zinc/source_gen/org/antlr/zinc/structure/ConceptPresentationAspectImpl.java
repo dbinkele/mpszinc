@@ -323,6 +323,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ZFalseLiteral;
   private ConceptPresentation props_ZFloatType;
   private ConceptPresentation props_ZIntType;
+  private ConceptPresentation props_ZNumber;
   private ConceptPresentation props_ZTrueLiteral;
 
   @Override
@@ -2728,6 +2729,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZIntType = cpb.create();
         }
         return props_ZIntType;
+      case LanguageConceptSwitch.ZNumber:
+        if (props_ZNumber == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ZNumber");
+          props_ZNumber = cpb.create();
+        }
+        return props_ZNumber;
       case LanguageConceptSwitch.ZTrueLiteral:
         if (props_ZTrueLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
