@@ -17,7 +17,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="18,0,1227,0" name="org.antlr.zinc.editor.EditorAspectDescriptorImpl" />
+      <unit at="18,0,1237,0" name="org.antlr.zinc.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="GrammarActionsDescriptor.java">
       <unit at="63,51,67,5" name="org.antlr.zinc.editor.GrammarActionsDescriptor$1" />
@@ -1595,6 +1595,11 @@
       <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_WhereCond$GrammarCellsSubstituteMenuPart_4di1l2_a" />
       <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_WhereCond" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_ZAnd.java">
+      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZAnd$CONCEPTS" />
+      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZAnd$GrammarCellsSubstituteMenuPart_8hc5qk_a" />
+      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZAnd" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_ZBoolType.java">
       <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZBoolType$CONCEPTS" />
       <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZBoolType$GrammarCellsSubstituteMenuPart_hdb7s1_a" />
@@ -1615,10 +1620,30 @@
       <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZIntType$GrammarCellsSubstituteMenuPart_tyktqd_a" />
       <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZIntType" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_ZNot.java">
+      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNot$CONCEPTS" />
+      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNot$GrammarCellsSubstituteMenuPart_8hcakq_a" />
+      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNot" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_ZNumber.java">
+      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNumber$CONCEPTS" />
+      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNumber$GrammarCellsSubstituteMenuPart_loeyg3_a" />
+      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNumber" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_ZOr.java">
+      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZOr$CONCEPTS" />
+      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZOr$GrammarCellsSubstituteMenuPart_bqaca8_a" />
+      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZOr" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_ZTrueLiteral.java">
       <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZTrueLiteral$CONCEPTS" />
       <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZTrueLiteral$GrammarCellsSubstituteMenuPart_9wciwx_a" />
       <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZTrueLiteral" />
+    </file>
+    <file name="GrammarCellsSubstituteMenu_ZXor.java">
+      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZXor$CONCEPTS" />
+      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZXor$GrammarCellsSubstituteMenuPart_8hcea6_a" />
+      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZXor" />
     </file>
     <file name="ReflectionUtil_copy.java">
       <unit at="9,0,60,0" name="org.antlr.zinc.editor.ReflectionUtil_copy" />

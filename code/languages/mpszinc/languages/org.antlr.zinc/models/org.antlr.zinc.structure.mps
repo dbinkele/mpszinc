@@ -5262,7 +5262,7 @@
   </node>
   <node concept="1TIwiD" id="2yWALof45pF">
     <property role="EcuMT" value="2935391576183035499" />
-    <property role="3GE5qa" value="New.Expr" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
     <property role="TrG5h" value="ZTrueLiteral" />
     <property role="34LRSv" value="true" />
     <ref role="1TJDcQ" to="5qo5:6sdnDbSlcHp" resolve="TrueLiteral" />
@@ -5272,7 +5272,7 @@
   </node>
   <node concept="1TIwiD" id="2yWALof9oNd">
     <property role="EcuMT" value="2935391576184425677" />
-    <property role="3GE5qa" value="New.Expr" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
     <property role="TrG5h" value="ZFalseLiteral" />
     <property role="34LRSv" value="false" />
     <ref role="1TJDcQ" to="5qo5:6sdnDbSlcHQ" resolve="FalseLiteral" />
@@ -5286,6 +5286,45 @@
     <property role="TrG5h" value="ZNumber" />
     <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oerq" resolve="NumberLiteral" />
     <node concept="PrWs8" id="2yWALofaZp6" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofbac0">
+    <property role="EcuMT" value="2935391576184890112" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <property role="TrG5h" value="ZNot" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6NgXE" resolve="LogicalNotExpression" />
+    <node concept="PrWs8" id="2yWALofbac1" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofeI_s">
+    <property role="EcuMT" value="2935391576185825628" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <property role="TrG5h" value="ZAnd" />
+    <property role="34LRSv" value="&amp;&amp;" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MXOT" resolve="LogicalAndExpression" />
+    <node concept="PrWs8" id="2yWALofeSuq" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofnoE2">
+    <property role="EcuMT" value="2935391576188095106" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <property role="TrG5h" value="ZOr" />
+    <property role="34LRSv" value="||" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MXMV" resolve="LogicalOrExpression" />
+    <node concept="PrWs8" id="2yWALofnoE3" role="PzmwI">
+      <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2yWALofsaFo">
+    <property role="EcuMT" value="2935391576189348568" />
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <property role="TrG5h" value="ZXor" />
+    <property role="34LRSv" value="xor" />
+    <ref role="1TJDcQ" to="hm2y:4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="2yWALofwZM7" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSbQ" resolve="IExpr" />
     </node>
   </node>

@@ -39,12 +39,20 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new VarDeclItem_TextGen();
       case LanguageConceptSwitch.Varmark:
         return new Varmark_TextGen();
+      case LanguageConceptSwitch.ZAnd:
+        return new ZAnd_TextGen();
       case LanguageConceptSwitch.ZBoolType:
         return new ZBoolType_TextGen();
       case LanguageConceptSwitch.ZFloatType:
         return new ZFloatType_TextGen();
       case LanguageConceptSwitch.ZIntType:
         return new ZIntType_TextGen();
+      case LanguageConceptSwitch.ZNot:
+        return new ZNot_TextGen();
+      case LanguageConceptSwitch.ZOr:
+        return new ZOr_TextGen();
+      case LanguageConceptSwitch.ZXor:
+        return new ZXor_TextGen();
     }
     return null;
   }

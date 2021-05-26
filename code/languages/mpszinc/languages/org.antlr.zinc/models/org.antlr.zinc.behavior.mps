@@ -19,6 +19,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -36,6 +37,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -46,6 +48,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -156,6 +161,27 @@
         </node>
       </node>
       <node concept="17QB3L" id="7ARmMQbk6G_" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2yWALofsaFN">
+    <property role="3GE5qa" value="New.Expr.Logical" />
+    <ref role="13h7C2" to="rpch:2yWALofsaFo" resolve="ZXor" />
+    <node concept="13hLZK" id="2yWALofsaFO" role="13h7CW">
+      <node concept="3clFbS" id="2yWALofsaFP" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2yWALofsaFY" role="13h7CS">
+      <property role="TrG5h" value="priority" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="pbu6:4rZeNQ6MpZB" resolve="priority" />
+      <node concept="3Tm1VV" id="2yWALofsaFZ" role="1B3o_S" />
+      <node concept="3clFbS" id="2yWALofsaG2" role="3clF47">
+        <node concept="3clFbF" id="2yWALofsaYo" role="3cqZAp">
+          <node concept="3cmrfG" id="4rZeNQ6N6QZ" role="3clFbG">
+            <property role="3cmrfH" value="801" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="2yWALofsaG3" role="3clF45" />
     </node>
   </node>
 </model>

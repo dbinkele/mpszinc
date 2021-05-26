@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="cldhjralbdlnfyvhl5yzivl7ke5vvi8">
-  <files names="EmptyStatement_TextGen.java:Integer_1_TextGen.java:Model_TextGen.java:Satisfy_TextGen.java:Solve_TextGen.java:TextGenAspectDescriptor.java:VarDeclItem_TextGen.java:Var_TextGen.java:Varmark_TextGen.java:ZBoolType_TextGen.java:ZFloatType_TextGen.java:ZIntType_TextGen.java" />
+<product version="3" modelHash="-9zdszb0bwgcgmuyxf27x15ny3uez91f">
+  <files names="EmptyStatement_TextGen.java:Integer_1_TextGen.java:Model_TextGen.java:Satisfy_TextGen.java:Solve_TextGen.java:TextGenAspectDescriptor.java:VarDeclItem_TextGen.java:Var_TextGen.java:Varmark_TextGen.java:ZAnd_TextGen.java:ZBoolType_TextGen.java:ZFloatType_TextGen.java:ZIntType_TextGen.java:ZNot_TextGen.java:ZOr_TextGen.java:ZXor_TextGen.java" />
 </product>
 

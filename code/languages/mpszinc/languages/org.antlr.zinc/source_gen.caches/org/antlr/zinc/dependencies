@@ -5,6 +5,7 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -21,6 +22,7 @@
     <classNode dependClassName="org.antlr.zinc.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="org.antlr.zinc.structure.StructureAspectDescriptor" />
     <classNode dependClassName="org.antlr.zinc.textGen.TextGenAspectDescriptor" />
+    <classNode dependClassName="org.antlr.zinc.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />

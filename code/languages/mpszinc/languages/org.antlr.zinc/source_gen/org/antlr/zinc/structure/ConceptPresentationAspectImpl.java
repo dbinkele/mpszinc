@@ -319,12 +319,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Vardecl_block_1_1_2;
   private ConceptPresentation props_Varmark;
   private ConceptPresentation props_WhereCond;
+  private ConceptPresentation props_ZAnd;
   private ConceptPresentation props_ZBoolType;
   private ConceptPresentation props_ZFalseLiteral;
   private ConceptPresentation props_ZFloatType;
   private ConceptPresentation props_ZIntType;
+  private ConceptPresentation props_ZNot;
   private ConceptPresentation props_ZNumber;
+  private ConceptPresentation props_ZOr;
   private ConceptPresentation props_ZTrueLiteral;
+  private ConceptPresentation props_ZXor;
 
   @Override
   @Nullable
@@ -2701,6 +2705,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_WhereCond = cpb.create();
         }
         return props_WhereCond;
+      case LanguageConceptSwitch.ZAnd:
+        if (props_ZAnd == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("&&");
+          props_ZAnd = cpb.create();
+        }
+        return props_ZAnd;
       case LanguageConceptSwitch.ZBoolType:
         if (props_ZBoolType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2729,6 +2740,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZIntType = cpb.create();
         }
         return props_ZIntType;
+      case LanguageConceptSwitch.ZNot:
+        if (props_ZNot == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ZNot");
+          props_ZNot = cpb.create();
+        }
+        return props_ZNot;
       case LanguageConceptSwitch.ZNumber:
         if (props_ZNumber == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2736,6 +2754,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZNumber = cpb.create();
         }
         return props_ZNumber;
+      case LanguageConceptSwitch.ZOr:
+        if (props_ZOr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("||");
+          props_ZOr = cpb.create();
+        }
+        return props_ZOr;
       case LanguageConceptSwitch.ZTrueLiteral:
         if (props_ZTrueLiteral == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2743,6 +2768,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZTrueLiteral = cpb.create();
         }
         return props_ZTrueLiteral;
+      case LanguageConceptSwitch.ZXor:
+        if (props_ZXor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("xor");
+          props_ZXor = cpb.create();
+        }
+        return props_ZXor;
     }
     return null;
   }
