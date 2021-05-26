@@ -320,8 +320,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Varmark;
   private ConceptPresentation props_WhereCond;
   private ConceptPresentation props_ZBoolType;
+  private ConceptPresentation props_ZFalseLiteral;
   private ConceptPresentation props_ZFloatType;
   private ConceptPresentation props_ZIntType;
+  private ConceptPresentation props_ZTrueLiteral;
 
   @Override
   @Nullable
@@ -2705,6 +2707,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZBoolType = cpb.create();
         }
         return props_ZBoolType;
+      case LanguageConceptSwitch.ZFalseLiteral:
+        if (props_ZFalseLiteral == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("false");
+          props_ZFalseLiteral = cpb.create();
+        }
+        return props_ZFalseLiteral;
       case LanguageConceptSwitch.ZFloatType:
         if (props_ZFloatType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2719,6 +2728,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZIntType = cpb.create();
         }
         return props_ZIntType;
+      case LanguageConceptSwitch.ZTrueLiteral:
+        if (props_ZTrueLiteral == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("true");
+          props_ZTrueLiteral = cpb.create();
+        }
+        return props_ZTrueLiteral;
     }
     return null;
   }

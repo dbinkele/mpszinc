@@ -18,6 +18,7 @@
       </concept>
     </language>
     <language id="d84d0ef9-36eb-4841-bd7c-5b126eb1e2b4" name="org.antlr.zinc">
+      <concept id="2935391576183035499" name="org.antlr.zinc.structure.ZTrueLiteral" flags="ng" index="BFcPX" />
       <concept id="1995101294036026063" name="org.antlr.zinc.structure.EmptyStatement" flags="ng" index="1Eg8j1" />
       <concept id="2762559889861739291" name="org.antlr.zinc.structure.Satisfy" flags="ng" index="1JDhqe" />
       <concept id="2762559889861739225" name="org.antlr.zinc.structure.Solve" flags="ng" index="1JDhtc">
@@ -27,6 +28,9 @@
         <child id="1995101294035028194" name="Stats" index="1EkkVG" />
       </concept>
       <concept id="2762559889861739048" name="org.antlr.zinc.structure.ZBoolType" flags="ng" index="1JDhuX" />
+      <concept id="2762559889861739077" name="org.antlr.zinc.structure.VarDeclItem" flags="ng" index="1JDhvg">
+        <child id="5407274717693210036" name="expr" index="2$1T80" />
+      </concept>
       <concept id="2762559889861739123" name="org.antlr.zinc.structure.ZFloatType" flags="ng" index="1JDhvA" />
       <concept id="8770579050494783106" name="org.antlr.zinc.structure.VarDecl" flags="ng" index="3MzzmJ" />
       <concept id="8770579050496289530" name="org.antlr.zinc.structure.ParDecl" flags="ng" index="3MTN7n" />
@@ -42,7 +46,8 @@
     <node concept="1Eg8j1" id="1IK1wTM6eIO" role="1EkkVG" />
     <node concept="3MzzmJ" id="2yWALof2w60" role="1EkkVG">
       <property role="TrG5h" value="ysdcs" />
-      <node concept="1JDhuX" id="2yWALof2w6a" role="2zM23F" />
+      <node concept="1JDhuX" id="2yWALof7Aj$" role="2zM23F" />
+      <node concept="BFcPX" id="2yWALof7EKr" role="2$1T80" />
     </node>
     <node concept="3MTN7n" id="2yWALof2w6h" role="1EkkVG">
       <property role="TrG5h" value="s" />

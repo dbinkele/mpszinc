@@ -320,8 +320,10 @@ public final class LanguageConceptSwitch {
   public static final int Varmark = 308;
   public static final int WhereCond = 309;
   public static final int ZBoolType = 310;
-  public static final int ZFloatType = 311;
-  public static final int ZIntType = 312;
+  public static final int ZFalseLiteral = 311;
+  public static final int ZFloatType = 312;
+  public static final int ZIntType = 313;
+  public static final int ZTrueLiteral = 314;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L);
@@ -636,8 +638,10 @@ public final class LanguageConceptSwitch {
     builder.put(0x2656959549f38270L, Varmark);
     builder.put(0x2656959549f3832fL, WhereCond);
     builder.put(0x2656959549f38228L, ZBoolType);
+    builder.put(0x28bc9b160f258ccdL, ZFalseLiteral);
     builder.put(0x2656959549f38273L, ZFloatType);
     builder.put(0x2656959549f38201L, ZIntType);
+    builder.put(0x28bc9b160f10566bL, ZTrueLiteral);
     myIndex = builder.seal();
   }
 
