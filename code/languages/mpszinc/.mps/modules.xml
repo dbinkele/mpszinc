@@ -5,9 +5,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.antlr.zinc/org.antlr.zinc.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.antlr.zinc/runtime/org.antlr.zinc.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.antlr.zinc/sandbox/org.antlr.zinc.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.itemis.mpszinc/org.itemis.mpszinc.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.itemis.mpszinc/runtime/org.itemis.mpszinc.runtime.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.itemis.mpszinc/sandbox/org.itemis.mpszinc.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build.allScripts/mpszinc.build.allScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/mpszinc.build/mpszinc.build.msd" folder="build" />
     </projectModules>

@@ -29,6 +29,10 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Integer_1_TextGen();
       case LanguageConceptSwitch.Model:
         return new Model_TextGen();
+      case LanguageConceptSwitch.Rbool:
+        return new Rbool_TextGen();
+      case LanguageConceptSwitch.Rfloat:
+        return new Rfloat_TextGen();
       case LanguageConceptSwitch.Rint:
         return new Rint_TextGen();
       case LanguageConceptSwitch.Satisfy:
@@ -39,8 +43,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Var_TextGen();
       case LanguageConceptSwitch.Vardecl:
         return new Vardecl_TextGen();
-      case LanguageConceptSwitch.Vardecl_block_1_2:
-        return new Vardecl_block_1_2_TextGen();
       case LanguageConceptSwitch.Varmark:
         return new Varmark_TextGen();
     }

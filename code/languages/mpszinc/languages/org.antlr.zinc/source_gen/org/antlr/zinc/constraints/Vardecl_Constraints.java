@@ -11,10 +11,12 @@ import jetbrains.mps.smodel.runtime.CheckingNodeContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import java.util.Objects;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public class Vardecl_Constraints extends BaseConstraintsDescriptor {
   public Vardecl_Constraints() {
@@ -38,13 +40,17 @@ public class Vardecl_Constraints extends BaseConstraintsDescriptor {
   }
   private static boolean staticCanBeAParent(SNode node, SNode childNode, SAbstractConcept childConcept, SContainmentLink link) {
     // ToDo other concepts 
-    return Objects.equals(childConcept, CONCEPTS.Var$y4) || Objects.equals(childConcept, CONCEPTS.Vardecl_block_1_2$ub);
+    if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.Type$WK)) {
+      return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.ITypename$_Z);
+    }
+
+    return true;
   }
   private static final SNodePointer canBeParentBreakingPoint = new SNodePointer("r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)", "3477777044400737580");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Vardecl$fA = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38245L, "org.antlr.zinc.structure.Vardecl");
-    /*package*/ static final SConcept Vardecl_block_1_2$ub = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382a3L, "org.antlr.zinc.structure.Vardecl_block_1_2");
-    /*package*/ static final SConcept Var$y4 = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38226L, "org.antlr.zinc.structure.Var");
+    /*package*/ static final SInterfaceConcept ITypename$_Z = MetaAdapterFactory.getInterfaceConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38283L, "org.antlr.zinc.structure.ITypename");
+    /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
   }
 }

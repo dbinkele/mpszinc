@@ -6,7 +6,10 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -252,10 +255,8 @@
   <node concept="1TIwiD" id="2pm_pl9WS81">
     <property role="EcuMT" value="2762559889861739009" />
     <property role="TrG5h" value="Rint" />
-    <property role="34LRSv" value="int" />
-    <property role="R4oN_" value="Rint" />
-    <property role="3GE5qa" value="Rules.Rint" />
-    <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="New.Type" />
+    <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
     <node concept="PrWs8" id="2pm_pl9WSm0" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSa3" resolve="ITypename" />
     </node>
@@ -924,31 +925,14 @@
   <node concept="1TIwiD" id="2pm_pl9WS8A">
     <property role="EcuMT" value="2762559889861739046" />
     <property role="TrG5h" value="Var" />
-    <property role="34LRSv" value=":" />
     <property role="R4oN_" value="Var" />
     <property role="3GE5qa" value="Rules.Var" />
+    <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2pm_pl9WSdr" role="1TKVEi">
-      <property role="IQ2ns" value="2762559889861739355" />
-      <property role="20kJfa" value="Varmark_1" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WS9K" resolve="Varmark" />
-    </node>
-    <node concept="1TJgyj" id="2pm_pl9WSds" role="1TKVEi">
-      <property role="IQ2ns" value="2762559889861739356" />
-      <property role="20kJfa" value="Typename_2" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSa3" resolve="ITypename" />
-    </node>
     <node concept="1TJgyi" id="2pm_pl9WSdt" role="1TKVEl">
       <property role="IQ2nx" value="2762559889861739357" />
-      <property role="TrG5h" value="ID_1" />
+      <property role="TrG5h" value="ID" />
       <ref role="AX2Wp" node="2pm_pl9WScW" resolve="ID" />
-    </node>
-    <node concept="PrWs8" id="2pm_pl9WSlA" role="PzmwI">
-      <ref role="PrY4T" node="2pm_pl9WSaC" resolve="IVardecl_block_1_1" />
     </node>
   </node>
   <node concept="1TIwiD" id="2pm_pl9WS8B">
@@ -969,10 +953,8 @@
   <node concept="1TIwiD" id="2pm_pl9WS8C">
     <property role="EcuMT" value="2762559889861739048" />
     <property role="TrG5h" value="Rbool" />
-    <property role="34LRSv" value="bool" />
-    <property role="R4oN_" value="Rbool" />
-    <property role="3GE5qa" value="Rules.Rbool" />
-    <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="New.Type" />
+    <ref role="1TJDcQ" to="5qo5:6sdnDbSlaon" resolve="BooleanType" />
     <node concept="PrWs8" id="2pm_pl9WSm1" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSa3" resolve="ITypename" />
     </node>
@@ -1516,22 +1498,15 @@
   <node concept="1TIwiD" id="2pm_pl9WS95">
     <property role="EcuMT" value="2762559889861739077" />
     <property role="TrG5h" value="Vardecl" />
-    <property role="34LRSv" value="Vardecl" />
+    <property role="34LRSv" value="Var" />
     <property role="R4oN_" value="Vardecl" />
-    <property role="3GE5qa" value="Rules.Vardecl" />
+    <property role="3GE5qa" value="New.Decl" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2pm_pl9WSe4" role="1TKVEi">
-      <property role="IQ2ns" value="2762559889861739396" />
-      <property role="20kJfa" value="Vardecl_block_1_1_1" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+    <node concept="1TJgyj" id="4GavVjJ3uQO" role="1TKVEi">
+      <property role="IQ2ns" value="5407274717693210036" />
+      <property role="20kJfa" value="Expr" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSaC" resolve="IVardecl_block_1_1" />
-    </node>
-    <node concept="1TJgyj" id="2pm_pl9WSe5" role="1TKVEi">
-      <property role="IQ2ns" value="2762559889861739397" />
-      <property role="20kJfa" value="Vardecl_block_1_2_2" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSaz" resolve="Vardecl_block_1_2" />
+      <ref role="20lvS9" node="2pm_pl9WSbQ" resolve="IExpr" />
     </node>
     <node concept="PrWs8" id="2pm_pl9WSiw" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WS9x" resolve="IStat" />
@@ -1541,6 +1516,12 @@
     </node>
     <node concept="PrWs8" id="2pm_pl9WSjz" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSb4" resolve="ILetDecl" />
+    </node>
+    <node concept="PrWs8" id="4GavVjJ7r$b" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
+    </node>
+    <node concept="PrWs8" id="7ARmMQb4Z4_" role="PzmwI">
+      <ref role="PrY4T" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="2pm_pl9WS96">
@@ -2260,10 +2241,8 @@
   <node concept="1TIwiD" id="2pm_pl9WS9N">
     <property role="EcuMT" value="2762559889861739123" />
     <property role="TrG5h" value="Rfloat" />
-    <property role="34LRSv" value="float" />
-    <property role="R4oN_" value="Rfloat" />
-    <property role="3GE5qa" value="Rules.Rfloat" />
-    <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="New.Type" />
+    <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
     <node concept="PrWs8" id="2pm_pl9WSm2" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSa3" resolve="ITypename" />
     </node>
@@ -3023,21 +3002,6 @@
       <ref role="20lvS9" node="2pm_pl9WS99" resolve="IConstrainchoice" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2pm_pl9WSaz">
-    <property role="EcuMT" value="2762559889861739171" />
-    <property role="TrG5h" value="Vardecl_block_1_2" />
-    <property role="34LRSv" value="=" />
-    <property role="R4oN_" value="Vardecl_block_1_2" />
-    <property role="3GE5qa" value="Rules.Vardecl_block_1_2" />
-    <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2pm_pl9WSfx" role="1TKVEi">
-      <property role="IQ2ns" value="2762559889861739489" />
-      <property role="20kJfa" value="Expr_1" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSbQ" resolve="IExpr" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2pm_pl9WSa$">
     <property role="EcuMT" value="2762559889861739172" />
     <property role="TrG5h" value="Twosections" />
@@ -3098,11 +3062,6 @@
     <node concept="PrWs8" id="2pm_pl9WSls" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WS8O" resolve="IToR" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="2pm_pl9WSaC">
-    <property role="EcuMT" value="2762559889861739176" />
-    <property role="TrG5h" value="IVardecl_block_1_1" />
-    <property role="3GE5qa" value="Interfaces" />
   </node>
   <node concept="1TIwiD" id="2pm_pl9WSaD">
     <property role="EcuMT" value="2762559889861739177" />
@@ -3188,9 +3147,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2pm_pl9WS8A" resolve="Var" />
-    </node>
-    <node concept="PrWs8" id="2pm_pl9WSlB" role="PzmwI">
-      <ref role="PrY4T" node="2pm_pl9WSaC" resolve="IVardecl_block_1_1" />
     </node>
   </node>
   <node concept="1TIwiD" id="2pm_pl9WSaH">

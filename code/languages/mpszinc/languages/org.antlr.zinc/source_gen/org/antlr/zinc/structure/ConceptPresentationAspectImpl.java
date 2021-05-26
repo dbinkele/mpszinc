@@ -177,7 +177,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IToR;
   private ConceptPresentation props_ITypename;
   private ConceptPresentation props_IVarchoice;
-  private ConceptPresentation props_IVardecl_block_1_1;
   private ConceptPresentation props_Idexpr;
   private ConceptPresentation props_IfExpr;
   private ConceptPresentation props_InDecl;
@@ -319,7 +318,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Vardecl;
   private ConceptPresentation props_Vardecl_block_1_1_1;
   private ConceptPresentation props_Vardecl_block_1_1_2;
-  private ConceptPresentation props_Vardecl_block_1_2;
   private ConceptPresentation props_Varmark;
   private ConceptPresentation props_WhereCond;
 
@@ -1565,12 +1563,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IVarchoice = cpb.create();
         }
         return props_IVarchoice;
-      case LanguageConceptSwitch.IVardecl_block_1_1:
-        if (props_IVardecl_block_1_1 == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_IVardecl_block_1_1 = cpb.create();
-        }
-        return props_IVardecl_block_1_1;
       case LanguageConceptSwitch.Idexpr:
         if (props_Idexpr == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2246,8 +2238,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Rbool:
         if (props_Rbool == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Rbool");
-          cpb.rawPresentation("bool");
+          cpb.rawPresentation("Rbool");
           props_Rbool = cpb.create();
         }
         return props_Rbool;
@@ -2278,16 +2269,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Rfloat:
         if (props_Rfloat == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Rfloat");
-          cpb.rawPresentation("float");
+          cpb.rawPresentation("Rfloat");
           props_Rfloat = cpb.create();
         }
         return props_Rfloat;
       case LanguageConceptSwitch.Rint:
         if (props_Rint == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Rint");
-          cpb.rawPresentation("int");
+          cpb.rawPresentation("Rint");
           props_Rint = cpb.create();
         }
         return props_Rint;
@@ -2639,7 +2628,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Var == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Var");
-          cpb.rawPresentation(":");
+          cpb.rawPresentation("var");
           props_Var = cpb.create();
         }
         return props_Var;
@@ -2679,7 +2668,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Vardecl == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Vardecl");
-          cpb.rawPresentation("Vardecl");
+          cpb.presentationByName();
           props_Vardecl = cpb.create();
         }
         return props_Vardecl;
@@ -2699,14 +2688,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Vardecl_block_1_1_2 = cpb.create();
         }
         return props_Vardecl_block_1_1_2;
-      case LanguageConceptSwitch.Vardecl_block_1_2:
-        if (props_Vardecl_block_1_2 == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Vardecl_block_1_2");
-          cpb.rawPresentation("=");
-          props_Vardecl_block_1_2 = cpb.create();
-        }
-        return props_Vardecl_block_1_2;
       case LanguageConceptSwitch.Varmark:
         if (props_Varmark == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

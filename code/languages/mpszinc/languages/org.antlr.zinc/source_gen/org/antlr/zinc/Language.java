@@ -6,6 +6,7 @@ import jetbrains.mps.smodel.language.LanguageRuntime;
 import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
@@ -41,6 +42,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("6b277d9a-d52d-416f-a209-1919bd737f50"), "org.iets3.core.expr.simpleTypes"));
   }
 
   @Override
@@ -71,5 +73,6 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void contribute(@NotNull LanguageExtensions extensions) {
+    extensions.recordContribution("jetbrains.mps.lang.core", "ceab5195-25ea-4f22-9b92-103b95ca8c0c", EditorAspectDescriptor.class);
   }
 }

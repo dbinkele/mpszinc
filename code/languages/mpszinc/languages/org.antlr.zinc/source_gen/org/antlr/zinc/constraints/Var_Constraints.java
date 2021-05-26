@@ -11,7 +11,8 @@ import jetbrains.mps.smodel.runtime.CheckingNodeContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import java.util.Arrays;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -37,14 +38,12 @@ public class Var_Constraints extends BaseConstraintsDescriptor {
     };
   }
   private static boolean staticCanBeAParent(SNode node, SNode childNode, SAbstractConcept childConcept, SContainmentLink link) {
-    // ToDO other concepts 
-    return Arrays.asList(CONCEPTS.Rint$Bt, CONCEPTS.Varmark$iB).contains(childConcept);
+    return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.PrimitiveType$3l);
   }
   private static final SNodePointer canBeParentBreakingPoint = new SNodePointer("r:de5f5021-2160-43d1-970d-48cef26bdd59(org.antlr.zinc.constraints)", "3477777044400744146");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Var$y4 = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38226L, "org.antlr.zinc.structure.Var");
-    /*package*/ static final SConcept Rint$Bt = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38201L, "org.antlr.zinc.structure.Rint");
-    /*package*/ static final SConcept Varmark$iB = MetaAdapterFactory.getConcept(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38270L, "org.antlr.zinc.structure.Varmark");
+    /*package*/ static final SConcept PrimitiveType$3l = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f8572e33L, "org.iets3.core.expr.base.structure.PrimitiveType");
   }
 }

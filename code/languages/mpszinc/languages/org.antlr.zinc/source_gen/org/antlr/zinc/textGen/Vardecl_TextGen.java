@@ -6,22 +6,35 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class Vardecl_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_1_1$jIID));
-    tgs.append("  ");
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_2_2$jIXE) != null)) {
-      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Vardecl_block_1_2_2$jIXE));
+    tgs.append("var");
+    tgs.append(" ");
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.type$1eya));
+    tgs.append(":");
+    tgs.append(" ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Expr$XKLy) != null)) {
+      tgs.append(" ");
+      tgs.append("=");
+      tgs.append(" ");
+      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.Expr$XKLy));
     }
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink Vardecl_block_1_1_1$jIID = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38245L, 0x2656959549f38384L, "Vardecl_block_1_1_1");
-    /*package*/ static final SContainmentLink Vardecl_block_1_2_2$jIXE = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38245L, 0x2656959549f38385L, "Vardecl_block_1_2_2");
+    /*package*/ static final SContainmentLink type$1eya = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x62632b96c1ab0b7cL, 0x62632b96c1ab0b7dL, "type");
+    /*package*/ static final SContainmentLink Expr$XKLy = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38245L, 0x4b0a7fb4ef0dedb4L, "Expr");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }
