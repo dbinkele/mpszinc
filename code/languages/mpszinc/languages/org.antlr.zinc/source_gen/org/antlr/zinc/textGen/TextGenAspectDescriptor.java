@@ -47,20 +47,42 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new ZAnd_TextGen();
       case LanguageConceptSwitch.ZBoolType:
         return new ZBoolType_TextGen();
+      case LanguageConceptSwitch.ZDiv:
+        return new ZDiv_TextGen();
+      case LanguageConceptSwitch.ZEq:
+        return new ZEq_TextGen();
       case LanguageConceptSwitch.ZFloatType:
         return new ZFloatType_TextGen();
+      case LanguageConceptSwitch.ZGreater:
+        return new ZGreater_TextGen();
+      case LanguageConceptSwitch.ZGreaterEquals:
+        return new ZGreaterEquals_TextGen();
       case LanguageConceptSwitch.ZIff:
         return new ZIff_TextGen();
       case LanguageConceptSwitch.ZImplies:
         return new ZImplies_TextGen();
       case LanguageConceptSwitch.ZIntType:
         return new ZIntType_TextGen();
+      case LanguageConceptSwitch.ZLess:
+        return new ZLess_TextGen();
+      case LanguageConceptSwitch.ZLessEqual:
+        return new ZLessEqual_TextGen();
+      case LanguageConceptSwitch.ZMinus:
+        return new ZMinus_TextGen();
+      case LanguageConceptSwitch.ZMod:
+        return new ZMod_TextGen();
+      case LanguageConceptSwitch.ZMul:
+        return new ZMul_TextGen();
+      case LanguageConceptSwitch.ZNEq:
+        return new ZNEq_TextGen();
       case LanguageConceptSwitch.ZNot:
         return new ZNot_TextGen();
       case LanguageConceptSwitch.ZOr:
         return new ZOr_TextGen();
       case LanguageConceptSwitch.ZParens:
         return new ZParens_TextGen();
+      case LanguageConceptSwitch.ZPlus:
+        return new ZPlus_TextGen();
       case LanguageConceptSwitch.ZXor:
         return new ZXor_TextGen();
     }

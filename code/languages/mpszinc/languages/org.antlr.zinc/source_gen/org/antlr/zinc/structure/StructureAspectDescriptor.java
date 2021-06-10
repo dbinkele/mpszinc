@@ -330,15 +330,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptWhereCond = createDescriptorForWhereCond();
   /*package*/ final ConceptDescriptor myConceptZAnd = createDescriptorForZAnd();
   /*package*/ final ConceptDescriptor myConceptZBoolType = createDescriptorForZBoolType();
+  /*package*/ final ConceptDescriptor myConceptZDiv = createDescriptorForZDiv();
+  /*package*/ final ConceptDescriptor myConceptZEq = createDescriptorForZEq();
   /*package*/ final ConceptDescriptor myConceptZFalseLiteral = createDescriptorForZFalseLiteral();
   /*package*/ final ConceptDescriptor myConceptZFloatType = createDescriptorForZFloatType();
+  /*package*/ final ConceptDescriptor myConceptZGreater = createDescriptorForZGreater();
+  /*package*/ final ConceptDescriptor myConceptZGreaterEquals = createDescriptorForZGreaterEquals();
   /*package*/ final ConceptDescriptor myConceptZIff = createDescriptorForZIff();
   /*package*/ final ConceptDescriptor myConceptZImplies = createDescriptorForZImplies();
+  /*package*/ final ConceptDescriptor myConceptZIntDiv = createDescriptorForZIntDiv();
   /*package*/ final ConceptDescriptor myConceptZIntType = createDescriptorForZIntType();
+  /*package*/ final ConceptDescriptor myConceptZLess = createDescriptorForZLess();
+  /*package*/ final ConceptDescriptor myConceptZLessEqual = createDescriptorForZLessEqual();
+  /*package*/ final ConceptDescriptor myConceptZMinus = createDescriptorForZMinus();
+  /*package*/ final ConceptDescriptor myConceptZMod = createDescriptorForZMod();
+  /*package*/ final ConceptDescriptor myConceptZMul = createDescriptorForZMul();
+  /*package*/ final ConceptDescriptor myConceptZNEq = createDescriptorForZNEq();
   /*package*/ final ConceptDescriptor myConceptZNot = createDescriptorForZNot();
   /*package*/ final ConceptDescriptor myConceptZNumber = createDescriptorForZNumber();
   /*package*/ final ConceptDescriptor myConceptZOr = createDescriptorForZOr();
   /*package*/ final ConceptDescriptor myConceptZParens = createDescriptorForZParens();
+  /*package*/ final ConceptDescriptor myConceptZPlus = createDescriptorForZPlus();
   /*package*/ final ConceptDescriptor myConceptZTrueLiteral = createDescriptorForZTrueLiteral();
   /*package*/ final ConceptDescriptor myConceptZXor = createDescriptorForZXor();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeBOOL = new ConstrainedStringDatatypeDescriptorImpl(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38343L, "BOOL", "r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739331", "(true|false)");
@@ -361,7 +373,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAnnotation, myConceptArithComplexExpr_1, myConceptArithComplexExpr_2, myConceptArithExpr_1, myConceptArithExpr_2, myConceptArithExpr_3, myConceptArithOp2_1, myConceptArithOp2_2, myConceptArithOp2_3, myConceptArithOp2_4, myConceptArithOp2_5, myConceptArithOp2_6, myConceptArithOp_1, myConceptArithOp_2, myConceptArithOp_3, myConceptArithOp_4, myConceptArithOp_5, myConceptArithOp_6, myConceptArithOp_7, myConceptArithOp_8, myConceptArrayaccess_1, myConceptArrayaccess_2, myConceptBaseConcept, myConceptBodyIf, myConceptBodyIf_block_1_1_1, myConceptBodyIf_block_1_1_2, myConceptBoolComplexExpr_1, myConceptBoolComplexExpr_2, myConceptBoolComplexExpr_3, myConceptBoolComplexExpr_block_1_1_1, myConceptBoolComplexExpr_block_1_1_2, myConceptBoolComplexExpr_block_2_1_1, myConceptBoolComplexExpr_block_2_1_2, myConceptBoolExpr_1, myConceptBoolExpr_2, myConceptBoolExpr_3, myConceptBoolExpr_4, myConceptBoolExpr_block_1_1_1, myConceptBoolExpr_block_1_1_2, myConceptBoolExpr_block_2_1_1, myConceptBoolExpr_block_2_1_2, myConceptBoolOp_1, myConceptBoolOp_2, myConceptBoolOp_3, myConceptBoolOp_4, myConceptBoolOp_5, myConceptBoolOp_6, myConceptBoolOp_7, myConceptBoolOp_8, myConceptBoolOp_9, myConceptBoolS, myConceptBoolVal_1, myConceptBoolVal_2, myConceptBoolVal_3, myConceptBoolVal_4, myConceptBoolVal_5, myConceptBoolVal_6, myConceptBoolVal_7, myConceptBoolVal_8, myConceptBracketExpr_1, myConceptBracketExpr_2, myConceptCaseBranch, myConceptCaseBranch_block_1_1_1, myConceptCaseBranch_block_1_1_2, myConceptCaseExpr, myConceptCaseExpr_block_1_1, myConceptCommaList_1, myConceptCommaList_block_1_1, myConceptCommaList_block_1_2, myConceptConstr_1, myConceptConstr_2, myConceptConstrainchoice_1, myConceptConstrainchoice_2, myConceptConstrainchoice_3, myConceptConstrainchoice_4, myConceptConstrainchoice_5, myConceptConstraint, myConceptData, myConceptData_block_1_1, myConceptDecl_1, myConceptDecl_2, myConceptDimensions, myConceptDimensions_block_1_1_1, myConceptDimensions_block_1_1_2, myConceptDimensions_block_1_2, myConceptDimensions_block_1_3, myConceptElseS, myConceptElseifS, myConceptEmptyStatement, myConceptExpr_1, myConceptExpr_10, myConceptExpr_11, myConceptExpr_12, myConceptExpr_13, myConceptExpr_14, myConceptExpr_15, myConceptExpr_2, myConceptExpr_3, myConceptExpr_4, myConceptExpr_5, myConceptExpr_6, myConceptExpr_7, myConceptExpr_8, myConceptExpr_9, myConceptExtended, myConceptExtended_block_1_1, myConceptExtended_block_1_2, myConceptExtendsmark, myConceptFromR_1, myConceptFunction, myConceptFunction_block_1_1, myConceptFunction_block_1_2, myConceptGuard, myConceptGuard_block_1_1, myConceptGuardedList, myConceptGuardedSet, myConceptIArithComplexExpr, myConceptIArithExpr, myConceptIArithOp, myConceptIArithOp2, myConceptIArrayaccess, myConceptIBodyIf_block_1_1, myConceptIBoolComplexExpr, myConceptIBoolComplexExpr_block_1_1, myConceptIBoolComplexExpr_block_2_1, myConceptIBoolExpr, myConceptIBoolExpr_block_1_1, myConceptIBoolExpr_block_2_1, myConceptIBoolOp, myConceptIBoolVal, myConceptIBracketExpr, myConceptICaseBranch_block_1_1, myConceptICommaList, myConceptIConstr, myConceptIConstrainchoice, myConceptIDecl, myConceptIDimensions_block_1_1, myConceptIExpr, myConceptIFromR, myConceptIInfixOp, myConceptIInfixSetOp, myConceptIInteger, myConceptILetDecl, myConceptIListExpr, myConceptIListValue, myConceptIModeAnnotation, myConceptIOneDimList, myConceptIOp, myConceptIOpOrID, myConceptIOperand, myConceptIOptimize, myConceptIOutput, myConceptIPardecl, myConceptIPostExt, myConceptIPreExt, myConceptIPredOrUnionExpr_block_1_1, myConceptIQualName, myConceptIRange, myConceptISetExpr, myConceptISetVal, myConceptISimpleList, myConceptISolve_block_1_1, myConceptISolve_block_1_2, myConceptIStat, myConceptIStringExpr, myConceptIToR, myConceptITypename, myConceptIVarchoice, myConceptIdexpr, myConceptIfExpr, myConceptInDecl, myConceptInDecl_block_1_1, myConceptInclude, myConceptInfixOp_1, myConceptInfixOp_2, myConceptInfixSetOp_1, myConceptInfixSetOp_2, myConceptInfixSetOp_3, myConceptInit, myConceptIntS, myConceptInteger_1, myConceptLetDecl_1, myConceptLetDecl_2, myConceptLetExpr, myConceptLetExpr_block_1_1, myConceptListExpr_1, myConceptListExpr_2, myConceptListExpr_3, myConceptListExpr_4, myConceptListExtended, myConceptListExtended_block_1_1, myConceptListValue_1, myConceptListValue_2, myConceptListValue_3, myConceptListValue_4, myConceptListValue_5, myConceptMaximize, myConceptMinimize, myConceptMinusExpr, myConceptModeAnnotation_1, myConceptModeAnnotation_2, myConceptModeAnnotation_3, myConceptModeAnnotation_4, myConceptModel, myConceptMultiDimList, myConceptMultiDimList_block_1_1, myConceptMultiDimList_block_1_2, myConceptMultiDimList_block_1_3, myConceptNonEmptyListElems, myConceptNonEmptyListElems_block_1_1, myConceptNotExpr, myConceptOneDimList_1, myConceptOneDimList_2, myConceptOnesection, myConceptOnesection_block_1_1, myConceptOnesection_block_1_2, myConceptOpOrID_1, myConceptOpOrID_2, myConceptOp_1, myConceptOp_2, myConceptOperand_1, myConceptOperand_2, myConceptOperand_3, myConceptOperand_4, myConceptOperand_5, myConceptOperand_6, myConceptOperand_7, myConceptOperand_8, myConceptOptimize_1, myConceptOptimize_2, myConceptOutput_1, myConceptOutput_2, myConceptParDecl, myConceptParRef, myConceptParameter, myConceptParameter_block_1_1, myConceptPararray, myConceptPardecl_1, myConceptPardecl_2, myConceptPostExt_1, myConceptPreExt_1, myConceptPredOrUnionExpr, myConceptPredOrUnionExpr_block_1_1_1, myConceptPredOrUnionExpr_block_1_1_2, myConceptPredicate, myConceptPredicate_block_1_1, myConceptPredicate_block_1_2, myConceptQualArithOp, myConceptQualBoolOp, myConceptQualName_1, myConceptQualName_2, myConceptQualName_3, myConceptRange_1, myConceptRange_2, myConceptRbracketExpr, myConceptReal, myConceptRestS, myConceptSatisfy, myConceptScons, myConceptSeqS, myConceptSeqS_block_1_1, myConceptSetExpr_1, myConceptSetExpr_2, myConceptSetS, myConceptSetVal_1, myConceptSetVal_2, myConceptSetVal_3, myConceptSimpleList_1, myConceptSimpleList_2, myConceptSimpleNonEmptyList, myConceptSimpleNonEmptyList_block_1_1, myConceptSolve, myConceptSolve_block_1_1_1, myConceptSolve_block_1_2_1, myConceptSolve_block_1_2_2, myConceptStat_1, myConceptStat_10, myConceptStat_2, myConceptStat_3, myConceptStat_4, myConceptStat_5, myConceptStat_6, myConceptStat_7, myConceptStat_8, myConceptStat_9, myConceptString, myConceptStringExpr_1, myConceptTcons, myConceptTcons_block_1_1, myConceptToR_1, myConceptTwosections, myConceptTypedata, myConceptTypename_1, myConceptTypename_2, myConceptTypename_3, myConceptTypename_4, myConceptTypename_5, myConceptTypename_6, myConceptTypename_7, myConceptTypeset, myConceptVar, myConceptVarDecl, myConceptVarDeclItem, myConceptVarRef, myConceptVararray, myConceptVarchoice_1, myConceptVarchoice_2, myConceptVarchoice_3, myConceptVardecl_block_1_1_1, myConceptVardecl_block_1_1_2, myConceptVarmark, myConceptWhereCond, myConceptZAnd, myConceptZBoolType, myConceptZFalseLiteral, myConceptZFloatType, myConceptZIff, myConceptZImplies, myConceptZIntType, myConceptZNot, myConceptZNumber, myConceptZOr, myConceptZParens, myConceptZTrueLiteral, myConceptZXor);
+    return Arrays.asList(myConceptAnnotation, myConceptArithComplexExpr_1, myConceptArithComplexExpr_2, myConceptArithExpr_1, myConceptArithExpr_2, myConceptArithExpr_3, myConceptArithOp2_1, myConceptArithOp2_2, myConceptArithOp2_3, myConceptArithOp2_4, myConceptArithOp2_5, myConceptArithOp2_6, myConceptArithOp_1, myConceptArithOp_2, myConceptArithOp_3, myConceptArithOp_4, myConceptArithOp_5, myConceptArithOp_6, myConceptArithOp_7, myConceptArithOp_8, myConceptArrayaccess_1, myConceptArrayaccess_2, myConceptBaseConcept, myConceptBodyIf, myConceptBodyIf_block_1_1_1, myConceptBodyIf_block_1_1_2, myConceptBoolComplexExpr_1, myConceptBoolComplexExpr_2, myConceptBoolComplexExpr_3, myConceptBoolComplexExpr_block_1_1_1, myConceptBoolComplexExpr_block_1_1_2, myConceptBoolComplexExpr_block_2_1_1, myConceptBoolComplexExpr_block_2_1_2, myConceptBoolExpr_1, myConceptBoolExpr_2, myConceptBoolExpr_3, myConceptBoolExpr_4, myConceptBoolExpr_block_1_1_1, myConceptBoolExpr_block_1_1_2, myConceptBoolExpr_block_2_1_1, myConceptBoolExpr_block_2_1_2, myConceptBoolOp_1, myConceptBoolOp_2, myConceptBoolOp_3, myConceptBoolOp_4, myConceptBoolOp_5, myConceptBoolOp_6, myConceptBoolOp_7, myConceptBoolOp_8, myConceptBoolOp_9, myConceptBoolS, myConceptBoolVal_1, myConceptBoolVal_2, myConceptBoolVal_3, myConceptBoolVal_4, myConceptBoolVal_5, myConceptBoolVal_6, myConceptBoolVal_7, myConceptBoolVal_8, myConceptBracketExpr_1, myConceptBracketExpr_2, myConceptCaseBranch, myConceptCaseBranch_block_1_1_1, myConceptCaseBranch_block_1_1_2, myConceptCaseExpr, myConceptCaseExpr_block_1_1, myConceptCommaList_1, myConceptCommaList_block_1_1, myConceptCommaList_block_1_2, myConceptConstr_1, myConceptConstr_2, myConceptConstrainchoice_1, myConceptConstrainchoice_2, myConceptConstrainchoice_3, myConceptConstrainchoice_4, myConceptConstrainchoice_5, myConceptConstraint, myConceptData, myConceptData_block_1_1, myConceptDecl_1, myConceptDecl_2, myConceptDimensions, myConceptDimensions_block_1_1_1, myConceptDimensions_block_1_1_2, myConceptDimensions_block_1_2, myConceptDimensions_block_1_3, myConceptElseS, myConceptElseifS, myConceptEmptyStatement, myConceptExpr_1, myConceptExpr_10, myConceptExpr_11, myConceptExpr_12, myConceptExpr_13, myConceptExpr_14, myConceptExpr_15, myConceptExpr_2, myConceptExpr_3, myConceptExpr_4, myConceptExpr_5, myConceptExpr_6, myConceptExpr_7, myConceptExpr_8, myConceptExpr_9, myConceptExtended, myConceptExtended_block_1_1, myConceptExtended_block_1_2, myConceptExtendsmark, myConceptFromR_1, myConceptFunction, myConceptFunction_block_1_1, myConceptFunction_block_1_2, myConceptGuard, myConceptGuard_block_1_1, myConceptGuardedList, myConceptGuardedSet, myConceptIArithComplexExpr, myConceptIArithExpr, myConceptIArithOp, myConceptIArithOp2, myConceptIArrayaccess, myConceptIBodyIf_block_1_1, myConceptIBoolComplexExpr, myConceptIBoolComplexExpr_block_1_1, myConceptIBoolComplexExpr_block_2_1, myConceptIBoolExpr, myConceptIBoolExpr_block_1_1, myConceptIBoolExpr_block_2_1, myConceptIBoolOp, myConceptIBoolVal, myConceptIBracketExpr, myConceptICaseBranch_block_1_1, myConceptICommaList, myConceptIConstr, myConceptIConstrainchoice, myConceptIDecl, myConceptIDimensions_block_1_1, myConceptIExpr, myConceptIFromR, myConceptIInfixOp, myConceptIInfixSetOp, myConceptIInteger, myConceptILetDecl, myConceptIListExpr, myConceptIListValue, myConceptIModeAnnotation, myConceptIOneDimList, myConceptIOp, myConceptIOpOrID, myConceptIOperand, myConceptIOptimize, myConceptIOutput, myConceptIPardecl, myConceptIPostExt, myConceptIPreExt, myConceptIPredOrUnionExpr_block_1_1, myConceptIQualName, myConceptIRange, myConceptISetExpr, myConceptISetVal, myConceptISimpleList, myConceptISolve_block_1_1, myConceptISolve_block_1_2, myConceptIStat, myConceptIStringExpr, myConceptIToR, myConceptITypename, myConceptIVarchoice, myConceptIdexpr, myConceptIfExpr, myConceptInDecl, myConceptInDecl_block_1_1, myConceptInclude, myConceptInfixOp_1, myConceptInfixOp_2, myConceptInfixSetOp_1, myConceptInfixSetOp_2, myConceptInfixSetOp_3, myConceptInit, myConceptIntS, myConceptInteger_1, myConceptLetDecl_1, myConceptLetDecl_2, myConceptLetExpr, myConceptLetExpr_block_1_1, myConceptListExpr_1, myConceptListExpr_2, myConceptListExpr_3, myConceptListExpr_4, myConceptListExtended, myConceptListExtended_block_1_1, myConceptListValue_1, myConceptListValue_2, myConceptListValue_3, myConceptListValue_4, myConceptListValue_5, myConceptMaximize, myConceptMinimize, myConceptMinusExpr, myConceptModeAnnotation_1, myConceptModeAnnotation_2, myConceptModeAnnotation_3, myConceptModeAnnotation_4, myConceptModel, myConceptMultiDimList, myConceptMultiDimList_block_1_1, myConceptMultiDimList_block_1_2, myConceptMultiDimList_block_1_3, myConceptNonEmptyListElems, myConceptNonEmptyListElems_block_1_1, myConceptNotExpr, myConceptOneDimList_1, myConceptOneDimList_2, myConceptOnesection, myConceptOnesection_block_1_1, myConceptOnesection_block_1_2, myConceptOpOrID_1, myConceptOpOrID_2, myConceptOp_1, myConceptOp_2, myConceptOperand_1, myConceptOperand_2, myConceptOperand_3, myConceptOperand_4, myConceptOperand_5, myConceptOperand_6, myConceptOperand_7, myConceptOperand_8, myConceptOptimize_1, myConceptOptimize_2, myConceptOutput_1, myConceptOutput_2, myConceptParDecl, myConceptParRef, myConceptParameter, myConceptParameter_block_1_1, myConceptPararray, myConceptPardecl_1, myConceptPardecl_2, myConceptPostExt_1, myConceptPreExt_1, myConceptPredOrUnionExpr, myConceptPredOrUnionExpr_block_1_1_1, myConceptPredOrUnionExpr_block_1_1_2, myConceptPredicate, myConceptPredicate_block_1_1, myConceptPredicate_block_1_2, myConceptQualArithOp, myConceptQualBoolOp, myConceptQualName_1, myConceptQualName_2, myConceptQualName_3, myConceptRange_1, myConceptRange_2, myConceptRbracketExpr, myConceptReal, myConceptRestS, myConceptSatisfy, myConceptScons, myConceptSeqS, myConceptSeqS_block_1_1, myConceptSetExpr_1, myConceptSetExpr_2, myConceptSetS, myConceptSetVal_1, myConceptSetVal_2, myConceptSetVal_3, myConceptSimpleList_1, myConceptSimpleList_2, myConceptSimpleNonEmptyList, myConceptSimpleNonEmptyList_block_1_1, myConceptSolve, myConceptSolve_block_1_1_1, myConceptSolve_block_1_2_1, myConceptSolve_block_1_2_2, myConceptStat_1, myConceptStat_10, myConceptStat_2, myConceptStat_3, myConceptStat_4, myConceptStat_5, myConceptStat_6, myConceptStat_7, myConceptStat_8, myConceptStat_9, myConceptString, myConceptStringExpr_1, myConceptTcons, myConceptTcons_block_1_1, myConceptToR_1, myConceptTwosections, myConceptTypedata, myConceptTypename_1, myConceptTypename_2, myConceptTypename_3, myConceptTypename_4, myConceptTypename_5, myConceptTypename_6, myConceptTypename_7, myConceptTypeset, myConceptVar, myConceptVarDecl, myConceptVarDeclItem, myConceptVarRef, myConceptVararray, myConceptVarchoice_1, myConceptVarchoice_2, myConceptVarchoice_3, myConceptVardecl_block_1_1_1, myConceptVardecl_block_1_1_2, myConceptVarmark, myConceptWhereCond, myConceptZAnd, myConceptZBoolType, myConceptZDiv, myConceptZEq, myConceptZFalseLiteral, myConceptZFloatType, myConceptZGreater, myConceptZGreaterEquals, myConceptZIff, myConceptZImplies, myConceptZIntDiv, myConceptZIntType, myConceptZLess, myConceptZLessEqual, myConceptZMinus, myConceptZMod, myConceptZMul, myConceptZNEq, myConceptZNot, myConceptZNumber, myConceptZOr, myConceptZParens, myConceptZPlus, myConceptZTrueLiteral, myConceptZXor);
   }
 
   @Override
@@ -996,16 +1008,38 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptZAnd;
       case LanguageConceptSwitch.ZBoolType:
         return myConceptZBoolType;
+      case LanguageConceptSwitch.ZDiv:
+        return myConceptZDiv;
+      case LanguageConceptSwitch.ZEq:
+        return myConceptZEq;
       case LanguageConceptSwitch.ZFalseLiteral:
         return myConceptZFalseLiteral;
       case LanguageConceptSwitch.ZFloatType:
         return myConceptZFloatType;
+      case LanguageConceptSwitch.ZGreater:
+        return myConceptZGreater;
+      case LanguageConceptSwitch.ZGreaterEquals:
+        return myConceptZGreaterEquals;
       case LanguageConceptSwitch.ZIff:
         return myConceptZIff;
       case LanguageConceptSwitch.ZImplies:
         return myConceptZImplies;
+      case LanguageConceptSwitch.ZIntDiv:
+        return myConceptZIntDiv;
       case LanguageConceptSwitch.ZIntType:
         return myConceptZIntType;
+      case LanguageConceptSwitch.ZLess:
+        return myConceptZLess;
+      case LanguageConceptSwitch.ZLessEqual:
+        return myConceptZLessEqual;
+      case LanguageConceptSwitch.ZMinus:
+        return myConceptZMinus;
+      case LanguageConceptSwitch.ZMod:
+        return myConceptZMod;
+      case LanguageConceptSwitch.ZMul:
+        return myConceptZMul;
+      case LanguageConceptSwitch.ZNEq:
+        return myConceptZNEq;
       case LanguageConceptSwitch.ZNot:
         return myConceptZNot;
       case LanguageConceptSwitch.ZNumber:
@@ -1014,6 +1048,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptZOr;
       case LanguageConceptSwitch.ZParens:
         return myConceptZParens;
+      case LanguageConceptSwitch.ZPlus:
+        return myConceptZPlus;
       case LanguageConceptSwitch.ZTrueLiteral:
         return myConceptZTrueLiteral;
       case LanguageConceptSwitch.ZXor:
@@ -4343,6 +4379,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForZDiv() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZDiv", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f544503dL);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.DivExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cac63bL);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354678325309");
+    b.version(2);
+    b.alias("/");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZEq() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZEq", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f5516aa6L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.EqualsExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cc6dc9L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679184038");
+    b.version(2);
+    b.alias("=");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForZFalseLiteral() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZFalseLiteral", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x28bc9b160f258ccdL);
     b.class_(false, false, false);
@@ -4360,6 +4416,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38283L);
     b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739123");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZGreater() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZGreater", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f55174c0L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.GreaterExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cb4f94L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679186624");
+    b.version(2);
+    b.alias(">");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZGreaterEquals() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZGreaterEquals", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f5517823L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.GreaterEqualsExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cb5011L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679187491");
+    b.version(2);
+    b.alias(">");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForZIff() {
@@ -4382,6 +4458,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("=>");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForZIntDiv() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZIntDiv", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f5588801L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.DivExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cac63bL);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679650305");
+    b.version(2);
+    b.alias("div");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForZIntType() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZIntType", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38201L);
     b.class_(false, false, false);
@@ -4389,6 +4475,66 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38283L);
     b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739009");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZLess() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZLess", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f55174c0L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.LessExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cb5012L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679188358");
+    b.version(2);
+    b.alias("<");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZLessEqual() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZLessEqual", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f5524ae6L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.LessEqualsExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cb5013L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679241446");
+    b.version(2);
+    b.alias("<=");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZMinus() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZMinus", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f5444abdL);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.MinusExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cac5a5L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354678323901");
+    b.version(2);
+    b.alias("-");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZMod() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZMod", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f54b3cd5L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.ModExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x53e292c5b9d6ff5aL);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354678779093");
+    b.version(2);
+    b.alias("mod");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZMul() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZMul", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f54b3972L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.MulExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c9a56fL);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354678778226");
+    b.version(2);
+    b.alias("*");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZNEq() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZNEq", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f551715dL);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.NotEqualsExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cc6dcaL);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354679185757");
+    b.version(2);
+    b.alias("!=");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForZNot() {
@@ -4427,6 +4573,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2935391576192867217");
     b.version(2);
     b.alias("(");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForZPlus() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.antlr.zinc", "ZPlus", 0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x1cd0c633f5374268L);
+    b.class_(false, false, false);
+    b.super_("org.iets3.core.expr.base.structure.PlusExpression", 0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c9a4f2L);
+    b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382f6L);
+    b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2076377354677469800");
+    b.version(2);
+    b.alias("+");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForZTrueLiteral() {
