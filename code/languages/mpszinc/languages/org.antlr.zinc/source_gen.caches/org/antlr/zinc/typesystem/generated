@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="67va1u4yv5i4pzjedidf05rfumfdo9p">
-  <files names="TypesystemDescriptor.java:typeof_ZBoolType_InferenceRule.java" />
+<product version="3" modelHash="-3apgk9mjrapxzmqo3a7s0muama4ei34">
+  <files names="TypesystemDescriptor.java:typeof_VarRef_InferenceRule.java" />
 </product>
 

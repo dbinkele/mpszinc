@@ -8,7 +8,7 @@ import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 public class TypesystemDescriptor extends BaseHelginsDescriptor {
   public TypesystemDescriptor() {
     {
-      InferenceRule_Runtime inferenceRule = new typeof_ZBoolType_InferenceRule();
+      InferenceRule_Runtime inferenceRule = new typeof_VarRef_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
   }

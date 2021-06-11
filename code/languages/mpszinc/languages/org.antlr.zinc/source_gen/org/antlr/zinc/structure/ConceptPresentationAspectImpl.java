@@ -322,29 +322,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Varmark;
   private ConceptPresentation props_WhereCond;
   private ConceptPresentation props_ZAnd;
-  private ConceptPresentation props_ZBoolType;
-  private ConceptPresentation props_ZDiv;
-  private ConceptPresentation props_ZEq;
-  private ConceptPresentation props_ZFalseLiteral;
-  private ConceptPresentation props_ZFloatType;
-  private ConceptPresentation props_ZGreater;
-  private ConceptPresentation props_ZGreaterEquals;
   private ConceptPresentation props_ZIff;
   private ConceptPresentation props_ZImplies;
   private ConceptPresentation props_ZIntDiv;
-  private ConceptPresentation props_ZIntType;
-  private ConceptPresentation props_ZLess;
-  private ConceptPresentation props_ZLessEqual;
-  private ConceptPresentation props_ZMinus;
-  private ConceptPresentation props_ZMod;
-  private ConceptPresentation props_ZMul;
-  private ConceptPresentation props_ZNEq;
   private ConceptPresentation props_ZNot;
-  private ConceptPresentation props_ZNumber;
   private ConceptPresentation props_ZOr;
-  private ConceptPresentation props_ZParens;
-  private ConceptPresentation props_ZPlus;
-  private ConceptPresentation props_ZTrueLiteral;
   private ConceptPresentation props_ZXor;
 
   @Override
@@ -2743,55 +2725,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZAnd = cpb.create();
         }
         return props_ZAnd;
-      case LanguageConceptSwitch.ZBoolType:
-        if (props_ZBoolType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ZBoolType");
-          props_ZBoolType = cpb.create();
-        }
-        return props_ZBoolType;
-      case LanguageConceptSwitch.ZDiv:
-        if (props_ZDiv == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("/");
-          props_ZDiv = cpb.create();
-        }
-        return props_ZDiv;
-      case LanguageConceptSwitch.ZEq:
-        if (props_ZEq == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("=");
-          props_ZEq = cpb.create();
-        }
-        return props_ZEq;
-      case LanguageConceptSwitch.ZFalseLiteral:
-        if (props_ZFalseLiteral == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("false");
-          props_ZFalseLiteral = cpb.create();
-        }
-        return props_ZFalseLiteral;
-      case LanguageConceptSwitch.ZFloatType:
-        if (props_ZFloatType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ZFloatType");
-          props_ZFloatType = cpb.create();
-        }
-        return props_ZFloatType;
-      case LanguageConceptSwitch.ZGreater:
-        if (props_ZGreater == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation(">");
-          props_ZGreater = cpb.create();
-        }
-        return props_ZGreater;
-      case LanguageConceptSwitch.ZGreaterEquals:
-        if (props_ZGreaterEquals == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation(">");
-          props_ZGreaterEquals = cpb.create();
-        }
-        return props_ZGreaterEquals;
       case LanguageConceptSwitch.ZIff:
         if (props_ZIff == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2813,55 +2746,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZIntDiv = cpb.create();
         }
         return props_ZIntDiv;
-      case LanguageConceptSwitch.ZIntType:
-        if (props_ZIntType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ZIntType");
-          props_ZIntType = cpb.create();
-        }
-        return props_ZIntType;
-      case LanguageConceptSwitch.ZLess:
-        if (props_ZLess == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("<");
-          props_ZLess = cpb.create();
-        }
-        return props_ZLess;
-      case LanguageConceptSwitch.ZLessEqual:
-        if (props_ZLessEqual == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("<=");
-          props_ZLessEqual = cpb.create();
-        }
-        return props_ZLessEqual;
-      case LanguageConceptSwitch.ZMinus:
-        if (props_ZMinus == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("-");
-          props_ZMinus = cpb.create();
-        }
-        return props_ZMinus;
-      case LanguageConceptSwitch.ZMod:
-        if (props_ZMod == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("mod");
-          props_ZMod = cpb.create();
-        }
-        return props_ZMod;
-      case LanguageConceptSwitch.ZMul:
-        if (props_ZMul == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("*");
-          props_ZMul = cpb.create();
-        }
-        return props_ZMul;
-      case LanguageConceptSwitch.ZNEq:
-        if (props_ZNEq == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("!=");
-          props_ZNEq = cpb.create();
-        }
-        return props_ZNEq;
       case LanguageConceptSwitch.ZNot:
         if (props_ZNot == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2869,13 +2753,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZNot = cpb.create();
         }
         return props_ZNot;
-      case LanguageConceptSwitch.ZNumber:
-        if (props_ZNumber == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ZNumber");
-          props_ZNumber = cpb.create();
-        }
-        return props_ZNumber;
       case LanguageConceptSwitch.ZOr:
         if (props_ZOr == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2883,27 +2760,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZOr = cpb.create();
         }
         return props_ZOr;
-      case LanguageConceptSwitch.ZParens:
-        if (props_ZParens == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("(");
-          props_ZParens = cpb.create();
-        }
-        return props_ZParens;
-      case LanguageConceptSwitch.ZPlus:
-        if (props_ZPlus == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("+");
-          props_ZPlus = cpb.create();
-        }
-        return props_ZPlus;
-      case LanguageConceptSwitch.ZTrueLiteral:
-        if (props_ZTrueLiteral == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("true");
-          props_ZTrueLiteral = cpb.create();
-        }
-        return props_ZTrueLiteral;
       case LanguageConceptSwitch.ZXor:
         if (props_ZXor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

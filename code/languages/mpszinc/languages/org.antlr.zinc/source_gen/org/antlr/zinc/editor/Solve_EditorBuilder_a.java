@@ -46,7 +46,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createRefNode_0());
-    editorCell.addEditorCell(createRefNode_1());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -56,71 +55,14 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new Solve_block_1_1_1SingleRoleHandler_jk7wly_b0(myNode, LINKS.Solve_block_1_1_1$qpg5, getEditorContext());
+    SingleRoleCellProvider provider = new Solve_block_1_2_2SingleRoleHandler_jk7wly_b0(myNode, LINKS.Solve_block_1_2_2$qpv6, getEditorContext());
     return provider.createCell();
   }
-  private static class Solve_block_1_1_1SingleRoleHandler_jk7wly_b0 extends SingleRoleCellProvider {
+  private static class Solve_block_1_2_2SingleRoleHandler_jk7wly_b0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public Solve_block_1_1_1SingleRoleHandler_jk7wly_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(containmentLink, context);
-      myNode = ownerNode;
-    }
-
-    @Override
-    @NotNull
-    public SNode getNode() {
-      return myNode;
-    }
-
-    protected EditorCell createChildCell(SNode child) {
-      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.Solve_block_1_1_1$qpg5, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.Solve_block_1_1_1$qpg5, child));
-      installCellInfo(child, editorCell, false);
-      return editorCell;
-    }
-
-
-
-    private void installCellInfo(SNode child, EditorCell editorCell, boolean isEmpty) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
-      }
-      if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.Solve_block_1_1_1$qpg5);
-      }
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.Solve_block_1_1_1$qpg5));
-      try {
-        EditorCell editorCell = createConstant_1();
-        installCellInfo(null, editorCell, true);
-        setCellContext(editorCell);
-        return editorCell;
-      } finally {
-        getCellFactory().popCellContext();
-      }
-    }
-    private EditorCell createConstant_1() {
-      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ");
-      editorCell.setCellId("Constant_jk7wly_a1a");
-      editorCell.setDefaultText("");
-      return editorCell;
-    }
-  }
-  private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new Solve_block_1_2_2SingleRoleHandler_jk7wly_c0(myNode, LINKS.Solve_block_1_2_2$qpv6, getEditorContext());
-    return provider.createCell();
-  }
-  private static class Solve_block_1_2_2SingleRoleHandler_jk7wly_c0 extends SingleRoleCellProvider {
-    @NotNull
-    private SNode myNode;
-
-    public Solve_block_1_2_2SingleRoleHandler_jk7wly_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public Solve_block_1_2_2SingleRoleHandler_jk7wly_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -154,7 +96,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       getCellFactory().pushCellContext();
       getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.Solve_block_1_2_2$qpv6));
       try {
-        EditorCell editorCell = createConstant_2();
+        EditorCell editorCell = createConstant_1();
         installCellInfo(null, editorCell, true);
         setCellContext(editorCell);
         return editorCell;
@@ -162,16 +104,15 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         getCellFactory().popCellContext();
       }
     }
-    private EditorCell createConstant_2() {
+    private EditorCell createConstant_1() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ");
-      editorCell.setCellId("Constant_jk7wly_a2a");
+      editorCell.setCellId("Constant_jk7wly_a1a");
       editorCell.setDefaultText("");
       return editorCell;
     }
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink Solve_block_1_1_1$qpg5 = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382d9L, 0x2656959549f38414L, "Solve_block_1_1_1");
     /*package*/ static final SContainmentLink Solve_block_1_2_2$qpv6 = MetaAdapterFactory.getContainmentLink(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382d9L, 0x2656959549f38415L, "Solve_block_1_2_2");
   }
 }

@@ -278,16 +278,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="2pm_pl9WSn5">
-    <property role="3GE5qa" value="New.Type" />
-    <ref role="1XX52x" to="rpch:2pm_pl9WS81" resolve="ZIntType" />
-    <node concept="3EZMnI" id="2pm_pl9WSn6" role="2wV5jI">
-      <node concept="l2Vlx" id="2pm_pl9WSn7" role="2iSdaV" />
-      <node concept="3F0ifn" id="2pm_pl9WSn8" role="3EZMnx">
-        <property role="3F0ifm" value="int" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="2pm_pl9WSn9">
     <property role="3GE5qa" value="Rules.NonEmptyListElems" />
     <ref role="1XX52x" to="rpch:2pm_pl9WS82" resolve="NonEmptyListElems" />
@@ -801,16 +791,6 @@
         <node concept="3F0ifn" id="2pm_pl9WSq2" role="2ruayu">
           <property role="3F0ifm" value=" " />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2pm_pl9WSq3">
-    <property role="3GE5qa" value="New.Type" />
-    <ref role="1XX52x" to="rpch:2pm_pl9WS8C" resolve="ZBoolType" />
-    <node concept="3EZMnI" id="2pm_pl9WSq4" role="2wV5jI">
-      <node concept="l2Vlx" id="2pm_pl9WSq5" role="2iSdaV" />
-      <node concept="3F0ifn" id="2pm_pl9WSq6" role="3EZMnx">
-        <property role="3F0ifm" value="bool" />
       </node>
     </node>
   </node>
@@ -1847,16 +1827,6 @@
       </node>
       <node concept="3F0ifn" id="2pm_pl9WSvX" role="3EZMnx">
         <property role="3F0ifm" value="++" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2pm_pl9WSvY">
-    <property role="3GE5qa" value="New.Type" />
-    <ref role="1XX52x" to="rpch:2pm_pl9WS9N" resolve="ZFloatType" />
-    <node concept="3EZMnI" id="2pm_pl9WSvZ" role="2wV5jI">
-      <node concept="l2Vlx" id="2pm_pl9WSw0" role="2iSdaV" />
-      <node concept="3F0ifn" id="2pm_pl9WSw1" role="3EZMnx">
-        <property role="3F0ifm" value="float" />
       </node>
     </node>
   </node>
@@ -3257,13 +3227,6 @@
       <node concept="l2Vlx" id="2pm_pl9WSBW" role="2iSdaV" />
       <node concept="3F0ifn" id="2pm_pl9WSBX" role="3EZMnx">
         <property role="3F0ifm" value="solve" />
-      </node>
-      <node concept="3F1sOY" id="2pm_pl9WSBY" role="3EZMnx">
-        <property role="2ru_X1" value="true" />
-        <ref role="1NtTu8" to="rpch:2pm_pl9WSgk" resolve="Solve_block_1_1_1" />
-        <node concept="3F0ifn" id="2pm_pl9WSBZ" role="2ruayu">
-          <property role="3F0ifm" value=" " />
-        </node>
       </node>
       <node concept="3F1sOY" id="2pm_pl9WSC0" role="3EZMnx">
         <property role="2ru_X1" value="true" />

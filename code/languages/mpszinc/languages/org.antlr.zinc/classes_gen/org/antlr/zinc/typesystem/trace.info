@@ -12,51 +12,53 @@
       <unit at="8,0,16,0" name="org.antlr.zinc.typesystem.TypesystemDescriptor" />
     </file>
   </root>
-  <root nodeRef="r:7317d49c-42a1-4411-8e45-103e32fc2978(org.antlr.zinc.typesystem)/2935391576185353348">
+  <root nodeRef="r:7317d49c-42a1-4411-8e45-103e32fc2978(org.antlr.zinc.typesystem)/5394445121764400126">
     <file name="TypesystemDescriptor.java">
-      <node id="2935391576185353348" at="10,5,11,81" concept="4" />
-      <node id="2935391576185353348" at="11,81,12,47" concept="2" />
-      <node id="2935391576185353348" at="9,33,13,5" concept="0" />
-      <scope id="2935391576185353348" at="10,5,12,47">
-        <var name="inferenceRule" id="2935391576185353348" />
+      <node id="5394445121764400126" at="10,5,11,78" concept="4" />
+      <node id="5394445121764400126" at="11,78,12,47" concept="2" />
+      <node id="5394445121764400126" at="9,33,13,5" concept="0" />
+      <scope id="5394445121764400126" at="10,5,12,47">
+        <var name="inferenceRule" id="5394445121764400126" />
       </scope>
     </file>
-    <file name="typeof_ZBoolType_InferenceRule.java">
-      <node id="2935391576185354178" at="20,5,21,51" concept="4" />
-      <node id="2935391576185354178" at="21,51,22,191" concept="4" />
-      <node id="2935391576185354178" at="22,191,23,255" concept="2" />
-      <node id="2935391576185353348" at="26,50,27,33" concept="5" />
-      <node id="2935391576185353348" at="29,68,30,102" concept="5" />
-      <node id="2935391576185353348" at="32,30,33,17" concept="5" />
-      <node id="2935391576185353348" at="37,0,38,0" concept="6" trace="ZBoolType$z2" />
-      <node id="2935391576185353348" at="17,0,19,0" concept="1" trace="typeof_ZBoolType_InferenceRule#()V" />
-      <node id="2935391576185353348" at="26,0,29,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="2935391576185353348" at="29,0,32,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="2935391576185353348" at="32,0,35,0" concept="3" trace="overrides#()Z" />
-      <node id="2935391576185354178" at="19,122,24,5" concept="0" />
-      <node id="2935391576185353348" at="19,0,26,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="2935391576185353348" at="17,43,17,43" />
-      <scope id="2935391576185353348" at="26,50,27,33" />
-      <scope id="2935391576185353348" at="29,68,30,102" />
-      <scope id="2935391576185353348" at="32,30,33,17" />
-      <scope id="2935391576185353348" at="17,0,19,0" />
-      <scope id="2935391576185354178" at="20,5,23,255">
-        <var name="_info_12389875345" id="2935391576185354178" />
-        <var name="_nodeToCheck_1029348928467" id="2935391576185354178" />
+    <file name="typeof_VarRef_InferenceRule.java">
+      <node id="5394445121764400984" at="21,5,22,48" concept="4" />
+      <node id="5394445121764400984" at="22,48,23,191" concept="4" />
+      <node id="5394445121764400984" at="23,191,24,407" concept="2" />
+      <node id="5394445121764400126" at="27,50,28,30" concept="5" />
+      <node id="5394445121764400126" at="30,68,31,102" concept="5" />
+      <node id="5394445121764400126" at="33,30,34,17" concept="5" />
+      <node id="5394445121764400126" at="38,0,39,0" concept="6" trace="var$SOnE" />
+      <node id="5394445121764400126" at="42,0,43,0" concept="6" trace="VarRef$ZQ" />
+      <node id="5394445121764400126" at="18,0,20,0" concept="1" trace="typeof_VarRef_InferenceRule#()V" />
+      <node id="5394445121764400126" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5394445121764400126" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5394445121764400126" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="5394445121764400984" at="20,119,25,5" concept="0" />
+      <node id="5394445121764400126" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5394445121764400126" at="18,40,18,40" />
+      <scope id="5394445121764400126" at="27,50,28,30" />
+      <scope id="5394445121764400126" at="30,68,31,102" />
+      <scope id="5394445121764400126" at="33,30,34,17" />
+      <scope id="5394445121764400126" at="18,0,20,0" />
+      <scope id="5394445121764400984" at="21,5,24,407">
+        <var name="_info_12389875345" id="5394445121764400984" />
+        <var name="_nodeToCheck_1029348928467" id="5394445121764400984" />
       </scope>
-      <scope id="2935391576185353348" at="26,0,29,0" />
-      <scope id="2935391576185353348" at="29,0,32,0">
-        <var name="argument" id="2935391576185353348" />
+      <scope id="5394445121764400126" at="27,0,30,0" />
+      <scope id="5394445121764400126" at="30,0,33,0">
+        <var name="argument" id="5394445121764400126" />
       </scope>
-      <scope id="2935391576185353348" at="32,0,35,0" />
-      <scope id="2935391576185353349" at="19,122,24,5" />
-      <scope id="2935391576185353348" at="19,0,26,0">
-        <var name="status" id="2935391576185353348" />
-        <var name="typeCheckingContext" id="2935391576185353348" />
-        <var name="zBoolType" id="2935391576185353348" />
+      <scope id="5394445121764400126" at="33,0,36,0" />
+      <scope id="5394445121764400127" at="20,119,25,5" />
+      <scope id="5394445121764400126" at="20,0,27,0">
+        <var name="status" id="5394445121764400126" />
+        <var name="typeCheckingContext" id="5394445121764400126" />
+        <var name="varRef" id="5394445121764400126" />
       </scope>
-      <unit id="2935391576185353348" at="36,0,39,0" name="org.antlr.zinc.typesystem.typeof_ZBoolType_InferenceRule$CONCEPTS" />
-      <unit id="2935391576185353348" at="16,0,40,0" name="org.antlr.zinc.typesystem.typeof_ZBoolType_InferenceRule" />
+      <unit id="5394445121764400126" at="37,0,40,0" name="org.antlr.zinc.typesystem.typeof_VarRef_InferenceRule$LINKS" />
+      <unit id="5394445121764400126" at="41,0,44,0" name="org.antlr.zinc.typesystem.typeof_VarRef_InferenceRule$CONCEPTS" />
+      <unit id="5394445121764400126" at="17,0,45,0" name="org.antlr.zinc.typesystem.typeof_VarRef_InferenceRule" />
     </file>
   </root>
 </debug-info>
