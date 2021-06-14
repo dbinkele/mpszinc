@@ -78,6 +78,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_CommaList_1;
   private ConceptPresentation props_CommaList_block_1_1;
   private ConceptPresentation props_CommaList_block_1_2;
+  private ConceptPresentation props_CommentStatement;
   private ConceptPresentation props_Constr_1;
   private ConceptPresentation props_Constr_2;
   private ConceptPresentation props_Constrainchoice_1;
@@ -884,6 +885,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CommaList_block_1_2 = cpb.create();
         }
         return props_CommaList_block_1_2;
+      case LanguageConceptSwitch.CommentStatement:
+        if (props_CommentStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("//");
+          props_CommentStatement = cpb.create();
+        }
+        return props_CommentStatement;
       case LanguageConceptSwitch.Constr_1:
         if (props_Constr_1 == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

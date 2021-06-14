@@ -15,6 +15,7 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -88,6 +89,28 @@
     <node concept="1YaCAy" id="4FsUO7r6LK1" role="1YuTPh">
       <property role="TrG5h" value="varRef" />
       <ref role="1YaFvo" to="rpch:2yWALofAj8E" resolve="VarRef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2hjuDitG8lz">
+    <property role="TrG5h" value="typeof_CommentExpression" />
+    <property role="3GE5qa" value="New.Expr" />
+    <node concept="3clFbS" id="2hjuDitG8l$" role="18ibNy">
+      <node concept="1Z5TYs" id="2hjuDitG8wD" role="3cqZAp">
+        <node concept="mw_s8" id="2hjuDitG8wU" role="1ZfhKB">
+          <node concept="10Nm6u" id="2hjuDitG8$1" role="mwGJk" />
+        </node>
+        <node concept="mw_s8" id="2hjuDitG8wG" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2hjuDitG8lE" role="mwGJk">
+            <node concept="1YBJjd" id="2hjuDitG8ny" role="1Z2MuG">
+              <ref role="1YBMHb" node="2hjuDitG8lA" resolve="commentExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2hjuDitG8lA" role="1YuTPh">
+      <property role="TrG5h" value="commentExpression" />
+      <ref role="1YaFvo" to="rpch:2hjuDitEut4" resolve="CommentStatement" />
     </node>
   </node>
 </model>

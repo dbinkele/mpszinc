@@ -285,6 +285,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1IK1wTLYpQo">
+    <property role="3GE5qa" value="New" />
     <ref role="WuzLi" to="rpch:1IK1wTLW8bf" resolve="EmptyStatement" />
     <node concept="11bSqf" id="1IK1wTLYpQp" role="11c4hB">
       <node concept="3clFbS" id="1IK1wTLYpQq" role="2VODD2">
@@ -610,6 +611,96 @@
               <node concept="117lpO" id="1NgLzfPm8wU" role="2Oq$k0" />
               <node concept="3TrEf2" id="1NgLzfPm8wV" role="2OqNvi">
                 <ref role="3Tt5mk" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2hjuDitEuuh">
+    <property role="3GE5qa" value="New.Expr" />
+    <ref role="WuzLi" to="rpch:2hjuDitEut4" resolve="CommentStatement" />
+    <node concept="11bSqf" id="2hjuDitEuui" role="11c4hB">
+      <node concept="3clFbS" id="2hjuDitEuuj" role="2VODD2">
+        <node concept="lc7rE" id="2hjuDitOKAy" role="3cqZAp">
+          <node concept="la8eA" id="2hjuDitOKAQ" role="lcghm">
+            <property role="lacIc" value="%" />
+          </node>
+          <node concept="l9hG8" id="2hjuDitOKBF" role="lcghm">
+            <node concept="2OqwBi" id="2hjuDitOKN0" role="lb14g">
+              <node concept="117lpO" id="2hjuDitOKCy" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2hjuDitOKZE" role="2OqNvi">
+                <ref role="3TsBF5" to="rpch:2hjuDitEut5" resolve="comment" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2hjuDitHLIu">
+    <property role="3GE5qa" value="New.Solve.Objective" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS8q" resolve="Maximize" />
+    <node concept="11bSqf" id="2hjuDitHLIv" role="11c4hB">
+      <node concept="3clFbS" id="2hjuDitHLIw" role="2VODD2">
+        <node concept="lc7rE" id="2hjuDitHMvp" role="3cqZAp">
+          <node concept="la8eA" id="2hjuDitHMvH" role="lcghm">
+            <property role="lacIc" value=" maximize" />
+          </node>
+          <node concept="la8eA" id="2hjuDitMKLk" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l9hG8" id="2hjuDitMKLZ" role="lcghm">
+            <node concept="2OqwBi" id="2hjuDitMKYk" role="lb14g">
+              <node concept="117lpO" id="2hjuDitMKMR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2hjuDitMLcO" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:2pm_pl9WSdc" resolve="Expr_1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2hjuDitHMxV">
+    <property role="3GE5qa" value="New.Solve.Objective" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS9u" resolve="Minimize" />
+    <node concept="11bSqf" id="2hjuDitHMxW" role="11c4hB">
+      <node concept="3clFbS" id="2hjuDitHMxX" role="2VODD2">
+        <node concept="lc7rE" id="2hjuDitHMye" role="3cqZAp">
+          <node concept="la8eA" id="2hjuDitHMyy" role="lcghm">
+            <property role="lacIc" value=" minimze" />
+          </node>
+          <node concept="la8eA" id="2hjuDitMLjn" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+          <node concept="l9hG8" id="2hjuDitMLke" role="lcghm">
+            <node concept="2OqwBi" id="2hjuDitMLu8" role="lb14g">
+              <node concept="117lpO" id="2hjuDitMLl6" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2hjuDitMLH3" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:2pm_pl9WSeu" resolve="Expr_1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2hjuDitODWK">
+    <property role="3GE5qa" value="Rules.Constraint" />
+    <ref role="WuzLi" to="rpch:2pm_pl9WS9Q" resolve="Constraint" />
+    <node concept="11bSqf" id="2hjuDitODWL" role="11c4hB">
+      <node concept="3clFbS" id="2hjuDitODWM" role="2VODD2">
+        <node concept="lc7rE" id="2hjuDitODX3" role="3cqZAp">
+          <node concept="la8eA" id="2hjuDitODXn" role="lcghm">
+            <property role="lacIc" value="constraint " />
+          </node>
+          <node concept="l9hG8" id="2hjuDitODYc" role="lcghm">
+            <node concept="2OqwBi" id="2hjuDitOE85" role="lb14g">
+              <node concept="117lpO" id="2hjuDitODZ3" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2hjuDitOE_N" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:2pm_pl9WSeM" resolve="Expr_1" />
               </node>
             </node>
           </node>

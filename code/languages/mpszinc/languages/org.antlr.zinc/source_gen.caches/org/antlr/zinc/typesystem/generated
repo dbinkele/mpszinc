@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-3apgk9mjrapxzmqo3a7s0muama4ei34">
-  <files names="TypesystemDescriptor.java:typeof_VarRef_InferenceRule.java" />
+<product version="3" modelHash="-e6d91m1c5vpocezbwkw5k9nsmlny75n">
+  <files names="TypesystemDescriptor.java:typeof_CommentExpression_InferenceRule.java:typeof_VarRef_InferenceRule.java" />
 </product>
 
