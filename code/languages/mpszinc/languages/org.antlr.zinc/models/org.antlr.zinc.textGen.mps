@@ -103,7 +103,7 @@
     </language>
   </registry>
   <node concept="WtQ9Q" id="313yWIVxW9V">
-    <property role="3GE5qa" value="Rules.Model" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="WuzLi" to="rpch:2pm_pl9WS8t" resolve="Model" />
     <node concept="11bSqf" id="313yWIVxW9W" role="11c4hB">
       <node concept="3clFbS" id="313yWIVxW9X" role="2VODD2">
@@ -295,7 +295,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1IK1wTM3Oyl">
-    <property role="3GE5qa" value="Rules.Solve" />
+    <property role="3GE5qa" value="New.Solve" />
     <ref role="WuzLi" to="rpch:2pm_pl9WSbp" resolve="Solve" />
     <node concept="11bSqf" id="1IK1wTM3Oym" role="11c4hB">
       <node concept="3clFbS" id="1IK1wTM3Oyn" role="2VODD2">
@@ -319,7 +319,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1IK1wTM3RAq">
-    <property role="3GE5qa" value="Rules.Satisfy" />
+    <property role="3GE5qa" value="New.Satisfy" />
     <ref role="WuzLi" to="rpch:2pm_pl9WScr" resolve="Satisfy" />
     <node concept="11bSqf" id="1IK1wTM3RAr" role="11c4hB">
       <node concept="3clFbS" id="1IK1wTM3RAs" role="2VODD2">

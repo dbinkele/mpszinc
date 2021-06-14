@@ -46,6 +46,9 @@
       <concept id="2762559889861739037" name="org.antlr.zinc.structure.Model" flags="ng" index="1JDhu8">
         <child id="1995101294035028194" name="Stats" index="1EkkVG" />
       </concept>
+      <concept id="2762559889861739034" name="org.antlr.zinc.structure.Maximize" flags="ng" index="1JDhuf">
+        <child id="2762559889861739340" name="Expr_1" index="1JDhrp" />
+      </concept>
       <concept id="2762559889861739077" name="org.antlr.zinc.structure.VarDeclItem" flags="ng" index="1JDhvg">
         <child id="5407274717693210036" name="expr" index="2$1T80" />
       </concept>
@@ -109,6 +112,28 @@
     <node concept="1Eg8j1" id="1NgLzfPklX9" role="1EkkVG" />
     <node concept="1JDhtc" id="4GavVjJ3vGc" role="1EkkVG">
       <node concept="1JDhqe" id="4GavVjJ3vGm" role="1JDh60" />
+    </node>
+  </node>
+  <node concept="1JDhu8" id="2hjuDitEucp">
+    <property role="TrG5h" value="ScndHit" />
+    <node concept="1Eg8j1" id="2hjuDitEucq" role="1EkkVG" />
+    <node concept="1Eg8j1" id="2hjuDitEucs" role="1EkkVG" />
+    <node concept="3MzzmJ" id="2hjuDitEucz" role="1EkkVG">
+      <property role="TrG5h" value="x" />
+      <node concept="30bXR$" id="2hjuDitEucE" role="2zM23F" />
+    </node>
+    <node concept="1Eg8j1" id="2hjuDitEucL" role="1EkkVG" />
+    <node concept="1JDhtc" id="2hjuDitEucY" role="1EkkVG">
+      <node concept="1JDhuf" id="2hjuDitEud8" role="1JDh60">
+        <node concept="30dDTi" id="2hjuDitEue9" role="1JDhrp">
+          <node concept="B9q$W" id="2hjuDitEuer" role="30dEs_">
+            <ref role="B9q$X" node="2hjuDitEucz" resolve="x" />
+          </node>
+          <node concept="B9q$W" id="2hjuDitEude" role="30dEsF">
+            <ref role="B9q$X" node="2hjuDitEucz" resolve="x" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

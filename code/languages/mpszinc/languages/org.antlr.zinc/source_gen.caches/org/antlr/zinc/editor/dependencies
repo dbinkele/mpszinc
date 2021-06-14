@@ -2408,8 +2408,8 @@
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISetExpr" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISetVal" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISimpleList" />
+    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_1" />
-    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_2" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IStat" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IStringExpr" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IToR" />
@@ -6378,7 +6378,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_1">
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -6396,7 +6396,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_2">
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_1">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />

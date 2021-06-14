@@ -850,15 +850,15 @@
       <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISimpleList$GrammarCellsSubstituteMenuPart_15gqoe_a" />
       <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISimpleList" />
     </file>
+    <file name="GrammarCellsSubstituteMenu_ISolve.java">
+      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve$CONCEPTS" />
+      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve$GrammarCellsSubstituteMenuPart_dw9ozd_a" />
+      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve" />
+    </file>
     <file name="GrammarCellsSubstituteMenu_ISolve_block_1_1.java">
       <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_1$CONCEPTS" />
       <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_1$GrammarCellsSubstituteMenuPart_kezfw2_a" />
       <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_1" />
-    </file>
-    <file name="GrammarCellsSubstituteMenu_ISolve_block_1_2.java">
-      <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_2$CONCEPTS" />
-      <unit at="46,0,56,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_2$GrammarCellsSubstituteMenuPart_kezfw2_a" />
-      <unit at="21,0,61,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ISolve_block_1_2" />
     </file>
     <file name="GrammarCellsSubstituteMenu_IStat.java">
       <unit at="57,0,60,0" name="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IStat$CONCEPTS" />

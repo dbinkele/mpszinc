@@ -170,8 +170,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ISetExpr;
   private ConceptPresentation props_ISetVal;
   private ConceptPresentation props_ISimpleList;
+  private ConceptPresentation props_ISolve;
   private ConceptPresentation props_ISolve_block_1_1;
-  private ConceptPresentation props_ISolve_block_1_2;
   private ConceptPresentation props_IStat;
   private ConceptPresentation props_IStringExpr;
   private ConceptPresentation props_IToR;
@@ -1529,18 +1529,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ISimpleList = cpb.create();
         }
         return props_ISimpleList;
+      case LanguageConceptSwitch.ISolve:
+        if (props_ISolve == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ISolve = cpb.create();
+        }
+        return props_ISolve;
       case LanguageConceptSwitch.ISolve_block_1_1:
         if (props_ISolve_block_1_1 == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_ISolve_block_1_1 = cpb.create();
         }
         return props_ISolve_block_1_1;
-      case LanguageConceptSwitch.ISolve_block_1_2:
-        if (props_ISolve_block_1_2 == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ISolve_block_1_2 = cpb.create();
-        }
-        return props_ISolve_block_1_2;
       case LanguageConceptSwitch.IStat:
         if (props_IStat == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

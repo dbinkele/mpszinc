@@ -200,7 +200,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1IK1wTLTZH7">
-    <property role="3GE5qa" value="Rules.Model" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="1M2myG" to="rpch:2pm_pl9WS8t" resolve="Model" />
     <node concept="9SLcT" id="1IK1wTLTZH8" role="9SGkU">
       <node concept="3clFbS" id="1IK1wTLTZH9" role="2VODD2">
@@ -301,20 +301,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1IK1wTM3O$e">
-    <property role="3GE5qa" value="Rules.Solve" />
+    <property role="3GE5qa" value="New.Solve" />
     <ref role="1M2myG" to="rpch:2pm_pl9WSbp" resolve="Solve" />
-    <node concept="9SLcT" id="1IK1wTM3O$f" role="9SGkU">
-      <node concept="3clFbS" id="1IK1wTM3O$g" role="2VODD2">
-        <node concept="3clFbF" id="1IK1wTM3OCa" role="3cqZAp">
-          <node concept="17R0WA" id="1IK1wTM3Pan" role="3clFbG">
-            <node concept="2DD5aU" id="1IK1wTM3PeD" role="3uHU7w" />
-            <node concept="35c_gC" id="1IK1wTM3OC9" role="3uHU7B">
-              <ref role="35c_gD" to="rpch:2pm_pl9WScr" resolve="Satisfy" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="4GavVjJ2$$B">
     <property role="3GE5qa" value="Interfaces" />

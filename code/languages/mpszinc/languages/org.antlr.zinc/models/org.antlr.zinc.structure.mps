@@ -52,17 +52,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -697,17 +689,17 @@
     <property role="TrG5h" value="Maximize" />
     <property role="34LRSv" value="maximize" />
     <property role="R4oN_" value="Maximize" />
-    <property role="3GE5qa" value="Rules.Maximize" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2pm_pl9WSdc" role="1TKVEi">
       <property role="IQ2ns" value="2762559889861739340" />
       <property role="20kJfa" value="Expr_1" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSbQ" resolve="IExpr" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2pm_pl9WShX" role="PzmwI">
-      <ref role="PrY4T" node="2pm_pl9WSaY" resolve="ISolve_block_1_2" />
+      <ref role="PrY4T" node="2pm_pl9WSaY" resolve="ISolve" />
     </node>
     <node concept="PrWs8" id="2pm_pl9WShY" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSaS" resolve="IOptimize" />
@@ -771,9 +763,9 @@
   <node concept="1TIwiD" id="2pm_pl9WS8t">
     <property role="EcuMT" value="2762559889861739037" />
     <property role="TrG5h" value="Model" />
-    <property role="34LRSv" value="Model_block_1_1 model" />
+    <property role="34LRSv" value="Model" />
     <property role="R4oN_" value="Model" />
-    <property role="3GE5qa" value="Rules.Model" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1IK1wTLSkzy" role="1TKVEi">
@@ -1930,17 +1922,17 @@
     <property role="TrG5h" value="Minimize" />
     <property role="34LRSv" value="minimize" />
     <property role="R4oN_" value="Minimize" />
-    <property role="3GE5qa" value="Rules.Minimize" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2pm_pl9WSeu" role="1TKVEi">
       <property role="IQ2ns" value="2762559889861739422" />
       <property role="20kJfa" value="Expr_1" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSbQ" resolve="IExpr" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="2pm_pl9WShZ" role="PzmwI">
-      <ref role="PrY4T" node="2pm_pl9WSaY" resolve="ISolve_block_1_2" />
+      <ref role="PrY4T" node="2pm_pl9WSaY" resolve="ISolve" />
     </node>
     <node concept="PrWs8" id="2pm_pl9WSi0" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WSaS" resolve="IOptimize" />
@@ -3357,8 +3349,8 @@
   </node>
   <node concept="PlHQZ" id="2pm_pl9WSaY">
     <property role="EcuMT" value="2762559889861739198" />
-    <property role="TrG5h" value="ISolve_block_1_2" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="TrG5h" value="ISolve" />
+    <property role="3GE5qa" value="New.Interfaces" />
   </node>
   <node concept="1TIwiD" id="2pm_pl9WSaZ">
     <property role="EcuMT" value="2762559889861739199" />
@@ -3799,24 +3791,14 @@
     <property role="TrG5h" value="Solve" />
     <property role="34LRSv" value="solve" />
     <property role="R4oN_" value="Solve" />
-    <property role="3GE5qa" value="Rules.Solve" />
+    <property role="3GE5qa" value="New.Solve" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
-    <node concept="1X3_iC" id="1IK1wTLR73c" role="lGtFl">
-      <property role="3V$3am" value="linkDeclaration" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
-      <node concept="1TJgyj" id="2pm_pl9WSgk" role="8Wnug">
-        <property role="IQ2ns" value="2762559889861739540" />
-        <property role="20kJfa" value="Solve_block_1_1_1" />
-        <property role="20lmBu" value="fLJjDmT/aggregation" />
-        <ref role="20lvS9" node="2pm_pl9WSaV" resolve="ISolve_block_1_1" />
-      </node>
-    </node>
     <node concept="1TJgyj" id="2pm_pl9WSgl" role="1TKVEi">
       <property role="IQ2ns" value="2762559889861739541" />
       <property role="20kJfa" value="Solve_block_1_2_2" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="2pm_pl9WSaY" resolve="ISolve_block_1_2" />
+      <ref role="20lvS9" node="2pm_pl9WSaY" resolve="ISolve" />
     </node>
     <node concept="PrWs8" id="2pm_pl9WSiA" role="PzmwI">
       <ref role="PrY4T" node="2pm_pl9WS9x" resolve="IStat" />
@@ -4893,10 +4875,10 @@
     <property role="TrG5h" value="Satisfy" />
     <property role="34LRSv" value="satisfy" />
     <property role="R4oN_" value="Satisfy" />
-    <property role="3GE5qa" value="Rules.Satisfy" />
+    <property role="3GE5qa" value="New.Satisfy" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2pm_pl9WShW" role="PzmwI">
-      <ref role="PrY4T" node="2pm_pl9WSaY" resolve="ISolve_block_1_2" />
+      <ref role="PrY4T" node="2pm_pl9WSaY" resolve="ISolve" />
     </node>
   </node>
   <node concept="1TIwiD" id="2pm_pl9WScs">

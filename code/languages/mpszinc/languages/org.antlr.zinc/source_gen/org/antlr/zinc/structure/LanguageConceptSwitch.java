@@ -170,8 +170,8 @@ public final class LanguageConceptSwitch {
   public static final int ISetExpr = 158;
   public static final int ISetVal = 159;
   public static final int ISimpleList = 160;
-  public static final int ISolve_block_1_1 = 161;
-  public static final int ISolve_block_1_2 = 162;
+  public static final int ISolve = 161;
+  public static final int ISolve_block_1_1 = 162;
   public static final int IStat = 163;
   public static final int IStringExpr = 164;
   public static final int IToR = 165;
@@ -492,8 +492,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x2656959549f38239L, ISetExpr);
     builder.put(0x2656959549f3825aL, ISetVal);
     builder.put(0x2656959549f382f2L, ISimpleList);
+    builder.put(0x2656959549f382beL, ISolve);
     builder.put(0x2656959549f382bbL, ISolve_block_1_1);
-    builder.put(0x2656959549f382beL, ISolve_block_1_2);
     builder.put(0x2656959549f38261L, IStat);
     builder.put(0x2656959549f382b5L, IStringExpr);
     builder.put(0x2656959549f38234L, IToR);

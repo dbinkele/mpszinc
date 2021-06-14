@@ -552,7 +552,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2pm_pl9WSoK">
-    <property role="3GE5qa" value="Rules.Maximize" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="1XX52x" to="rpch:2pm_pl9WS8q" resolve="Maximize" />
     <node concept="3EZMnI" id="2pm_pl9WSoL" role="2wV5jI">
       <node concept="l2Vlx" id="2pm_pl9WSoM" role="2iSdaV" />
@@ -625,7 +625,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2pm_pl9WSp9">
-    <property role="3GE5qa" value="Rules.Model" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="1XX52x" to="rpch:2pm_pl9WS8t" resolve="Model" />
     <node concept="3EZMnI" id="313yWIVzqq_" role="2wV5jI">
       <node concept="3EZMnI" id="313yWIV$9_h" role="3EZMnx">
@@ -1555,7 +1555,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2pm_pl9WSur">
-    <property role="3GE5qa" value="Rules.Minimize" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <ref role="1XX52x" to="rpch:2pm_pl9WS9u" resolve="Minimize" />
     <node concept="3EZMnI" id="2pm_pl9WSus" role="2wV5jI">
       <node concept="l2Vlx" id="2pm_pl9WSut" role="2iSdaV" />
@@ -3221,7 +3221,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2pm_pl9WSBU">
-    <property role="3GE5qa" value="Rules.Solve" />
+    <property role="3GE5qa" value="New.Solve" />
     <ref role="1XX52x" to="rpch:2pm_pl9WSbp" resolve="Solve" />
     <node concept="3EZMnI" id="2pm_pl9WSBV" role="2wV5jI">
       <node concept="l2Vlx" id="2pm_pl9WSBW" role="2iSdaV" />
@@ -4004,7 +4004,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2pm_pl9WSGx">
-    <property role="3GE5qa" value="Rules.Satisfy" />
+    <property role="3GE5qa" value="New.Satisfy" />
     <ref role="1XX52x" to="rpch:2pm_pl9WScr" resolve="Satisfy" />
     <node concept="3EZMnI" id="2pm_pl9WSGy" role="2wV5jI">
       <node concept="l2Vlx" id="2pm_pl9WSGz" role="2iSdaV" />

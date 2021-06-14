@@ -7206,35 +7206,35 @@
   </root>
   <root nodeRef="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739195">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2762559889861739195" at="173,0,174,0" concept="1" trace="props_ISolve_block_1_1" />
-      <node id="2762559889861739195" at="1533,45,1534,76" concept="3" />
-      <node id="2762559889861739195" at="1534,76,1535,48" concept="0" />
-      <node id="2762559889861739195" at="1536,9,1537,38" concept="4" />
-      <node id="2762559889861739195" at="1532,50,1536,9" concept="2" />
-      <scope id="2762559889861739195" at="1533,45,1535,48">
+      <node id="2762559889861739195" at="174,0,175,0" concept="1" trace="props_ISolve_block_1_1" />
+      <node id="2762559889861739195" at="1539,45,1540,76" concept="3" />
+      <node id="2762559889861739195" at="1540,76,1541,48" concept="0" />
+      <node id="2762559889861739195" at="1542,9,1543,38" concept="4" />
+      <node id="2762559889861739195" at="1538,50,1542,9" concept="2" />
+      <scope id="2762559889861739195" at="1539,45,1541,48">
         <var name="cpb" id="2762559889861739195" />
       </scope>
-      <scope id="2762559889861739195" at="1532,50,1537,38" />
+      <scope id="2762559889861739195" at="1538,50,1543,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2762559889861739195" at="173,0,174,0" concept="5" trace="ISolve_block_1_1" />
-      <node id="2762559889861739195" at="494,50,495,55" concept="0" />
+      <node id="2762559889861739195" at="174,0,175,0" concept="5" trace="ISolve_block_1_1" />
+      <node id="2762559889861739195" at="495,45,496,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2762559889861739195" at="180,0,181,0" concept="1" trace="myConceptISolve_block_1_1" />
-      <node id="2762559889861739195" at="688,50,689,41" concept="4" />
+      <node id="2762559889861739195" at="181,0,182,0" concept="1" trace="myConceptISolve_block_1_1" />
+      <node id="2762559889861739195" at="690,50,691,41" concept="4" />
       <node id="2762559889861739195" at="1021,116,1022,76" concept="0" />
-      <node id="2762559889861739195" at="2656,74,2657,165" concept="3" />
-      <node id="2762559889861739195" at="2657,165,2658,19" concept="0" />
-      <node id="2762559889861739195" at="2658,19,2659,101" concept="0" />
-      <node id="2762559889861739195" at="2659,101,2660,17" concept="0" />
-      <node id="2762559889861739195" at="2660,17,2661,22" concept="4" />
-      <node id="2762559889861739195" at="2656,0,2663,0" concept="6" trace="createDescriptorForISolve_block_1_1#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2762559889861739195" at="688,50,689,41" />
-      <scope id="2762559889861739195" at="2656,74,2661,22">
+      <node id="2762559889861739195" at="2663,74,2664,165" concept="3" />
+      <node id="2762559889861739195" at="2664,165,2665,19" concept="0" />
+      <node id="2762559889861739195" at="2665,19,2666,101" concept="0" />
+      <node id="2762559889861739195" at="2666,101,2667,17" concept="0" />
+      <node id="2762559889861739195" at="2667,17,2668,22" concept="4" />
+      <node id="2762559889861739195" at="2663,0,2670,0" concept="6" trace="createDescriptorForISolve_block_1_1#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2762559889861739195" at="690,50,691,41" />
+      <scope id="2762559889861739195" at="2663,74,2668,22">
         <var name="b" id="2762559889861739195" />
       </scope>
-      <scope id="2762559889861739195" at="2656,0,2663,0" />
+      <scope id="2762559889861739195" at="2663,0,2670,0" />
     </file>
   </root>
   <root nodeRef="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739196">
@@ -7312,37 +7312,37 @@
   </root>
   <root nodeRef="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739198">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2762559889861739198" at="174,0,175,0" concept="1" trace="props_ISolve_block_1_2" />
-      <node id="2762559889861739198" at="1539,45,1540,76" concept="3" />
-      <node id="2762559889861739198" at="1540,76,1541,48" concept="0" />
-      <node id="2762559889861739198" at="1542,9,1543,38" concept="4" />
-      <node id="2762559889861739198" at="1538,50,1542,9" concept="2" />
-      <scope id="2762559889861739198" at="1539,45,1541,48">
+      <node id="2762559889861739198" at="173,0,174,0" concept="1" trace="props_ISolve" />
+      <node id="2762559889861739198" at="1533,35,1534,76" concept="3" />
+      <node id="2762559889861739198" at="1534,76,1535,38" concept="0" />
+      <node id="2762559889861739198" at="1536,9,1537,28" concept="4" />
+      <node id="2762559889861739198" at="1532,40,1536,9" concept="2" />
+      <scope id="2762559889861739198" at="1533,35,1535,38">
         <var name="cpb" id="2762559889861739198" />
       </scope>
-      <scope id="2762559889861739198" at="1538,50,1543,38" />
+      <scope id="2762559889861739198" at="1532,40,1537,28" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2762559889861739198" at="174,0,175,0" concept="5" trace="ISolve_block_1_2" />
-      <node id="2762559889861739198" at="495,55,496,55" concept="0" />
+      <node id="2762559889861739198" at="173,0,174,0" concept="5" trace="ISolve" />
+      <node id="2762559889861739198" at="494,50,495,45" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2762559889861739198" at="181,0,182,0" concept="1" trace="myConceptISolve_block_1_2" />
-      <node id="2762559889861739198" at="690,50,691,41" concept="4" />
-      <node id="2762559889861739198" at="2663,74,2664,165" concept="3" />
-      <node id="2762559889861739198" at="2664,165,2665,19" concept="0" />
-      <node id="2762559889861739198" at="2665,19,2666,101" concept="0" />
-      <node id="2762559889861739198" at="2666,101,2667,17" concept="0" />
-      <node id="2762559889861739198" at="2667,17,2668,22" concept="4" />
+      <node id="2762559889861739198" at="180,0,181,0" concept="1" trace="myConceptISolve" />
+      <node id="2762559889861739198" at="688,40,689,31" concept="4" />
+      <node id="2762559889861739198" at="2656,64,2657,155" concept="3" />
+      <node id="2762559889861739198" at="2657,155,2658,19" concept="0" />
+      <node id="2762559889861739198" at="2658,19,2659,101" concept="0" />
+      <node id="2762559889861739198" at="2659,101,2660,17" concept="0" />
+      <node id="2762559889861739198" at="2660,17,2661,22" concept="4" />
       <node id="2762559889861739198" at="3032,116,3033,76" concept="0" />
       <node id="2762559889861739198" at="3044,116,3045,76" concept="0" />
       <node id="2762559889861739198" at="3731,116,3732,76" concept="0" />
-      <node id="2762559889861739198" at="2663,0,2670,0" concept="6" trace="createDescriptorForISolve_block_1_2#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2762559889861739198" at="690,50,691,41" />
-      <scope id="2762559889861739198" at="2663,74,2668,22">
+      <node id="2762559889861739198" at="2656,0,2663,0" concept="6" trace="createDescriptorForISolve#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2762559889861739198" at="688,40,689,31" />
+      <scope id="2762559889861739198" at="2656,64,2661,22">
         <var name="b" id="2762559889861739198" />
       </scope>
-      <scope id="2762559889861739198" at="2663,0,2670,0" />
+      <scope id="2762559889861739198" at="2656,0,2663,0" />
     </file>
   </root>
   <root nodeRef="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739199">

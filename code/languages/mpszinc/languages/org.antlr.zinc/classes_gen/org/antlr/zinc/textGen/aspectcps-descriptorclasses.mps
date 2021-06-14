@@ -646,7 +646,7 @@
   <node concept="312cEu" id="20">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Model_TextGen" />
-    <property role="3GE5qa" value="Rules.Model" />
+    <property role="3GE5qa" value="New.Solve.Objective" />
     <uo k="s:originTrace" v="n:3477777044401013371" />
     <node concept="3Tm1VV" id="21" role="1B3o_S">
       <uo k="s:originTrace" v="n:3477777044401013371" />
@@ -927,7 +927,7 @@
   <node concept="312cEu" id="3e">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Satisfy_TextGen" />
-    <property role="3GE5qa" value="Rules.Satisfy" />
+    <property role="3GE5qa" value="New.Satisfy" />
     <uo k="s:originTrace" v="n:1995101294038055322" />
     <node concept="3Tm1VV" id="3f" role="1B3o_S">
       <uo k="s:originTrace" v="n:1995101294038055322" />
@@ -1007,7 +1007,7 @@
   <node concept="312cEu" id="3z">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="Solve_TextGen" />
-    <property role="3GE5qa" value="Rules.Solve" />
+    <property role="3GE5qa" value="New.Solve" />
     <uo k="s:originTrace" v="n:1995101294038042773" />
     <node concept="3Tm1VV" id="3$" role="1B3o_S">
       <uo k="s:originTrace" v="n:1995101294038042773" />
