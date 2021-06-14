@@ -39,6 +39,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Model_TextGen();
       case LanguageConceptSwitch.ParRef:
         return new ParRef_TextGen();
+      case LanguageConceptSwitch.RealType:
+        return new RealType_TextGen();
       case LanguageConceptSwitch.Satisfy:
         return new Satisfy_TextGen();
       case LanguageConceptSwitch.Solve:

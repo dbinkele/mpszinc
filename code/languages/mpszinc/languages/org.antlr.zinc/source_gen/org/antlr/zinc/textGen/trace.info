@@ -12,8 +12,8 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="90,0,93,0" name="org.antlr.zinc.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,94,0" name="org.antlr.zinc.textGen.TextGenAspectDescriptor" />
+      <unit at="92,0,95,0" name="org.antlr.zinc.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="16,0,96,0" name="org.antlr.zinc.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/1995101294036622744">
@@ -52,8 +52,8 @@
       <unit id="1995101294038042773" at="12,0,25,0" name="org.antlr.zinc.textGen.Solve_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1995101294038042773" at="44,39,45,35" concept="6" />
-      <scope id="1995101294038042773" at="44,39,45,35" />
+      <node id="1995101294038042773" at="46,39,47,35" concept="6" />
+      <scope id="1995101294038042773" at="46,39,47,35" />
     </file>
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/1995101294038055322">
@@ -70,14 +70,14 @@
       <unit id="1995101294038055322" at="9,0,16,0" name="org.antlr.zinc.textGen.Satisfy_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="1995101294038055322" at="42,41,43,37" concept="6" />
-      <scope id="1995101294038055322" at="42,41,43,37" />
+      <node id="1995101294038055322" at="44,41,45,37" concept="6" />
+      <scope id="1995101294038055322" at="44,41,45,37" />
     </file>
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2076377354679650333">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2076377354679650333" at="60,41,61,37" concept="6" />
-      <scope id="2076377354679650333" at="60,41,61,37" />
+      <node id="2076377354679650333" at="62,41,63,37" concept="6" />
+      <scope id="2076377354679650333" at="62,41,63,37" />
     </file>
     <file name="ZIntDiv_TextGen.java">
       <node id="2076377354679650333" at="14,54,15,55" concept="5" />
@@ -185,10 +185,28 @@
       <scope id="2617570587153964848" at="28,44,29,40" />
     </file>
   </root>
+  <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2617570587156371716">
+    <file name="RealType_TextGen.java">
+      <node id="2617570587156371716" at="11,54,12,55" concept="5" />
+      <node id="2617570587156371757" at="12,55,13,24" concept="1" />
+      <node id="2617570587156371716" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2617570587156371716" at="11,54,13,24">
+        <var name="tgs" id="2617570587156371716" />
+      </scope>
+      <scope id="2617570587156371716" at="10,0,15,0">
+        <var name="ctx" id="2617570587156371716" />
+      </scope>
+      <unit id="2617570587156371716" at="9,0,16,0" name="org.antlr.zinc.textGen.RealType_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="2617570587156371716" at="42,42,43,38" concept="6" />
+      <scope id="2617570587156371716" at="42,42,43,38" />
+    </file>
+  </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576185810117">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576185810117" at="62,38,63,34" concept="6" />
-      <scope id="2935391576185810117" at="62,38,63,34" />
+      <node id="2935391576185810117" at="64,38,65,34" concept="6" />
+      <scope id="2935391576185810117" at="64,38,65,34" />
     </file>
     <file name="ZNot_TextGen.java">
       <node id="2935391576185810117" at="14,54,15,55" concept="5" />
@@ -209,8 +227,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576185947216">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576185947216" at="54,38,55,34" concept="6" />
-      <scope id="2935391576185947216" at="54,38,55,34" />
+      <node id="2935391576185947216" at="56,38,57,34" concept="6" />
+      <scope id="2935391576185947216" at="56,38,57,34" />
     </file>
     <file name="ZAnd_TextGen.java">
       <node id="2935391576185947216" at="14,54,15,55" concept="5" />
@@ -234,8 +252,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576188095134">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576188095134" at="64,37,65,33" concept="6" />
-      <scope id="2935391576188095134" at="64,37,65,33" />
+      <node id="2935391576188095134" at="66,37,67,33" concept="6" />
+      <scope id="2935391576188095134" at="66,37,67,33" />
     </file>
     <file name="ZOr_TextGen.java">
       <node id="2935391576188095134" at="14,54,15,55" concept="5" />
@@ -259,8 +277,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576189350402">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576189350402" at="66,38,67,34" concept="6" />
-      <scope id="2935391576189350402" at="66,38,67,34" />
+      <node id="2935391576189350402" at="68,38,69,34" concept="6" />
+      <scope id="2935391576189350402" at="68,38,69,34" />
     </file>
     <file name="ZXor_TextGen.java">
       <node id="2935391576189350402" at="14,54,15,55" concept="5" />
@@ -284,8 +302,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576191113880">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576191113880" at="56,38,57,34" concept="6" />
-      <scope id="2935391576191113880" at="56,38,57,34" />
+      <node id="2935391576191113880" at="58,38,59,34" concept="6" />
+      <scope id="2935391576191113880" at="58,38,59,34" />
     </file>
     <file name="ZIff_TextGen.java">
       <node id="2935391576191113880" at="14,54,15,55" concept="5" />
@@ -309,8 +327,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576191163857">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576191163857" at="58,42,59,38" concept="6" />
-      <scope id="2935391576191163857" at="58,42,59,38" />
+      <node id="2935391576191163857" at="60,42,61,38" concept="6" />
+      <scope id="2935391576191163857" at="60,42,61,38" />
     </file>
     <file name="ZImplies_TextGen.java">
       <node id="2935391576191163857" at="14,54,15,55" concept="5" />
@@ -334,8 +352,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/2935391576192425252">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2935391576192425252" at="50,40,51,36" concept="6" />
-      <scope id="2935391576192425252" at="50,40,51,36" />
+      <node id="2935391576192425252" at="52,40,53,36" concept="6" />
+      <scope id="2935391576192425252" at="52,40,53,36" />
     </file>
     <file name="VarRef_TextGen.java">
       <node id="2935391576192425252" at="16,54,17,55" concept="5" />
@@ -407,25 +425,25 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="3477777044401013371" at="38,39,39,35" concept="6" />
-      <node id="3477777044401013371" at="75,56,76,47" concept="5" />
-      <node id="3477777044401013371" at="76,47,77,50" concept="5" />
-      <node id="3477777044401013371" at="77,50,78,84" concept="1" />
-      <node id="3477777044401013371" at="78,84,79,17" concept="0" />
-      <node id="3477777044401013371" at="83,55,84,26" concept="6" />
-      <node id="3477777044401016142" at="86,60,87,17" concept="6" />
-      <node id="3477777044401013371" at="83,0,86,0" concept="9" trace="getFileName_Model#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3477777044401013371" at="86,0,89,0" concept="9" trace="getFileExtension_Model#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3477777044401013371" at="74,58,80,7" concept="3" />
+      <node id="3477777044401013371" at="77,56,78,47" concept="5" />
+      <node id="3477777044401013371" at="78,47,79,50" concept="5" />
+      <node id="3477777044401013371" at="79,50,80,84" concept="1" />
+      <node id="3477777044401013371" at="80,84,81,17" concept="0" />
+      <node id="3477777044401013371" at="85,55,86,26" concept="6" />
+      <node id="3477777044401016142" at="88,60,89,17" concept="6" />
+      <node id="3477777044401013371" at="85,0,88,0" concept="9" trace="getFileName_Model#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3477777044401013371" at="88,0,91,0" concept="9" trace="getFileExtension_Model#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3477777044401013371" at="76,58,82,7" concept="3" />
       <scope id="3477777044401013371" at="38,39,39,35" />
-      <scope id="3477777044401013371" at="83,55,84,26" />
-      <scope id="3477777044401013371" at="86,60,87,17" />
-      <scope id="3477777044401013371" at="83,0,86,0">
+      <scope id="3477777044401013371" at="85,55,86,26" />
+      <scope id="3477777044401013371" at="88,60,89,17" />
+      <scope id="3477777044401013371" at="85,0,88,0">
         <var name="node" id="3477777044401013371" />
       </scope>
-      <scope id="3477777044401013371" at="86,0,89,0">
+      <scope id="3477777044401013371" at="88,0,91,0">
         <var name="node" id="3477777044401013371" />
       </scope>
-      <scope id="3477777044401013371" at="75,56,79,17">
+      <scope id="3477777044401013371" at="77,56,81,17">
         <var name="ext" id="3477777044401013371" />
         <var name="fname" id="3477777044401013371" />
       </scope>
@@ -433,8 +451,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/3477777044401749868">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3477777044401749868" at="52,41,53,37" concept="6" />
-      <scope id="3477777044401749868" at="52,41,53,37" />
+      <node id="3477777044401749868" at="54,41,55,37" concept="6" />
+      <scope id="3477777044401749868" at="54,41,55,37" />
     </file>
     <file name="Varmark_TextGen.java">
       <node id="3477777044401749868" at="11,54,12,55" concept="5" />
@@ -451,8 +469,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/3477777044402147686">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3477777044402147686" at="48,45,49,41" concept="6" />
-      <scope id="3477777044402147686" at="48,45,49,41" />
+      <node id="3477777044402147686" at="50,45,51,41" concept="6" />
+      <scope id="3477777044402147686" at="50,45,51,41" />
     </file>
     <file name="VarDeclItem_TextGen.java">
       <node id="3477777044402147686" at="17,54,18,55" concept="5" />
@@ -485,8 +503,8 @@
   </root>
   <root nodeRef="r:94de9f5b-83f7-47aa-91c4-079dc4ac6961(org.antlr.zinc.textGen)/3477777044402158039">
     <file name="TextGenAspectDescriptor.java">
-      <node id="3477777044402158039" at="46,37,47,33" concept="6" />
-      <scope id="3477777044402158039" at="46,37,47,33" />
+      <node id="3477777044402158039" at="48,37,49,33" concept="6" />
+      <scope id="3477777044402158039" at="48,37,49,33" />
     </file>
     <file name="Var_TextGen.java">
       <node id="3477777044402158039" at="14,54,15,55" concept="5" />

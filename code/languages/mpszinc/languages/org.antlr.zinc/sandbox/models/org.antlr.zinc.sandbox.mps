@@ -159,6 +159,9 @@
       <property role="2TYDRh" value="Government regulations require that at least 30 bushels of corn need to be produced in each week. Formulate and solve an LP which maximizes the total revenue that Farmer Jones makes." />
     </node>
     <node concept="1Eg8j1" id="2hjuDitOtJJ" role="1EkkVG" />
+    <node concept="2TYDRg" id="2hjuDitXNEs" role="1EkkVG">
+      <property role="2TYDRh" value="Problems: TextGen translates to 'real' but minizinc needs 'float'." />
+    </node>
     <node concept="3MzzmJ" id="2hjuDitODRy" role="1EkkVG">
       <property role="TrG5h" value="x1" />
       <node concept="30bXLL" id="2hjuDitODRP" role="2zM23F" />

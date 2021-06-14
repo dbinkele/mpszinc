@@ -41,6 +41,10 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -1884,6 +1888,9 @@
       <node concept="l2Vlx" id="2pm_pl9WSwk" role="2iSdaV" />
       <node concept="3F0ifn" id="2pm_pl9WSwl" role="3EZMnx">
         <property role="3F0ifm" value="constraint" />
+        <node concept="VechU" id="2hjuDitQviD" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
       </node>
       <node concept="3F1sOY" id="2pm_pl9WSwm" role="3EZMnx">
         <property role="2ru_X1" value="true" />
@@ -3227,6 +3234,9 @@
       <node concept="l2Vlx" id="2pm_pl9WSBW" role="2iSdaV" />
       <node concept="3F0ifn" id="2pm_pl9WSBX" role="3EZMnx">
         <property role="3F0ifm" value="solve" />
+        <node concept="VechU" id="2hjuDitWkof" role="3F10Kt">
+          <property role="Vb096" value="fLwANPn/red" />
+        </node>
       </node>
       <node concept="3F1sOY" id="2pm_pl9WSC0" role="3EZMnx">
         <property role="2ru_X1" value="true" />
@@ -4268,6 +4278,9 @@
       <node concept="l2Vlx" id="2yWALof0YrL" role="2iSdaV" />
       <node concept="PMmxH" id="2yWALof0YrM" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="VechU" id="2hjuDitTpFJ" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2yWALof0YrN" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -4367,6 +4380,9 @@
       </node>
       <node concept="3F0A7n" id="2hjuDitEutN" role="3EZMnx">
         <ref role="1NtTu8" to="rpch:2hjuDitEut5" resolve="comment" />
+        <node concept="VechU" id="2hjuDitONzR" role="3F10Kt">
+          <property role="Vb096" value="fLwANPu/blue" />
+        </node>
       </node>
       <node concept="2iRfu4" id="2hjuDitEutA" role="2iSdaV" />
     </node>

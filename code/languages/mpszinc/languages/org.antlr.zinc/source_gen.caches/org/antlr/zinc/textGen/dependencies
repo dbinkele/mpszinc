@@ -75,6 +75,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="org.antlr.zinc.textGen.RealType_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="org.antlr.zinc.textGen.Satisfy_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
@@ -105,6 +111,7 @@
     <classNode dependClassName="org.antlr.zinc.textGen.Minimize_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Model_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.ParRef_TextGen" />
+    <classNode dependClassName="org.antlr.zinc.textGen.RealType_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Satisfy_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.Solve_TextGen" />
     <classNode dependClassName="org.antlr.zinc.textGen.VarDeclItem_TextGen" />
