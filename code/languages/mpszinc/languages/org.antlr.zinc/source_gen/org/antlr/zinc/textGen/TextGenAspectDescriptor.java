@@ -29,6 +29,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Constraint_TextGen();
       case LanguageConceptSwitch.EmptyStatement:
         return new EmptyStatement_TextGen();
+      case LanguageConceptSwitch.IntDivExpression:
+        return new IntDivExpression_TextGen();
       case LanguageConceptSwitch.Integer_1:
         return new Integer_1_TextGen();
       case LanguageConceptSwitch.Maximize:
@@ -39,8 +41,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Model_TextGen();
       case LanguageConceptSwitch.ParRef:
         return new ParRef_TextGen();
-      case LanguageConceptSwitch.RealType:
-        return new RealType_TextGen();
       case LanguageConceptSwitch.Satisfy:
         return new Satisfy_TextGen();
       case LanguageConceptSwitch.Solve:
@@ -59,8 +59,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new ZIff_TextGen();
       case LanguageConceptSwitch.ZImplies:
         return new ZImplies_TextGen();
-      case LanguageConceptSwitch.ZIntDiv:
-        return new ZIntDiv_TextGen();
       case LanguageConceptSwitch.ZNot:
         return new ZNot_TextGen();
       case LanguageConceptSwitch.ZOr:

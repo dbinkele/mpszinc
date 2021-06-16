@@ -2342,6 +2342,7 @@
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolOp_8" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolOp_9" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolS" />
+    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolType" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolVal_1" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolVal_2" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolVal_3" />
@@ -2400,6 +2401,7 @@
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Extended_block_1_1" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Extended_block_1_2" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Extendsmark" />
+    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_FloatType" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_FromR_1" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Function" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Function_block_1_1" />
@@ -2471,6 +2473,7 @@
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_InfixSetOp_2" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_InfixSetOp_3" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Init" />
+    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IntDivExpression" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IntS" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Integer_1" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_LetDecl_1" />
@@ -2607,8 +2610,8 @@
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZAnd" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZIff" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZImplies" />
-    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZIntDiv" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNot" />
+    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZOp" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZOr" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZXor" />
     <classNode dependClassName="org.antlr.zinc.editor.Guard_Editor" />
@@ -4443,6 +4446,24 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolType">
+    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
   <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_BoolVal_1">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
@@ -5470,6 +5491,24 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Extendsmark">
+    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_FloatType">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -6748,6 +6787,24 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Init">
+    <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_IntDivExpression">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -9215,7 +9272,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZIntDiv">
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNot">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -9233,7 +9290,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZNot">
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_ZOp">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -9245,7 +9302,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SInterfaceConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />

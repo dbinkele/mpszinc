@@ -60,6 +60,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BoolOp_8;
   private ConceptPresentation props_BoolOp_9;
   private ConceptPresentation props_BoolS;
+  private ConceptPresentation props_BoolType;
   private ConceptPresentation props_BoolVal_1;
   private ConceptPresentation props_BoolVal_2;
   private ConceptPresentation props_BoolVal_3;
@@ -118,6 +119,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Extended_block_1_1;
   private ConceptPresentation props_Extended_block_1_2;
   private ConceptPresentation props_Extendsmark;
+  private ConceptPresentation props_FloatType;
   private ConceptPresentation props_FromR_1;
   private ConceptPresentation props_Function;
   private ConceptPresentation props_Function_block_1_1;
@@ -189,6 +191,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_InfixSetOp_2;
   private ConceptPresentation props_InfixSetOp_3;
   private ConceptPresentation props_Init;
+  private ConceptPresentation props_IntDivExpression;
   private ConceptPresentation props_IntS;
   private ConceptPresentation props_Integer_1;
   private ConceptPresentation props_LetDecl_1;
@@ -323,10 +326,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Varmark;
   private ConceptPresentation props_WhereCond;
   private ConceptPresentation props_ZAnd;
+  private ConceptPresentation props_ZEqualsExpression;
   private ConceptPresentation props_ZIff;
   private ConceptPresentation props_ZImplies;
-  private ConceptPresentation props_ZIntDiv;
   private ConceptPresentation props_ZNot;
+  private ConceptPresentation props_ZOp;
   private ConceptPresentation props_ZOr;
   private ConceptPresentation props_ZXor;
 
@@ -741,6 +745,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BoolS = cpb.create();
         }
         return props_BoolS;
+      case LanguageConceptSwitch.BoolType:
+        if (props_BoolType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("boolean type ");
+          cpb.rawPresentation("bool");
+          props_BoolType = cpb.create();
+        }
+        return props_BoolType;
       case LanguageConceptSwitch.BoolVal_1:
         if (props_BoolVal_1 == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -1203,6 +1215,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Extendsmark = cpb.create();
         }
         return props_Extendsmark;
+      case LanguageConceptSwitch.FloatType:
+        if (props_FloatType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("numeric type ");
+          cpb.rawPresentation("float");
+          props_FloatType = cpb.create();
+        }
+        return props_FloatType;
       case LanguageConceptSwitch.FromR_1:
         if (props_FromR_1 == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -1667,6 +1687,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Init = cpb.create();
         }
         return props_Init;
+      case LanguageConceptSwitch.IntDivExpression:
+        if (props_IntDivExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("integer division");
+          cpb.rawPresentation("div");
+          props_IntDivExpression = cpb.create();
+        }
+        return props_IntDivExpression;
       case LanguageConceptSwitch.IntS:
         if (props_IntS == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2733,6 +2761,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZAnd = cpb.create();
         }
         return props_ZAnd;
+      case LanguageConceptSwitch.ZEqualsExpression:
+        if (props_ZEqualsExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("=");
+          props_ZEqualsExpression = cpb.create();
+        }
+        return props_ZEqualsExpression;
       case LanguageConceptSwitch.ZIff:
         if (props_ZIff == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2747,13 +2782,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZImplies = cpb.create();
         }
         return props_ZImplies;
-      case LanguageConceptSwitch.ZIntDiv:
-        if (props_ZIntDiv == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("div");
-          props_ZIntDiv = cpb.create();
-        }
-        return props_ZIntDiv;
       case LanguageConceptSwitch.ZNot:
         if (props_ZNot == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -2761,6 +2789,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ZNot = cpb.create();
         }
         return props_ZNot;
+      case LanguageConceptSwitch.ZOp:
+        if (props_ZOp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ZOp = cpb.create();
+        }
+        return props_ZOp;
       case LanguageConceptSwitch.ZOr:
         if (props_ZOr == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
