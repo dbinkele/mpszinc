@@ -73,7 +73,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="1IK1wTM2bo0">
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="New" />
     <ref role="13h7C2" to="rpch:2pm_pl9WS9x" resolve="IStat" />
     <node concept="13hLZK" id="1IK1wTM2bo1" role="13h7CW">
       <node concept="3clFbS" id="1IK1wTM2bo2" role="2VODD2" />

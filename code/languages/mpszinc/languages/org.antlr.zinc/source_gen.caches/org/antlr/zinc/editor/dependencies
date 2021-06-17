@@ -1958,14 +1958,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.Decl_1_Editor">
+  <dependency className="org.antlr.zinc.editor.Decl_2_Editor">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.antlr.zinc.editor.Decl_1_EditorBuilder_a" />
+    <classNode dependClassName="org.antlr.zinc.editor.Decl_2_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.Decl_1_EditorBuilder_a">
+  <dependency className="org.antlr.zinc.editor.Decl_2_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
@@ -1985,14 +1985,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.Decl_2_Editor">
+  <dependency className="org.antlr.zinc.editor.Decl_Editor">
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.antlr.zinc.editor.Decl_2_EditorBuilder_a" />
+    <classNode dependClassName="org.antlr.zinc.editor.Decl_EditorBuilder_a" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.Decl_2_EditorBuilder_a">
+  <dependency className="org.antlr.zinc.editor.Decl_EditorBuilder_a">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
@@ -2257,8 +2257,8 @@
     <classNode dependClassName="org.antlr.zinc.editor.Constraint_Editor" />
     <classNode dependClassName="org.antlr.zinc.editor.Data_Editor" />
     <classNode dependClassName="org.antlr.zinc.editor.Data_block_1_1_Editor" />
-    <classNode dependClassName="org.antlr.zinc.editor.Decl_1_Editor" />
     <classNode dependClassName="org.antlr.zinc.editor.Decl_2_Editor" />
+    <classNode dependClassName="org.antlr.zinc.editor.Decl_Editor" />
     <classNode dependClassName="org.antlr.zinc.editor.Dimensions_Editor" />
     <classNode dependClassName="org.antlr.zinc.editor.Dimensions_block_1_1_1_Editor" />
     <classNode dependClassName="org.antlr.zinc.editor.Dimensions_block_1_1_2_Editor" />
@@ -2372,7 +2372,7 @@
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Constraint" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Data" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Data_block_1_1" />
-    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Decl_1" />
+    <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Decl" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Decl_2" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Dimensions" />
     <classNode dependClassName="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Dimensions_block_1_1_1" />
@@ -4987,7 +4987,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
-  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Decl_1">
+  <dependency className="org.antlr.zinc.editor.GrammarCellsSubstituteMenu_Decl">
     <classNode dependClassName="com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.ArrayList" />

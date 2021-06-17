@@ -1975,7 +1975,7 @@
   <node concept="PlHQZ" id="2pm_pl9WS9x">
     <property role="EcuMT" value="2762559889861739105" />
     <property role="TrG5h" value="IStat" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="New" />
   </node>
   <node concept="1TIwiD" id="2pm_pl9WS9y">
     <property role="EcuMT" value="2762559889861739106" />
@@ -2809,14 +2809,14 @@
   </node>
   <node concept="1TIwiD" id="2pm_pl9WSap">
     <property role="EcuMT" value="2762559889861739161" />
-    <property role="TrG5h" value="Decl_1" />
+    <property role="TrG5h" value="Decl" />
     <property role="34LRSv" value="Vardecl decl" />
     <property role="R4oN_" value="Decl" />
     <property role="3GE5qa" value="Rules.Decl" />
     <ref role="1TJDcQ" node="2pm_pl9WS7Q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2pm_pl9WSfl" role="1TKVEi">
       <property role="IQ2ns" value="2762559889861739477" />
-      <property role="20kJfa" value="Vardecl_1" />
+      <property role="20kJfa" value="vardeclItem" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2pm_pl9WS95" resolve="VarDeclItem" />

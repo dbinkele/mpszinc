@@ -180,7 +180,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 78:
         return Collections.<ConceptEditor>singletonList(new Data_block_1_1_Editor());
       case 79:
-        return Collections.<ConceptEditor>singletonList(new Decl_1_Editor());
+        return Collections.<ConceptEditor>singletonList(new Decl_Editor());
       case 80:
         return Collections.<ConceptEditor>singletonList(new Decl_2_Editor());
       case 81:
@@ -748,7 +748,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 80:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Data_block_1_1());
       case 81:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Decl_1());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Decl());
       case 82:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Decl_2());
       case 83:

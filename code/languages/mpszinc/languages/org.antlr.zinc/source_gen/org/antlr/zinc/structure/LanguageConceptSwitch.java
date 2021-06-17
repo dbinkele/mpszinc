@@ -90,7 +90,7 @@ public final class LanguageConceptSwitch {
   public static final int Constraint = 78;
   public static final int Data = 79;
   public static final int Data_block_1_1 = 80;
-  public static final int Decl_1 = 81;
+  public static final int Decl = 81;
   public static final int Decl_2 = 82;
   public static final int Dimensions = 83;
   public static final int Dimensions_block_1_1_1 = 84;
@@ -417,7 +417,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2656959549f38276L, Constraint);
     builder.put(0x2656959549f3829bL, Data);
     builder.put(0x2656959549f38227L, Data_block_1_1);
-    builder.put(0x2656959549f38299L, Decl_1);
+    builder.put(0x2656959549f38299L, Decl);
     builder.put(0x2656959549f3829aL, Decl_2);
     builder.put(0x2656959549f38294L, Dimensions);
     builder.put(0x2656959549f3826dL, Dimensions_block_1_1_1);

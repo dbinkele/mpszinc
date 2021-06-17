@@ -2371,12 +2371,12 @@
   </node>
   <node concept="24kQdi" id="2pm_pl9WSyY">
     <property role="3GE5qa" value="Rules.Decl" />
-    <ref role="1XX52x" to="rpch:2pm_pl9WSap" resolve="Decl_1" />
+    <ref role="1XX52x" to="rpch:2pm_pl9WSap" resolve="Decl" />
     <node concept="3EZMnI" id="2pm_pl9WSyZ" role="2wV5jI">
       <node concept="l2Vlx" id="2pm_pl9WSz0" role="2iSdaV" />
       <node concept="3F1sOY" id="2pm_pl9WSz1" role="3EZMnx">
         <property role="2ru_X1" value="true" />
-        <ref role="1NtTu8" to="rpch:2pm_pl9WSfl" resolve="Vardecl_1" />
+        <ref role="1NtTu8" to="rpch:2pm_pl9WSfl" resolve="vardeclItem" />
         <node concept="3F0ifn" id="2pm_pl9WSz2" role="2ruayu">
           <property role="3F0ifm" value=" " />
         </node>

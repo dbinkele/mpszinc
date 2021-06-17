@@ -6172,36 +6172,36 @@
   </root>
   <root nodeRef="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739161">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2762559889861739161" at="93,0,94,0" concept="1" trace="props_Decl_1" />
-      <node id="2762559889861739161" at="988,35,989,76" concept="3" />
+      <node id="2762559889861739161" at="93,0,94,0" concept="1" trace="props_Decl" />
+      <node id="2762559889861739161" at="988,33,989,76" concept="3" />
       <node id="2762559889861739161" at="989,76,990,32" concept="0" />
       <node id="2762559889861739161" at="990,32,991,46" concept="0" />
-      <node id="2762559889861739161" at="991,46,992,38" concept="0" />
-      <node id="2762559889861739161" at="993,9,994,28" concept="4" />
-      <node id="2762559889861739161" at="987,40,993,9" concept="2" />
-      <scope id="2762559889861739161" at="988,35,992,38">
+      <node id="2762559889861739161" at="991,46,992,36" concept="0" />
+      <node id="2762559889861739161" at="993,9,994,26" concept="4" />
+      <node id="2762559889861739161" at="987,38,993,9" concept="2" />
+      <scope id="2762559889861739161" at="988,33,992,36">
         <var name="cpb" id="2762559889861739161" />
       </scope>
-      <scope id="2762559889861739161" at="987,40,994,28" />
+      <scope id="2762559889861739161" at="987,38,994,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2762559889861739161" at="93,0,94,0" concept="5" trace="Decl_1" />
-      <node id="2762559889861739161" at="419,53,420,45" concept="0" />
+      <node id="2762559889861739161" at="93,0,94,0" concept="5" trace="Decl" />
+      <node id="2762559889861739161" at="419,53,420,43" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2762559889861739161" at="101,0,102,0" concept="1" trace="myConceptDecl_1" />
-      <node id="2762559889861739161" at="535,40,536,31" concept="4" />
-      <node id="2762559889861739161" at="1984,64,1985,155" concept="3" />
-      <node id="2762559889861739161" at="1985,155,1986,34" concept="0" />
+      <node id="2762559889861739161" at="101,0,102,0" concept="1" trace="myConceptDecl" />
+      <node id="2762559889861739161" at="535,38,536,29" concept="4" />
+      <node id="2762559889861739161" at="1984,62,1985,153" concept="3" />
+      <node id="2762559889861739161" at="1985,153,1986,34" concept="0" />
       <node id="2762559889861739161" at="1986,34,1987,116" concept="0" />
       <node id="2762559889861739161" at="1987,116,1988,101" concept="0" />
       <node id="2762559889861739161" at="1988,101,1989,17" concept="0" />
-      <node id="2762559889861739477" at="1989,17,1990,203" concept="0" />
-      <node id="2762559889861739161" at="1990,203,1991,28" concept="0" />
+      <node id="2762559889861739477" at="1989,17,1990,205" concept="0" />
+      <node id="2762559889861739161" at="1990,205,1991,28" concept="0" />
       <node id="2762559889861739161" at="1991,28,1992,22" concept="4" />
-      <node id="2762559889861739161" at="1984,0,1994,0" concept="6" trace="createDescriptorForDecl_1#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2762559889861739161" at="535,40,536,31" />
-      <scope id="2762559889861739161" at="1984,64,1992,22">
+      <node id="2762559889861739161" at="1984,0,1994,0" concept="6" trace="createDescriptorForDecl#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2762559889861739161" at="535,38,536,29" />
+      <scope id="2762559889861739161" at="1984,62,1992,22">
         <var name="b" id="2762559889861739161" />
       </scope>
       <scope id="2762559889861739161" at="1984,0,1994,0" />
@@ -6223,7 +6223,7 @@
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2762559889861739162" at="94,0,95,0" concept="5" trace="Decl_2" />
-      <node id="2762559889861739162" at="420,45,421,45" concept="0" />
+      <node id="2762559889861739162" at="420,43,421,45" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2762559889861739162" at="102,0,103,0" concept="1" trace="myConceptDecl_2" />

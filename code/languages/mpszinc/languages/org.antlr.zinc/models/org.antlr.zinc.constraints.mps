@@ -112,7 +112,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="313yWIVwO5I">
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="New" />
     <ref role="1M2myG" to="rpch:2pm_pl9WS9x" resolve="IStat" />
   </node>
   <node concept="1M2fIO" id="313yWIVwSOF">

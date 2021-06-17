@@ -90,7 +90,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Constraint;
   private ConceptPresentation props_Data;
   private ConceptPresentation props_Data_block_1_1;
-  private ConceptPresentation props_Decl_1;
+  private ConceptPresentation props_Decl;
   private ConceptPresentation props_Decl_2;
   private ConceptPresentation props_Dimensions;
   private ConceptPresentation props_Dimensions_block_1_1_1;
@@ -984,14 +984,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Data_block_1_1 = cpb.create();
         }
         return props_Data_block_1_1;
-      case LanguageConceptSwitch.Decl_1:
-        if (props_Decl_1 == null) {
+      case LanguageConceptSwitch.Decl:
+        if (props_Decl == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Decl");
           cpb.rawPresentation("Vardecl decl");
-          props_Decl_1 = cpb.create();
+          props_Decl = cpb.create();
         }
-        return props_Decl_1;
+        return props_Decl;
       case LanguageConceptSwitch.Decl_2:
         if (props_Decl_2 == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
