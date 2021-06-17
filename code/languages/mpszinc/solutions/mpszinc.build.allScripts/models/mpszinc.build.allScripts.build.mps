@@ -51,6 +51,9 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+        <child id="7389400916848037006" name="children" index="39821P" />
+      </concept>
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
       </concept>
@@ -67,6 +70,9 @@
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
+      </concept>
+      <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
+        <reference id="1265949165890536425" name="module" index="L2wRA" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
@@ -121,7 +127,7 @@
         <property role="TrG5h" value="mpszinc.build" />
         <property role="3LESm3" value="9d837ef4-0cdd-4886-96d4-0d9366c28444" />
         <node concept="398BVA" id="3_zi6dBMvPj" role="3LF7KH">
-          <ref role="398BVh" node="5wLtKNeTaqD" resolve="hansebloc.home" />
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="mpszinc.home" />
           <node concept="2Ry0Ak" id="3_zi6dBMvPn" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="2pN$LORI$pK" role="2Ry0An">
@@ -158,7 +164,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="610BU7WKS9Q" role="1HemKq">
             <node concept="398BVA" id="610BU7WKS9E" role="3LXTmr">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="hansebloc.home" />
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="mpszinc.home" />
               <node concept="2Ry0Ak" id="610BU7WKS9F" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="610BU7WKS9G" role="2Ry0An">
@@ -175,7 +181,7 @@
           </node>
           <node concept="3LXTmp" id="2pN$LORI$pZ" role="1HemKq">
             <node concept="398BVA" id="2pN$LORI$pO" role="3LXTmr">
-              <ref role="398BVh" node="5wLtKNeTaqD" resolve="hansebloc.home" />
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="mpszinc.home" />
               <node concept="2Ry0Ak" id="2pN$LORI$pP" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="2pN$LORI$pQ" role="2Ry0An">
@@ -218,7 +224,7 @@
       </node>
     </node>
     <node concept="398rNT" id="3_zi6dBMuQB" role="1l3spd">
-      <property role="TrG5h" value="hansebloc.git.home" />
+      <property role="TrG5h" value="mpszinc" />
       <node concept="55IIr" id="3_zi6dBMuQE" role="398pKh">
         <node concept="2Ry0Ak" id="3_zi6dBMuQH" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -231,7 +237,7 @@
     <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="398BVA" id="1_mH9Af1yv6" role="398pKh">
-        <ref role="398BVh" node="3_zi6dBMuQB" resolve="hansebloc.git.home" />
+        <ref role="398BVh" node="3_zi6dBMuQB" resolve="mpszinc" />
         <node concept="2Ry0Ak" id="1_mH9Af1yv9" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="3_zi6dBMva5" role="2Ry0An">
@@ -243,7 +249,7 @@
     <node concept="398rNT" id="1Y5vs7yKdNe" role="1l3spd">
       <property role="TrG5h" value="dependencies.root" />
       <node concept="398BVA" id="1Y5vs7yKdUU" role="398pKh">
-        <ref role="398BVh" node="3_zi6dBMuQB" resolve="hansebloc.git.home" />
+        <ref role="398BVh" node="3_zi6dBMuQB" resolve="mpszinc" />
         <node concept="2Ry0Ak" id="jS_CvxPGTA" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="jS_CvxPGUn" role="2Ry0An">
@@ -253,7 +259,7 @@
       </node>
     </node>
     <node concept="398rNT" id="5wLtKNeTaqD" role="1l3spd">
-      <property role="TrG5h" value="hansebloc.home" />
+      <property role="TrG5h" value="mpszinc.home" />
       <node concept="55IIr" id="5wLtKNeTarb" role="398pKh">
         <node concept="2Ry0Ak" id="5wLtKNeTarg" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -275,7 +281,11 @@
     <node concept="10PD9b" id="3_zi6dBMuJy" role="10PD9s" />
     <node concept="3b7kt6" id="3_zi6dBMuQx" role="10PD9s" />
     <node concept="55IIr" id="3_zi6dBMuJu" role="auvoZ" />
-    <node concept="1l3spV" id="3_zi6dBMuJv" role="1l3spN" />
+    <node concept="1l3spV" id="3_zi6dBMuJv" role="1l3spN">
+      <node concept="L2wRC" id="7RIE_vPMkcZ" role="39821P">
+        <ref role="L2wRA" node="3_zi6dBMvPf" resolve="mpszinc.build" />
+      </node>
+    </node>
   </node>
 </model>
 

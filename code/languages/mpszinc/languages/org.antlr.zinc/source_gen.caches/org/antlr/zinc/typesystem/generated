@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-ee7o4vav10jxwodsgkvup9vvvvkdrsz">
+<product version="3" modelHash="-8gq3jpzg99sk0u078sso2eti6r011wq">
   <files names="FloatTypeisRealType_SubtypingRule.java:IsBooleanType_SubtypingRule.java:TypesystemDescriptor.java:check_VarDeclItem_NonTypesystemRule.java:check_VarDecl_NonTypesystemRule.java:typeof_BoolType_InferenceRule.java:typeof_CommentExpression_InferenceRule.java:typeof_FloatType_InferenceRule.java:typeof_VarRef_InferenceRule.java" />
 </product>
 

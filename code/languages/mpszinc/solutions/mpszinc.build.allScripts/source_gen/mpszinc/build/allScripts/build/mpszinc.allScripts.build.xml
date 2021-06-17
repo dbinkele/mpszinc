@@ -3,10 +3,10 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/mpszinc.allScripts.build" />
   <property name="build.layout" location="${build.dir}/artifacts/mpszinc.allScripts.build" />
-  <property name="hansebloc.git.home" location="${basedir}/../.." />
-  <property name="mps.home" location="${hansebloc.git.home}/build/mps" />
-  <property name="dependencies.root" location="${hansebloc.git.home}/build/dependencies" />
-  <property name="hansebloc.home" location="${basedir}/../../code/languages/mpszinc" />
+  <property name="mpszinc" location="${basedir}/../.." />
+  <property name="mps.home" location="${mpszinc}/build/mps" />
+  <property name="dependencies.root" location="${mpszinc}/build/dependencies" />
+  <property name="mpszinc.home" location="${basedir}/../../code/languages/mpszinc" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.platform" location="${dependencies.root}/com.mbeddr.platform" />
   <property name="artifacts.org.iets3.opensource" location="${dependencies.root}/org.iets3.opensource" />
@@ -47,6 +47,49 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
+    <mkdir dir="${build.tmp}/default/mpszinc.build.jar" />
+    <mkdir dir="${build.tmp}/default/mpszinc.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/mpszinc.build.jar/META-INF/module.xml">
+      <module namespace="mpszinc.build" type="solution" uuid="9d837ef4-0cdd-4886-96d4-0d9366c28444">
+        <dependencies>
+          <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
+          <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
+          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+          <module ref="31dfb853-8304-435d-b27c-e29ef9a627cf(org.iets3.opensource.build)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
+          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
+          <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="mpszinc.build-src.jar" descriptor="mpszinc.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/mpszinc.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/mpszinc.build" />
+      <fileset dir="${mpszinc.home}/solutions/mpszinc.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/mpszinc.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-hansebloc.build-models">
+      <fileset dir="${mpszinc.home}/solutions/hansebloc.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-mpszinc.build-models">
+      <fileset dir="${mpszinc.home}/solutions/mpszinc.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/mpszinc.build-src.jar" duplicate="preserve">
+      <fileset dir="${mpszinc.home}/solutions/mpszinc.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${mpszinc.home}/solutions/mpszinc.build/mpszinc.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-hansebloc.build-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-mpszinc.build-models" prefix="module/models" />
+    </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}org.iets3.opensource.minor=${org.iets3.opensource.minor}${line.separator}org.iets3.opensource.major=${org.iets3.opensource.major}${line.separator}org.iets3.opensource.build=${org.iets3.opensource.build}${line.separator}org.iets3.opensource.version=${org.iets3.opensource.version}</echo>
   </target>
   
@@ -182,16 +225,16 @@
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.runtime.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <chunk>
-        <module file="${hansebloc.home}/solutions/mpszinc.build/mpszinc.build.msd" />
+        <module file="${mpszinc.home}/solutions/mpszinc.build/mpszinc.build.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="hansebloc.git.home" path="${hansebloc.git.home}" />
+      <macro name="mpszinc" path="${mpszinc}" />
       <macro name="mps.home" path="${mps.home}" />
       <macro name="dependencies.root" path="${dependencies.root}" />
-      <macro name="hansebloc.home" path="${hansebloc.home}" />
+      <macro name="mpszinc.home" path="${mpszinc.home}" />
     </generate>
   </target>
   
@@ -202,12 +245,12 @@
   <target name="makeDependents" />
   
   <target name="java.compile.mpszinc.build">
-    <mkdir dir="${hansebloc.home}/solutions/mpszinc.build/source_gen" />
+    <mkdir dir="${mpszinc.home}/solutions/mpszinc.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mpszinc.build" />
     <javac destdir="${build.tmp}/java/out/mpszinc.build" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${hansebloc.home}/solutions/mpszinc.build/source_gen" />
+        <path location="${mpszinc.home}/solutions/mpszinc.build/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
@@ -216,13 +259,13 @@
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/mpszinc.build">
-      <fileset dir="${hansebloc.home}/solutions/mpszinc.build/source_gen">
+      <fileset dir="${mpszinc.home}/solutions/mpszinc.build/source_gen">
         <include name="**/*.info" />
       </fileset>
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${hansebloc.home}/solutions/mpszinc.build/source_gen" />
+    <delete dir="${mpszinc.home}/solutions/mpszinc.build/source_gen" />
   </target>
 </project>

@@ -4,7 +4,6 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -43,6 +42,7 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -52,6 +52,9 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
@@ -637,7 +640,7 @@
         <node concept="3F0ifn" id="313yWIV$9_k" role="3EZMnx">
           <property role="3F0ifm" value="Name:" />
           <node concept="VechU" id="54RZRM62Ibp" role="3F10Kt">
-            <property role="Vb096" value="fLwANPo/pink" />
+            <property role="Vb096" value="fLwANPp/orange" />
           </node>
         </node>
         <node concept="3F0A7n" id="54RZRM62Ibl" role="3EZMnx">
@@ -3239,6 +3242,9 @@
         <property role="3F0ifm" value="solve" />
         <node concept="VechU" id="2hjuDitWkof" role="3F10Kt">
           <property role="Vb096" value="fLwANPn/red" />
+          <node concept="1iSF2X" id="2vybEKfhA22" role="VblUZ">
+            <property role="1iTho6" value="fa4911" />
+          </node>
         </node>
       </node>
       <node concept="3F1sOY" id="2pm_pl9WSC0" role="3EZMnx">
