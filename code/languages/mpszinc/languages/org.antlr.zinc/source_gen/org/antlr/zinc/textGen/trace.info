@@ -39,10 +39,10 @@
       <node id="1995101294038042773" at="14,54,15,55" concept="5" />
       <node id="1995101294038053401" at="15,55,16,24" concept="1" />
       <node id="1995101294038061867" at="16,24,17,20" concept="1" />
-      <node id="1995101294038053469" at="17,20,18,99" concept="1" />
-      <node id="1995101294038042773" at="22,0,23,0" concept="8" trace="Solve_block_1_2_2$qpv6" />
+      <node id="1995101294038053469" at="17,20,18,91" concept="1" />
+      <node id="1995101294038042773" at="22,0,23,0" concept="8" trace="SolveType$qpv6" />
       <node id="1995101294038042773" at="13,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="1995101294038042773" at="14,54,18,99">
+      <scope id="1995101294038042773" at="14,54,18,91">
         <var name="tgs" id="1995101294038042773" />
       </scope>
       <scope id="1995101294038042773" at="13,0,20,0">

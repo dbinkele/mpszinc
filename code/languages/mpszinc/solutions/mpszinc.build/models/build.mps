@@ -109,6 +109,9 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
         <property id="8137134783396676838" name="extracted" index="1HemKv" />
@@ -339,6 +342,31 @@
         <node concept="1SiIV0" id="5ZHf8wxtpCg" role="3bR37C">
           <node concept="3bR9La" id="5ZHf8wxtpCh" role="1SiIV1">
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.libs" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="54RZRM64hv4" role="3bR31x">
+          <node concept="3LXTmp" id="54RZRM64hv5" role="3rtmxm">
+            <node concept="398BVA" id="54RZRM64hv6" role="3LXTmr">
+              <ref role="398BVh" node="3_zi6dBMvSP" resolve="mpszinc.home" />
+              <node concept="2Ry0Ak" id="54RZRM64hv7" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="54RZRM64hv8" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="54RZRM64hv9" role="2Ry0An">
+                    <property role="2Ry0Am" value="mpszinc" />
+                    <node concept="2Ry0Ak" id="54RZRM64hva" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="54RZRM64hvb" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.antlr.zinc" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="54RZRM64hvd" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>

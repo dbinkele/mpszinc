@@ -636,8 +636,11 @@
         <node concept="2iRfu4" id="313yWIV$9_i" role="2iSdaV" />
         <node concept="3F0ifn" id="313yWIV$9_k" role="3EZMnx">
           <property role="3F0ifm" value="Name:" />
+          <node concept="VechU" id="54RZRM62Ibp" role="3F10Kt">
+            <property role="Vb096" value="fLwANPo/pink" />
+          </node>
         </node>
-        <node concept="3F0A7n" id="313yWIVzqqE" role="3EZMnx">
+        <node concept="3F0A7n" id="54RZRM62Ibl" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
@@ -3240,7 +3243,7 @@
       </node>
       <node concept="3F1sOY" id="2pm_pl9WSC0" role="3EZMnx">
         <property role="2ru_X1" value="true" />
-        <ref role="1NtTu8" to="rpch:2pm_pl9WSgl" resolve="Solve_block_1_2_2" />
+        <ref role="1NtTu8" to="rpch:2pm_pl9WSgl" resolve="SolveType" />
         <node concept="3F0ifn" id="2pm_pl9WSC1" role="2ruayu">
           <property role="3F0ifm" value=" " />
         </node>

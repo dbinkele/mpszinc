@@ -313,7 +313,7 @@
             <node concept="2OqwBi" id="1IK1wTM3Rkt" role="lb14g">
               <node concept="117lpO" id="1IK1wTM3Rak" role="2Oq$k0" />
               <node concept="3TrEf2" id="1IK1wTM3Rx7" role="2OqNvi">
-                <ref role="3Tt5mk" to="rpch:2pm_pl9WSgl" resolve="Solve_block_1_2_2" />
+                <ref role="3Tt5mk" to="rpch:2pm_pl9WSgl" resolve="SolveType" />
               </node>
             </node>
           </node>

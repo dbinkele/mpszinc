@@ -3943,7 +3943,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f38261L);
     b.origin("r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)/2762559889861739225");
     b.version(2);
-    b.aggregate("Solve_block_1_2_2", 0x2656959549f38415L).target(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382beL).optional(false).ordered(true).multiple(false).origin("2762559889861739541").done();
+    b.aggregate("SolveType", 0x2656959549f38415L).target(0xd84d0ef936eb4841L, 0xbd7c5b126eb1e2b4L, 0x2656959549f382beL).optional(false).ordered(true).multiple(false).origin("2762559889861739541").done();
     b.alias("solve");
     return b.create();
   }

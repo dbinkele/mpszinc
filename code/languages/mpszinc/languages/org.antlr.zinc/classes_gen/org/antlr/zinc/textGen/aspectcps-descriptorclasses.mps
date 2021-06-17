@@ -1810,7 +1810,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="75" role="2OqNvi">
-                  <ref role="3Tt5mk" to="rpch:2pm_pl9WSgl" resolve="Solve_block_1_2_2" />
+                  <ref role="3Tt5mk" to="rpch:2pm_pl9WSgl" resolve="SolveType" />
                   <uo k="s:originTrace" v="n:1995101294038054983" />
                 </node>
               </node>
