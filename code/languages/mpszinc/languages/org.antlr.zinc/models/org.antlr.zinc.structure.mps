@@ -5336,6 +5336,9 @@
     <property role="34LRSv" value="float" />
     <property role="R4oN_" value="numeric type " />
     <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+    <node concept="PrWs8" id="5Hztbtxgeza" role="PzmwI">
+      <ref role="PrY4T" node="5HztbtxgbK1" resolve="IOptionallyRanged" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5ZHf8wxyQha">
     <property role="TrG5h" value="ZOp" />
@@ -5356,6 +5359,49 @@
     <property role="TrG5h" value="ZEqualsExpression" />
     <property role="34LRSv" value="=" />
     <ref role="1TJDcQ" to="hm2y:4rZeNQ6N6R9" resolve="EqualsExpression" />
+  </node>
+  <node concept="PlHQZ" id="5HztbtxgbK1">
+    <property role="TrG5h" value="IOptionallyRanged" />
+    <property role="3GE5qa" value="New.Types" />
+    <property role="34LRSv" value="bool" />
+    <property role="R4oN_" value="boolean type " />
+    <property role="EcuMT" value="6585235411105266689" />
+    <node concept="1TJgyj" id="5HztbtxgbSU" role="1TKVEi">
+      <property role="IQ2ns" value="6585235411105267258" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="range" />
+      <ref role="20lvS9" node="5HztbtxgemB" resolve="ZincRangeSpec" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HztbtxgemB">
+    <property role="EcuMT" value="6585235411105277351" />
+    <property role="3GE5qa" value="New.Types" />
+    <property role="TrG5h" value="ZincRangeSpec" />
+    <property role="34LRSv" value="range" />
+    <property role="R4oN_" value=" " />
+    <node concept="1TJgyj" id="5HztbtxgemD" role="1TKVEi">
+      <property role="IQ2ns" value="6585235411105277353" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="min" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5HztbtxgemF" role="1TKVEi">
+      <property role="IQ2ns" value="6585235411105277355" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="max" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HztbtxB232">
+    <property role="EcuMT" value="6585235411111256258" />
+    <property role="3GE5qa" value="New.Types" />
+    <property role="TrG5h" value="ZincIntType" />
+    <property role="34LRSv" value="int" />
+    <property role="R4oN_" value="integer type " />
+    <ref role="1TJDcQ" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+    <node concept="PrWs8" id="5HztbtxB233" role="PzmwI">
+      <ref role="PrY4T" node="5HztbtxgbK1" resolve="IOptionallyRanged" />
+    </node>
   </node>
 </model>
 
