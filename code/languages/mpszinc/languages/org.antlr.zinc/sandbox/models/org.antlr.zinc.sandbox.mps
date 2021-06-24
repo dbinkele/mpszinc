@@ -73,6 +73,7 @@
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
+      <concept id="5115872837156855227" name="org.iets3.core.expr.base.structure.UnaryMinusExpression" flags="ng" index="30cIq6" />
       <concept id="5115872837156687889" name="org.iets3.core.expr.base.structure.GreaterEqualsExpression" flags="ng" index="30d6GG" />
       <concept id="5115872837156687891" name="org.iets3.core.expr.base.structure.LessEqualsExpression" flags="ng" index="30d6GI" />
       <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
@@ -421,15 +422,15 @@
     <node concept="1Eg8j1" id="2hjuDitEucq" role="1EkkVG" />
     <node concept="3MzzmJ" id="2hjuDitEucz" role="1EkkVG">
       <property role="TrG5h" value="x" />
-      <node concept="30bXR$" id="2hjuDitEucE" role="2zM23F" />
+      <node concept="UZPhP" id="5HztbtxHCa2" role="2zM23F" />
     </node>
     <node concept="3MzzmJ" id="16vaj63FGv3" role="1EkkVG">
       <property role="TrG5h" value="v" />
-      <node concept="30bXR$" id="16vaj63FGvk" role="2zM23F" />
+      <node concept="UZPhP" id="5HztbtxHCiF" role="2zM23F" />
     </node>
     <node concept="3MzzmJ" id="16vaj63FGwr" role="1EkkVG">
       <property role="TrG5h" value="z" />
-      <node concept="30bXR$" id="16vaj63FGwG" role="2zM23F" />
+      <node concept="UZPhP" id="5HztbtxHCrk" role="2zM23F" />
     </node>
     <node concept="3MzzmJ" id="16vaj63FJn9" role="1EkkVG">
       <property role="TrG5h" value="b" />
@@ -809,23 +810,30 @@
       <node concept="UZPhP" id="5HztbtxEmy0" role="2zM23F">
         <node concept="U8T4g" id="5HztbtxEmy9" role="U8WEd">
           <node concept="30bXRB" id="5HztbtxEm_O" role="U8T4s">
-            <property role="30bXRw" value="1.111111e2" />
+            <property role="30bXRw" value="20" />
           </node>
-          <node concept="B28zw" id="5HztbtxEmFY" role="U8T4u">
-            <ref role="B9q$X" node="5HztbtxtfEV" resolve="parTest" />
+          <node concept="30cIq6" id="5HztbtyzaZm" role="U8T4u">
+            <node concept="B28zw" id="5HztbtxEmFY" role="30czhm">
+              <ref role="B9q$X" node="5HztbtxtfEV" resolve="parTest" />
+            </node>
           </node>
         </node>
       </node>
       <node concept="30bXRB" id="5HztbtxEnEu" role="2$1T80">
-        <property role="30bXRw" value="10.2" />
+        <property role="30bXRw" value="10" />
       </node>
     </node>
     <node concept="3MzzmJ" id="5HztbtxEnB7" role="1EkkVG">
       <property role="TrG5h" value="floatTest" />
       <node concept="1ocwl1" id="5HztbtxEnBk" role="2zM23F">
         <node concept="U8T4g" id="5HztbtxEnBt" role="U8WEd">
-          <node concept="30bXRB" id="5HztbtxEnBL" role="U8T4s">
-            <property role="30bXRw" value="1e20" />
+          <node concept="30dDZf" id="5HztbtyzaTI" role="U8T4s">
+            <node concept="B28zw" id="5HztbtyzaUR" role="30dEs_">
+              <ref role="B9q$X" node="5HztbtxtfEV" resolve="parTest" />
+            </node>
+            <node concept="30bXRB" id="5HztbtyejYJ" role="30dEsF">
+              <property role="30bXRw" value="1.5" />
+            </node>
           </node>
         </node>
       </node>
@@ -833,6 +841,16 @@
         <property role="30bXRw" value="10.2" />
       </node>
     </node>
+    <node concept="3MzzmJ" id="5Hztbtyoyq$" role="1EkkVG">
+      <property role="TrG5h" value="B" />
+      <node concept="1ocwl1" id="5Hztbtyoyq_" role="2zM23F">
+        <node concept="U8T4g" id="5Hztbtyoytg" role="U8WEd" />
+      </node>
+      <node concept="30bXRB" id="5HztbtyoyqC" role="2$1T80">
+        <property role="30bXRw" value="10.2" />
+      </node>
+    </node>
+    <node concept="1Eg8j1" id="5Hztbtyoyql" role="1EkkVG" />
   </node>
 </model>
 

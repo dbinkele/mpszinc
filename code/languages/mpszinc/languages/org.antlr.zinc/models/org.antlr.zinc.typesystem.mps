@@ -8,6 +8,7 @@
   <imports>
     <import index="rpch" ref="r:810e2824-2b52-41c1-bbbd-f24db2cd82b9(org.antlr.zinc.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="qttf" ref="r:5b948a3d-921c-4935-9db4-b930d43bc04b(org.antlr.zinc.intentions)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
@@ -60,6 +61,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -143,6 +145,7 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -838,6 +841,158 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5HztbtxB418" role="1YuTPh">
+      <property role="TrG5h" value="zincIntType" />
+      <ref role="1YaFvo" to="rpch:5HztbtxB232" resolve="ZincIntType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5HztbtymIin">
+    <property role="TrG5h" value="check_FloatType" />
+    <property role="3GE5qa" value="New.Types" />
+    <node concept="3clFbS" id="5HztbtymIio" role="18ibNy">
+      <node concept="3cpWs8" id="5HztbtymIJa" role="3cqZAp">
+        <node concept="3cpWsn" id="5HztbtymIJb" role="3cpWs9">
+          <property role="TrG5h" value="range" />
+          <node concept="3Tqbb2" id="5HztbtymIJc" role="1tU5fm">
+            <ref role="ehGHo" to="rpch:5HztbtxgemB" resolve="ZincRangeSpec" />
+          </node>
+          <node concept="2OqwBi" id="5HztbtymIJd" role="33vP2m">
+            <node concept="1YBJjd" id="5HztbtymIJX" role="2Oq$k0">
+              <ref role="1YBMHb" node="5HztbtymIiq" resolve="floatType" />
+            </node>
+            <node concept="3TrEf2" id="5HztbtymIJf" role="2OqNvi">
+              <ref role="3Tt5mk" to="rpch:5HztbtxgbSU" resolve="range" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5HztbtymIIS" role="3cqZAp" />
+      <node concept="3clFbJ" id="5HztbtykEbb" role="3cqZAp">
+        <node concept="3clFbS" id="5HztbtykEbd" role="3clFbx">
+          <node concept="2MkqsV" id="5HztbtykGtv" role="3cqZAp">
+            <node concept="Xl_RD" id="5HztbtykGtI" role="2MkJ7o">
+              <property role="Xl_RC" value="Empty range specification" />
+            </node>
+            <node concept="2OqwBi" id="5Hztbtyqlkq" role="1urrMF">
+              <node concept="1YBJjd" id="5HztbtymGH8" role="2Oq$k0">
+                <ref role="1YBMHb" node="5HztbtymIiq" resolve="floatType" />
+              </node>
+              <node concept="3TrEf2" id="5HztbtyqlTK" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:5HztbtxgbSU" resolve="range" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="5HztbtykFl2" role="3clFbw">
+          <node concept="2OqwBi" id="5HztbtykFUW" role="3uHU7w">
+            <node concept="2OqwBi" id="5HztbtykF_W" role="2Oq$k0">
+              <node concept="37vLTw" id="5HztbtymIUV" role="2Oq$k0">
+                <ref role="3cqZAo" node="5HztbtymIJb" resolve="range" />
+              </node>
+              <node concept="3TrEf2" id="5HztbtykFID" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:5HztbtxgemF" resolve="max" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5HztbtykGmz" role="2OqNvi" />
+          </node>
+          <node concept="1Wc70l" id="5HztbtymJ3N" role="3uHU7B">
+            <node concept="2OqwBi" id="5HztbtymJd_" role="3uHU7B">
+              <node concept="37vLTw" id="5HztbtymJba" role="2Oq$k0">
+                <ref role="3cqZAo" node="5HztbtymIJb" resolve="range" />
+              </node>
+              <node concept="3x8VRR" id="5HztbtymJmV" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5HztbtykEG1" role="3uHU7w">
+              <node concept="2OqwBi" id="5HztbtykEl$" role="2Oq$k0">
+                <node concept="37vLTw" id="5HztbtymIO2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5HztbtymIJb" resolve="range" />
+                </node>
+                <node concept="3TrEf2" id="5HztbtykEu3" role="2OqNvi">
+                  <ref role="3Tt5mk" to="rpch:5HztbtxgemD" resolve="min" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="5HztbtykEZr" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5HztbtymIiq" role="1YuTPh">
+      <property role="TrG5h" value="floatType" />
+      <ref role="1YaFvo" to="rpch:6EFcNSMAjpZ" resolve="FloatType" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5HztbtyoyIu">
+    <property role="TrG5h" value="check_ZincIntType" />
+    <property role="3GE5qa" value="New.Types" />
+    <node concept="3clFbS" id="5HztbtyoyIv" role="18ibNy">
+      <node concept="3cpWs8" id="5HztbtyoyI_" role="3cqZAp">
+        <node concept="3cpWsn" id="5HztbtyoyIA" role="3cpWs9">
+          <property role="TrG5h" value="range" />
+          <node concept="3Tqbb2" id="5HztbtyoyIB" role="1tU5fm">
+            <ref role="ehGHo" to="rpch:5HztbtxgemB" resolve="ZincRangeSpec" />
+          </node>
+          <node concept="2OqwBi" id="5HztbtyoyIC" role="33vP2m">
+            <node concept="1YBJjd" id="5Hztbtyqkcf" role="2Oq$k0">
+              <ref role="1YBMHb" node="5HztbtyoyIx" resolve="zincIntType" />
+            </node>
+            <node concept="3TrEf2" id="5HztbtyoyIE" role="2OqNvi">
+              <ref role="3Tt5mk" to="rpch:5HztbtxgbSU" resolve="range" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5HztbtyoyIF" role="3cqZAp" />
+      <node concept="3clFbJ" id="5HztbtyoyIG" role="3cqZAp">
+        <node concept="3clFbS" id="5HztbtyoyIH" role="3clFbx">
+          <node concept="2MkqsV" id="5HztbtyoyII" role="3cqZAp">
+            <node concept="Xl_RD" id="5HztbtyoyIJ" role="2MkJ7o">
+              <property role="Xl_RC" value="Empty range specification" />
+            </node>
+            <node concept="2OqwBi" id="5HztbtyqkG5" role="1urrMF">
+              <node concept="1YBJjd" id="5HztbtyqkgF" role="2Oq$k0">
+                <ref role="1YBMHb" node="5HztbtyoyIx" resolve="zincIntType" />
+              </node>
+              <node concept="3TrEf2" id="5Hztbtyql5J" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:5HztbtxgbSU" resolve="range" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="5HztbtyoyIL" role="3clFbw">
+          <node concept="2OqwBi" id="5HztbtyoyIM" role="3uHU7w">
+            <node concept="2OqwBi" id="5HztbtyoyIN" role="2Oq$k0">
+              <node concept="37vLTw" id="5HztbtyoyIO" role="2Oq$k0">
+                <ref role="3cqZAo" node="5HztbtyoyIA" resolve="range" />
+              </node>
+              <node concept="3TrEf2" id="5HztbtyoyIP" role="2OqNvi">
+                <ref role="3Tt5mk" to="rpch:5HztbtxgemF" resolve="max" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5HztbtyoyIQ" role="2OqNvi" />
+          </node>
+          <node concept="1Wc70l" id="5HztbtyoyIR" role="3uHU7B">
+            <node concept="2OqwBi" id="5HztbtyoyIS" role="3uHU7B">
+              <node concept="37vLTw" id="5HztbtyoyIT" role="2Oq$k0">
+                <ref role="3cqZAo" node="5HztbtyoyIA" resolve="range" />
+              </node>
+              <node concept="3x8VRR" id="5HztbtyoyIU" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5HztbtyoyIV" role="3uHU7w">
+              <node concept="2OqwBi" id="5HztbtyoyIW" role="2Oq$k0">
+                <node concept="37vLTw" id="5HztbtyoyIX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5HztbtyoyIA" resolve="range" />
+                </node>
+                <node concept="3TrEf2" id="5HztbtyoyIY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="rpch:5HztbtxgemD" resolve="min" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="5HztbtyoyIZ" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5HztbtyoyIx" role="1YuTPh">
       <property role="TrG5h" value="zincIntType" />
       <ref role="1YaFvo" to="rpch:5HztbtxB232" resolve="ZincIntType" />
     </node>
