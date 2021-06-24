@@ -44,9 +44,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -520,26 +517,6 @@
               <node concept="2Zo12i" id="5Hztbtyxpmp" role="2OqNvi">
                 <node concept="chp4Y" id="5HztbtyxpAc" role="2Zo12j">
                   <ref role="cht4Q" to="hm2y:4rZeNQ6NtQV" resolve="UnaryMinusExpression" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="5HztbtxHGDd">
-    <property role="3GE5qa" value="New.Decl" />
-    <ref role="1M2myG" to="rpch:7ARmMQbk6FU" resolve="ParDecl" />
-    <node concept="9SQb8" id="5HztbtxHGDe" role="9SGkC">
-      <node concept="3clFbS" id="5HztbtxHGDf" role="2VODD2">
-        <node concept="3clFbF" id="5HztbtxHGH9" role="3cqZAp">
-          <node concept="3fqX7Q" id="5HztbtxHHGc" role="3clFbG">
-            <node concept="2OqwBi" id="5HztbtxHHGe" role="3fr31v">
-              <node concept="2DD5aU" id="5HztbtxHHGf" role="2Oq$k0" />
-              <node concept="2Zo12i" id="5HztbtxHHGg" role="2OqNvi">
-                <node concept="chp4Y" id="5HztbtxHHGh" role="2Zo12j">
-                  <ref role="cht4Q" to="rpch:5HztbtxgemB" resolve="ZincRangeSpec" />
                 </node>
               </node>
             </node>

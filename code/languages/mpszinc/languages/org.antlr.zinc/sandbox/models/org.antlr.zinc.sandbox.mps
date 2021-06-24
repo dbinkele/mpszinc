@@ -803,7 +803,16 @@
     <property role="TrG5h" value="RangeTests" />
     <node concept="3MTN7n" id="5HztbtxtfEV" role="1EkkVG">
       <property role="TrG5h" value="parTest" />
-      <node concept="UZPhP" id="5HztbtxEmkh" role="2zM23F" />
+      <node concept="UZPhP" id="5HztbtxEmkh" role="2zM23F">
+        <node concept="U8T4g" id="5HztbtyARjK" role="U8WEd">
+          <node concept="30bXRB" id="5HztbtyARlT" role="U8T4s">
+            <property role="30bXRw" value="20" />
+          </node>
+          <node concept="30bXRB" id="5HztbtyARot" role="U8T4u">
+            <property role="30bXRw" value="15" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3MzzmJ" id="5HztbtxEmwl" role="1EkkVG">
       <property role="TrG5h" value="intTest" />
