@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -89,6 +90,19 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
+        <child id="1216383511839" name="argumentType" index="Q6QK4" />
+      </concept>
+      <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
+        <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
+      </concept>
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="8124453027370845339" name="jetbrains.mps.lang.typesystem.structure.AbstractOverloadedOpsTypeRule" flags="ng" index="32tDTw">
         <child id="8124453027370845343" name="function" index="32tDT$" />
         <child id="8124453027370845341" name="operationConcept" index="32tDTA" />
@@ -106,7 +120,16 @@
         <child id="1236165725858" name="rule" index="3he0YX" />
       </concept>
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
+      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <reference id="1216388525179" name="quickFix" index="QpYPw" />
+        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
+      </concept>
+      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
+        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
+        <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
@@ -162,6 +185,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -869,6 +893,20 @@
       <node concept="3clFbJ" id="5HztbtykEbb" role="3cqZAp">
         <node concept="3clFbS" id="5HztbtykEbd" role="3clFbx">
           <node concept="2MkqsV" id="5HztbtykGtv" role="3cqZAp">
+            <node concept="3Cnw8n" id="5Hztbtyzipt" role="1urrFz">
+              <ref role="QpYPw" node="5Hztbtyzhn9" resolve="fix_EmptyRangeSpec" />
+              <node concept="3CnSsL" id="5Hztbtyzjux" role="3Coj4f">
+                <ref role="QkamJ" node="5HztbtyziYB" resolve="range" />
+                <node concept="2OqwBi" id="5HztbtyzjJM" role="3CoRuB">
+                  <node concept="1YBJjd" id="5HztbtyzjuI" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5HztbtymIiq" resolve="floatType" />
+                  </node>
+                  <node concept="3TrEf2" id="5HztbtyzkJo" role="2OqNvi">
+                    <ref role="3Tt5mk" to="rpch:5HztbtxgbSU" resolve="range" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="Xl_RD" id="5HztbtykGtI" role="2MkJ7o">
               <property role="Xl_RC" value="Empty range specification" />
             </node>
@@ -945,6 +983,20 @@
       <node concept="3clFbJ" id="5HztbtyoyIG" role="3cqZAp">
         <node concept="3clFbS" id="5HztbtyoyIH" role="3clFbx">
           <node concept="2MkqsV" id="5HztbtyoyII" role="3cqZAp">
+            <node concept="3Cnw8n" id="5Hztbtyzl9M" role="1urrFz">
+              <ref role="QpYPw" node="5Hztbtyzhn9" resolve="fix_EmptyRangeSpec" />
+              <node concept="3CnSsL" id="5Hztbtyzl9N" role="3Coj4f">
+                <ref role="QkamJ" node="5HztbtyziYB" resolve="range" />
+                <node concept="2OqwBi" id="5Hztbtyzl9O" role="3CoRuB">
+                  <node concept="1YBJjd" id="5Hztbtyzlek" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5HztbtyoyIx" resolve="zincIntType" />
+                  </node>
+                  <node concept="3TrEf2" id="5Hztbtyzl9Q" role="2OqNvi">
+                    <ref role="3Tt5mk" to="rpch:5HztbtxgbSU" resolve="range" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="Xl_RD" id="5HztbtyoyIJ" role="2MkJ7o">
               <property role="Xl_RC" value="Empty range specification" />
             </node>
@@ -995,6 +1047,36 @@
     <node concept="1YaCAy" id="5HztbtyoyIx" role="1YuTPh">
       <property role="TrG5h" value="zincIntType" />
       <ref role="1YaFvo" to="rpch:5HztbtxB232" resolve="ZincIntType" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="5Hztbtyzhn9">
+    <property role="TrG5h" value="fix_EmptyRangeSpec" />
+    <node concept="Q6JDH" id="5HztbtyziYB" role="Q6Id_">
+      <property role="TrG5h" value="range" />
+      <node concept="3Tqbb2" id="5HztbtyziZ9" role="Q6QK4">
+        <ref role="ehGHo" to="rpch:5HztbtxgemB" resolve="ZincRangeSpec" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="5Hztbtyzhna" role="Q6x$H">
+      <node concept="3clFbS" id="5Hztbtyzhnb" role="2VODD2">
+        <node concept="3clFbF" id="5HztbtykTHj" role="3cqZAp">
+          <node concept="2OqwBi" id="5Hztbtyzj6S" role="3clFbG">
+            <node concept="QwW4i" id="5HztbtyziZl" role="2Oq$k0">
+              <ref role="QwW4h" node="5HztbtyziYB" resolve="range" />
+            </node>
+            <node concept="3YRAZt" id="5HztbtyzjeT" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="5Hztbtyzjhj" role="QzAvj">
+      <node concept="3clFbS" id="5Hztbtyzjhk" role="2VODD2">
+        <node concept="3clFbF" id="5HztbtyzjlS" role="3cqZAp">
+          <node concept="Xl_RD" id="5HztbtyzjlR" role="3clFbG">
+            <property role="Xl_RC" value="Remove empty range specification." />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
