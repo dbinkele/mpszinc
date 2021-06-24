@@ -8,8 +8,8 @@
   <imports>
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="ip48" ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -24,6 +24,7 @@
       <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
+        <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
         <child id="927724900262033863" name="resourceSelectors" index="2_Ic$A" />
       </concept>
       <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
@@ -83,9 +84,11 @@
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
+        <property id="4297162197620978188" name="strict" index="1wNuhc" />
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
+        <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
@@ -108,17 +111,20 @@
     <property role="2DA0ip" value="../../../../../build/scripts" />
     <property role="TrG5h" value="mpszinc.allScripts.build" />
     <property role="turDy" value="build-allScripts.xml" />
-    <node concept="1wNqPr" id="3_zi6dBMvz7" role="3989C9">
+    <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
+      <property role="2_Ic$B" value="true" />
+      <property role="TZNOO" value="" />
+      <property role="2_Ic$$" value="true" />
+      <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
+        <property role="3LWZYw" value="**/*.info" />
+      </node>
+    </node>
+    <node concept="1wNqPr" id="2B1T7v1mQPD" role="3989C9">
+      <property role="1wNuhc" value="true" />
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
-    </node>
-    <node concept="2_Ic$z" id="3_zi6dBMvyU" role="3989C9">
-      <property role="2_Ic$$" value="true" />
-      <property role="2_Ic$B" value="true" />
-      <node concept="3LWZYx" id="3_zi6dBMvz1" role="2_Ic$A">
-        <property role="3LWZYw" value="**/*.info" />
-      </node>
+      <property role="3Ej$Sc" value="true" />
     </node>
     <node concept="2G$12M" id="3_zi6dBMvzh" role="3989C9">
       <property role="TrG5h" value="mpszinc" />
