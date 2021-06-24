@@ -638,7 +638,7 @@
       <node concept="3EZMnI" id="313yWIV$9_h" role="3EZMnx">
         <node concept="2iRfu4" id="313yWIV$9_i" role="2iSdaV" />
         <node concept="3F0ifn" id="313yWIV$9_k" role="3EZMnx">
-          <property role="3F0ifm" value="Name:" />
+          <property role="3F0ifm" value="Name: " />
           <node concept="VechU" id="54RZRM62Ibp" role="3F10Kt">
             <property role="Vb096" value="fLwANPp/orange" />
           </node>
@@ -3239,7 +3239,7 @@
     <node concept="3EZMnI" id="2pm_pl9WSBV" role="2wV5jI">
       <node concept="l2Vlx" id="2pm_pl9WSBW" role="2iSdaV" />
       <node concept="3F0ifn" id="2pm_pl9WSBX" role="3EZMnx">
-        <property role="3F0ifm" value="solve" />
+        <property role="3F0ifm" value="solve " />
         <node concept="VechU" id="2hjuDitWkof" role="3F10Kt">
           <property role="Vb096" value="fLwANPn/red" />
           <node concept="1iSF2X" id="2vybEKfhA22" role="VblUZ">

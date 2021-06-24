@@ -1,5 +1,10 @@
 import de.itemis.mps.gradle.*
 
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
+
+
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
@@ -13,6 +18,7 @@ buildscript {
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'co.riiid.gradle' version '0.4.2'
 }
 
 // Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
@@ -83,10 +89,8 @@ if (project.hasProperty('iets3CoreVersion')) {
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 // Dependency versions
-ext.mpsVersion = '2020.3'
-//ext.iets3OpenSourceVersion = '2020.1.4561.e649db7'
-//ext.iets3Version = '2020.3.6137.4f33f08'
-//
+ext.mpsVersion = '2020.3.1'
+
 if (project.hasProperty('iets3OpenSourceVersion')) {
     ext.iets3OpenSourceVersion = project.iets3OpenSourceVersion
     logger.log(LogLevel.WARN, "IETS 3 open source versions externally overwritten to $ext.iets3OpenSourceVersion")
@@ -109,9 +113,7 @@ ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRe
 
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
-        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots',
-        'https://projects.itemis.de/nexus/content/repositories/iets3',
-        'https://projects.itemis.de/nexus/content/repositories/iets3_snapshots'
+        'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ]
 
 
@@ -128,7 +130,10 @@ configurations {
     languageLibs
     languageTestLibs
     junitAnt
-    resolveExternalLibs
+    z3osx
+    z3win
+    z3linux
+   // z3java
 }
 
 dependencies {
@@ -138,9 +143,18 @@ dependencies {
         // don't need MPS transitive dependency
         exclude group: 'com.jetbrains', module: 'mps'
     }
-    //languageLibs "org.iets3:core:$iets3Version"
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
-    resolveExternalLibs group: 'com.google.code.gson', name: 'gson', version: '2.8.2'
+
+    z3osx 'com.microsoft.z3:libz3.java.osx:4.8.8'
+    z3osx 'com.microsoft.z3:libz3.osx:4.8.8'
+
+    z3win 'com.microsoft.z3:libz3.java.win:4.8.8'
+    z3win 'com.microsoft.z3:libz3.win:4.8.8'
+
+    z3linux 'com.microsoft.z3:libz3.java.linux:4.8.8'
+    z3linux 'com.microsoft.z3:libz3.linux:4.8.8'
+
+   // z3java 'com.microsoft.z3:java-jar:4.8.8'
 }
 
 configurations.languageLibs {
@@ -168,6 +182,7 @@ repositories {
         }
     }
     mavenCentral()
+    jcenter()
 }
 
 task resolveMps(type: Copy) {
@@ -178,21 +193,36 @@ task resolveMps(type: Copy) {
     into "$buildDir/mps"
 }
 
+task resolveZ3Osx(type: Copy) {
+    dependsOn configurations.z3osx
+    from {
+        configurations.z3osx.resolve().collect {  zipTree(it) }
+    }
+    into "$projectDir/code/languages/org.iets3.core/solutions/org.iets3.analysis.solversupport.runtime/lib/macos64"
+}
+
+task resolveZ3Win(type: Copy) {
+    dependsOn configurations.z3win
+    from {
+        configurations.z3win.resolve().collect {  zipTree(it) }
+    }
+    into "$projectDir/code/languages/org.iets3.core/solutions/org.iets3.analysis.solversupport.runtime/lib/win64"
+}
+
+task resolveZ3Linux(type: Copy) {
+    dependsOn configurations.z3linux
+    from {
+        configurations.z3linux.resolve().collect {  zipTree(it) }
+    }
+    into "$projectDir/code/languages/org.iets3.core/solutions/org.iets3.analysis.solversupport.runtime/lib/linux64"
+}
+
 task resolveAllLanguageLibs(type: Copy) {
     from {
         def configs = [configurations.languageTestLibs, configurations.languageLibs]
         configs.collectMany { it.resolve() }.collect { zipTree(it) }
     }
     into "$buildDir/dependencies"
-}
-
-
-task resolveExternalLibs(type: Copy) {
-    from {
-        def configs = [configurations.languageTestLibs, configurations.languageLibs]
-        configs.collectMany { it.resolve() }.collect { zipTree(it) }
-    }
-    into "$buildDir/dependencies" //Copy nach lib-Folder in Ziel-Labguage.
 }
 
 // Default arguments for ant scripts
@@ -211,7 +241,7 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs, resolveZ3Osx, resolveZ3Win, resolveZ3Linux]) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -225,7 +255,7 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) { task ->
         // patch heap size setting for tests execution
         // see https://youtrack.jetbrains.com/issue/MPS-27715
         def antTestScriptFile = rootProject.file(task.script)
-        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx4096m")
+        antTestScriptFile.text = antTestScriptFile.text.replace("-Xmx1024m", "-Xmx2048m")
     }
     doLast {
         ant.taskdef(name: 'junitreport',
@@ -242,74 +272,85 @@ task buildAndRunTests(type: TestLanguages, dependsOn: buildLanguages) { task ->
 check.dependsOn buildAndRunTests
 
 task packageAllScripts(type: Zip, dependsOn: buildAllScripts) {
-    archiveBaseName = 'hansebloc.allScripts'
+    archiveBaseName = 'org.iets3.core.allScripts'
     from artifactsDir
-    include 'hansebloc.build/**'
+    include 'org.iets3.allScripts.build/**'
 }
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
-    archiveBaseName = 'hansebloc'
+    archiveBaseName = 'org.iets3.core'
     from artifactsDir
-    include 'hansebloc/**'
+    include 'org.iets3.core/**'
+}
+
+task buildDistroWithDependencies(type: RunAntScript, dependsOn: buildLanguages) {
+    script "$buildDir/scripts/build-distro.xml"
+    targets 'clean', 'assemble'
+}
+
+task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependencies) {
+    archiveBaseName = 'org.iets3.core-with-dependencies'
+    from artifactsDir
+    include 'org.iets3.distro/**'
 }
 
 assemble.dependsOn packageAllScripts, packageLanguages
 
-//def pomWithdep(pom, config, configMPS) {
-//    pom.withXml {
-//        def dependenciesNode = asNode().appendNode('dependencies')
-//        config.resolvedConfiguration.firstLevelModuleDependencies.each {
-//            def dependencyNode = dependenciesNode.appendNode('dependency')
-//            dependencyNode.appendNode('groupId', it.moduleGroup)
-//            dependencyNode.appendNode('artifactId', it.moduleName)
-//            dependencyNode.appendNode('version', it.moduleVersion)
-//            dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-//        }
-//        configMPS.resolvedConfiguration.firstLevelModuleDependencies.each {
-//            def dependencyNode = dependenciesNode.appendNode('dependency')
-//            dependencyNode.appendNode('groupId', it.moduleGroup)
-//            dependencyNode.appendNode('artifactId', it.moduleName)
-//            dependencyNode.appendNode('version', it.moduleVersion)
-//            dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-//            dependencyNode.appendNode('scope', 'provided')
-//        }
-//    }
-//}
+def pomWithdep(pom, config, configMPS) {
+    pom.withXml {
+        def dependenciesNode = asNode().appendNode('dependencies')
+        config.resolvedConfiguration.firstLevelModuleDependencies.each {
+            def dependencyNode = dependenciesNode.appendNode('dependency')
+            dependencyNode.appendNode('groupId', it.moduleGroup)
+            dependencyNode.appendNode('artifactId', it.moduleName)
+            dependencyNode.appendNode('version', it.moduleVersion)
+            dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+        }
+        configMPS.resolvedConfiguration.firstLevelModuleDependencies.each {
+            def dependencyNode = dependenciesNode.appendNode('dependency')
+            dependencyNode.appendNode('groupId', it.moduleGroup)
+            dependencyNode.appendNode('artifactId', it.moduleName)
+            dependencyNode.appendNode('version', it.moduleVersion)
+            dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+            dependencyNode.appendNode('scope', 'provided')
+        }
+    }
+}
 
-//publishing {
-//    repositories {
-//        maven {
-//            url project.publishingRepository
-//            if (project.hasProperty('nexusUsername')) {
-//                credentials {
-//                    username project.nexusUsername
-//                    password project.nexusPassword
-//                }
-//            }
-//        }
-//    }
-//    publications {
-//        allScripts(MavenPublication) {
-//            groupId 'hansebloc'
-//            artifactId 'allScripts'
-//            artifact packageAllScripts
-//            pomWithdep pom, configurations.languageLibs, configurations.mps
-//        }
-//        core(MavenPublication) {
-//            groupId 'org.iets3'
-//            artifactId 'core'
-//            artifact packageLanguages
-//            pomWithdep pom, configurations.languageLibs, configurations.mps
-//        }
-//    }
-//}
+publishing {
+    repositories {
+        maven {
+            url project.publishingRepository
+            if (project.hasProperty('nexusUsername')) {
+                credentials {
+                    username project.nexusUsername
+                    password project.nexusPassword
+                }
+            }
+        }
+    }
+    publications {
+        allScripts(MavenPublication) {
+            groupId 'org.iets3.core'
+            artifactId 'allScripts'
+            artifact packageAllScripts
+            pomWithdep pom, configurations.languageLibs, configurations.mps
+        }
+        core(MavenPublication) {
+            groupId 'org.iets3'
+            artifactId 'core'
+            artifact packageLanguages
+            pomWithdep pom, configurations.languageLibs, configurations.mps
+        }
+    }
+}
 
 task generateLibrariesXml(type: GenerateLibrariesXml) {
     dependsOn resolveAllLanguageLibs
     description "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
     defaults rootProject.file('projectlibraries.properties')
     overrides rootProject.file('projectlibraries.overrides.properties')
-    destination file('code/languages/mpszinc/.mps/libraries.xml')
+    destination file('code/languages/org.iets3.core/.mps/libraries.xml')
 }
 
 task setup {
@@ -319,3 +360,26 @@ task setup {
 }
 
 defaultTasks 'buildLanguages'
+
+def langLibDeps = project.configurations.languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies
+def releaseNotes = """Automated Nightly build from ${
+    LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+}.
+
+Includes dependencies:
+${langLibDeps.collect { "- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`" }.join("\n")}
+"""
+
+github {
+    owner = 'IETS3'
+    repo = 'iets3.core'
+    token = rootProject.findProperty('github.token') ?: 'empty'
+    tagName = 'nightly-' + version
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    name = 'Nightly Build ' + version
+    body = releaseNotes
+    prerelease = true
+    assets = packageDistroWithDependencies.outputs.files.collect { it.path }
+}
+
+githubRelease.dependsOn packageDistroWithDependencies
