@@ -113,6 +113,9 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
+      </concept>
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
         <property id="4297162197620978188" name="strict" index="1wNuhc" />
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
@@ -146,7 +149,7 @@
     <property role="turDy" value="build-languages.xml" />
     <node concept="2_Ic$z" id="2tMMEJ5g6CU" role="3989C9">
       <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="" />
+      <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <node concept="3LWZYx" id="2tMMEJ5g9j1" role="2_Ic$A">
         <property role="3LWZYw" value="**/*.info" />
@@ -163,12 +166,12 @@
       <property role="m$_wk" value="org.mpszinc" />
       <node concept="3_J27D" id="3Wuki8dHNmX" role="m$_yQ">
         <node concept="3Mxwew" id="3Wuki8dHNsz" role="3MwsjC">
-          <property role="3MwjfP" value="org.hansebloc" />
+          <property role="3MwjfP" value="org.mpszinc" />
         </node>
       </node>
       <node concept="3_J27D" id="3Wuki8dHNmZ" role="m_cZH">
         <node concept="3Mxwew" id="3Wuki8dHNs_" role="3MwsjC">
-          <property role="3MwjfP" value="org.hansebloc" />
+          <property role="3MwjfP" value="org.mpszinc" />
         </node>
       </node>
       <node concept="3_J27D" id="3Wuki8dHNn1" role="m$_w8">
@@ -179,17 +182,20 @@
       <node concept="m$f5U" id="3Wuki8dHNsT" role="m$_yh">
         <ref role="m$f5T" node="3_zi6dBMNrH" resolve="mpszinc" />
       </node>
-      <node concept="m$_yC" id="3Wuki8dHNt3" role="m$_yJ">
-        <ref role="m$_y1" to="ip48:5wLtKNeSRRD" resolve="org.iets3.core.os" />
-      </node>
-      <node concept="m$_yC" id="3Wuki8dHNu4" role="m$_yJ">
-        <ref role="m$_y1" to="ip48:5Ky8UT4nhy3" resolve="org.iets3.core.expr.genjava" />
-      </node>
-      <node concept="m$_yC" id="3Wuki8dHNus" role="m$_yJ">
+      <node concept="m$_yC" id="5Ct4D7zpvYG" role="m$_yJ">
         <ref role="m$_y1" to="ip48:7$nPgK7zjIH" resolve="org.iets3.comp.os" />
       </node>
-      <node concept="m$_yC" id="2yWALoeTov5" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
+      <node concept="m$_yC" id="5Ct4D7zxtgb" role="m$_yJ">
+        <ref role="m$_y1" to="ip48:64GCIgM55Fn" resolve="org.iets3.build.os" />
+      </node>
+      <node concept="m$_yC" id="4d1gpVcSdLn" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="7a$wyKwJoEH" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
+      <node concept="m$_yC" id="5Ct4D7zxzSk" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
     </node>
     <node concept="2G$12M" id="3_zi6dBMNrH" role="3989C9">
@@ -265,6 +271,34 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7235WRFl_SX" role="3bR31x">
+          <node concept="3LXTmp" id="7235WRFl_SY" role="3rtmxm">
+            <node concept="3qWCbU" id="7235WRFl_SZ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="5Ct4D7zps40" role="3LXTmr">
+              <ref role="398BVh" node="3_zi6dBMvSP" resolve="mpszinc.home" />
+              <node concept="2Ry0Ak" id="5Ct4D7zps41" role="iGT6I">
+                <property role="2Ry0Am" value="code" />
+                <node concept="2Ry0Ak" id="5Ct4D7zps42" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="5Ct4D7zps43" role="2Ry0An">
+                    <property role="2Ry0Am" value="mpszinc" />
+                    <node concept="2Ry0Ak" id="5Ct4D7zps44" role="2Ry0An">
+                      <property role="2Ry0Am" value="languages" />
+                      <node concept="2Ry0Ak" id="5Ct4D7zps45" role="2Ry0An">
+                        <property role="2Ry0Am" value="org.antlr.zinc" />
+                        <node concept="2Ry0Ak" id="5Ct4D7zps46" role="2Ry0An">
+                          <property role="2Ry0Am" value="models" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1SiIV0" id="1FQTM0rYaCl" role="3bR37C">
           <node concept="1Busua" id="1FQTM0rYaCm" role="1SiIV1">
             <ref role="1Busuk" to="ip48:2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
@@ -299,6 +333,12 @@
         <node concept="2Ry0Ak" id="3_zi6dBMNrD" role="iGT6I">
           <property role="2Ry0Am" value="org.iets3.opensource" />
         </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7BphVbl8wCf" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
+      <node concept="398BVA" id="7BphVbl8wCq" role="2JcizS">
+        <ref role="398BVh" node="3_zi6dBMvT7" resolve="mps.home" />
       </node>
     </node>
     <node concept="398rNT" id="3_zi6dBMvSP" role="1l3spd">
@@ -348,9 +388,17 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="5Ct4D7zpLu8" role="1l3spd">
+      <property role="TrG5h" value="samples_home" />
+      <node concept="55IIr" id="5Ct4D7zpLuu" role="398pKh" />
+    </node>
     <node concept="10PD9b" id="3_zi6dBMvR7" role="10PD9s" />
     <node concept="3b7kt6" id="3_zi6dBMvRa" role="10PD9s" />
-    <node concept="55IIr" id="3_zi6dBMvaP" role="auvoZ" />
+    <node concept="55IIr" id="3_zi6dBMvaP" role="auvoZ">
+      <node concept="2Ry0Ak" id="7I09Ro4csOM" role="iGT6I">
+        <property role="2Ry0Am" value="" />
+      </node>
+    </node>
     <node concept="1l3spV" id="3_zi6dBMvaQ" role="1l3spN">
       <node concept="m$_wl" id="7RIE_vPMkeL" role="39821P">
         <ref role="m_rDy" node="3Wuki8dHNmV" resolve="org.mpszinc" />

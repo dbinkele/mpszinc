@@ -130,10 +130,6 @@ configurations {
     languageLibs
     languageTestLibs
     junitAnt
-    z3osx
-    z3win
-    z3linux
-   // z3java
 }
 
 dependencies {
@@ -145,16 +141,7 @@ dependencies {
     }
     junitAnt 'org.apache.ant:ant-junit:1.10.6'
 
-    z3osx 'com.microsoft.z3:libz3.java.osx:4.8.8'
-    z3osx 'com.microsoft.z3:libz3.osx:4.8.8'
 
-    z3win 'com.microsoft.z3:libz3.java.win:4.8.8'
-    z3win 'com.microsoft.z3:libz3.win:4.8.8'
-
-    z3linux 'com.microsoft.z3:libz3.java.linux:4.8.8'
-    z3linux 'com.microsoft.z3:libz3.linux:4.8.8'
-
-   // z3java 'com.microsoft.z3:java-jar:4.8.8'
 }
 
 configurations.languageLibs {
@@ -193,29 +180,6 @@ task resolveMps(type: Copy) {
     into "$buildDir/mps"
 }
 
-task resolveZ3Osx(type: Copy) {
-    dependsOn configurations.z3osx
-    from {
-        configurations.z3osx.resolve().collect {  zipTree(it) }
-    }
-    into "$projectDir/code/languages/org.iets3.core/solutions/org.iets3.analysis.solversupport.runtime/lib/macos64"
-}
-
-task resolveZ3Win(type: Copy) {
-    dependsOn configurations.z3win
-    from {
-        configurations.z3win.resolve().collect {  zipTree(it) }
-    }
-    into "$projectDir/code/languages/org.iets3.core/solutions/org.iets3.analysis.solversupport.runtime/lib/win64"
-}
-
-task resolveZ3Linux(type: Copy) {
-    dependsOn configurations.z3linux
-    from {
-        configurations.z3linux.resolve().collect {  zipTree(it) }
-    }
-    into "$projectDir/code/languages/org.iets3.core/solutions/org.iets3.analysis.solversupport.runtime/lib/linux64"
-}
 
 task resolveAllLanguageLibs(type: Copy) {
     from {
@@ -241,7 +205,7 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D
 ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
-task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs, resolveZ3Osx, resolveZ3Win, resolveZ3Linux]) {
+task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs]) {
     script "$buildDir/scripts/build-allScripts.xml"
 }
 
@@ -282,7 +246,7 @@ task packageLanguages(type: Zip, dependsOn: buildLanguages) {
     from artifactsDir
     include 'org.iets3.core/**'
 }
-
+//
 task buildDistroWithDependencies(type: RunAntScript, dependsOn: buildLanguages) {
     script "$buildDir/scripts/build-distro.xml"
     targets 'clean', 'assemble'
@@ -294,7 +258,7 @@ task packageDistroWithDependencies(type: Zip, dependsOn: buildDistroWithDependen
     include 'org.iets3.distro/**'
 }
 
-assemble.dependsOn packageAllScripts, packageLanguages
+//assemble.dependsOn packageAllScripts, packageLanguages
 
 def pomWithdep(pom, config, configMPS) {
     pom.withXml {
