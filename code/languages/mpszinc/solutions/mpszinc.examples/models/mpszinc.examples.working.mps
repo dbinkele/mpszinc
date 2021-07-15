@@ -60,7 +60,6 @@
   <node concept="1JDhu8" id="CKJfz$IXiI">
     <property role="TrG5h" value="Jones" />
     <node concept="1Eg8j1" id="CKJfz$NbAn" role="1EkkVG" />
-    <node concept="1Eg8j1" id="CKJfz$NbAo" role="1EkkVG" />
     <node concept="3MzzmJ" id="CKJfz$IXiK" role="1EkkVG">
       <property role="TrG5h" value="x1" />
       <node concept="1ocwl1" id="CKJfz$IXiO" role="2zM23F" />

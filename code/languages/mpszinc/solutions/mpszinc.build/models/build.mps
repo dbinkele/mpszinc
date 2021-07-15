@@ -113,9 +113,6 @@
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
-      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
-        <child id="763829979718664967" name="files" index="3rtmxm" />
-      </concept>
       <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
         <property id="4297162197620978188" name="strict" index="1wNuhc" />
         <property id="4297162197620978190" name="parallel" index="1wNuhe" />
@@ -242,32 +239,6 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="1FQTM0rYaCj" role="1HemKq">
-            <node concept="398BVA" id="1FQTM0rYaCb" role="3LXTmr">
-              <ref role="398BVh" node="3_zi6dBMvSP" resolve="mpszinc.home" />
-              <node concept="2Ry0Ak" id="1FQTM0rYaCc" role="iGT6I">
-                <property role="2Ry0Am" value="code" />
-                <node concept="2Ry0Ak" id="1FQTM0rYaCd" role="2Ry0An">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="1FQTM0rYaCe" role="2Ry0An">
-                    <property role="2Ry0Am" value="mpszinc" />
-                    <node concept="2Ry0Ak" id="1FQTM0rYaCf" role="2Ry0An">
-                      <property role="2Ry0Am" value="languages" />
-                      <node concept="2Ry0Ak" id="1FQTM0rYaCg" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.antlr.zinc" />
-                        <node concept="2Ry0Ak" id="1FQTM0rYaCh" role="2Ry0An">
-                          <property role="2Ry0Am" value="models" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="1FQTM0rYaCk" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
           <node concept="3LXTmp" id="7kn12YDIFvv" role="1HemKq">
             <node concept="398BVA" id="7kn12YDIFvo" role="3LXTmr">
               <ref role="398BVh" node="3_zi6dBMvSP" resolve="mpszinc.home" />
@@ -292,34 +263,6 @@
             </node>
             <node concept="3qWCbU" id="7kn12YDIFvw" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="7235WRFl_SX" role="3bR31x">
-          <node concept="3LXTmp" id="7235WRFl_SY" role="3rtmxm">
-            <node concept="3qWCbU" id="7235WRFl_SZ" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="5Ct4D7zps40" role="3LXTmr">
-              <ref role="398BVh" node="3_zi6dBMvSP" resolve="mpszinc.home" />
-              <node concept="2Ry0Ak" id="5Ct4D7zps41" role="iGT6I">
-                <property role="2Ry0Am" value="code" />
-                <node concept="2Ry0Ak" id="5Ct4D7zps42" role="2Ry0An">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="5Ct4D7zps43" role="2Ry0An">
-                    <property role="2Ry0Am" value="mpszinc" />
-                    <node concept="2Ry0Ak" id="5Ct4D7zps44" role="2Ry0An">
-                      <property role="2Ry0Am" value="languages" />
-                      <node concept="2Ry0Ak" id="5Ct4D7zps45" role="2Ry0An">
-                        <property role="2Ry0Am" value="org.antlr.zinc" />
-                        <node concept="2Ry0Ak" id="5Ct4D7zps46" role="2Ry0An">
-                          <property role="2Ry0Am" value="models" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
